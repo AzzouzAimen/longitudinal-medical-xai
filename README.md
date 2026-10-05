@@ -35,6 +35,22 @@ The accompanying manuscript reports these window-level F1 scores and gains over 
 
 In a paired comparison of 16 Apnea-ECG cases, mean evidence coverage increased from 80.58% with current evidence alone to 88.99% with PDM history; unsupported patient-specific claims decreased from 5.00% to 0.00% (Table 7). The conditions had different amounts of available evidence. These are research results, not clinical validation. See the saved [narrative results](outputs/paper_source_bundle/source_files/table7_results.json).
 
+## Reproducing reported results
+
+The Table 2 F1 scores are reported in the paper. Raw datasets, prepared inputs, and trained weights are not bundled, so a fresh checkout cannot reproduce every score.
+
+| Result | Code and required input | Current limitation |
+| --- | --- | --- |
+| Apnea-ECG · 62.48% | [Notebook workflow](models/apnea_ecg/code/training_and_baselines.ipynb); 60-second windows in `.npz` or PostgreSQL | Raw recordings, window cache, database ingestion, and weights are absent; companion Python files depend on notebook state. |
+| CHB-MIT EEG · 82.60% | [MedAttnAID code](models/chb_mit/code/src/medattnaid/); cleaned EEG in PostgreSQL/TimescaleDB | EDF ingestion and a prepared database are absent. |
+| Sleep-EDF · 76.70% | [Model code](models/sleep_edf/code/); processed `sleep_edf_processed.npy` | Preprocessing and weights are absent. This routine uses a different split from the PDM patient-held-out experiment. |
+| UCI HAR · 53.80% | [Code folder](models/uci_har/code/) and [reference trainer](models/uci_har/reference/train.py); official inertial-signal files | The reference trainer is reconstructed and does not reproduce the reported score. The code-folder trainer is incomplete and has a random-data fallback. |
+| Synthetic thermal · 85.10% | [Thermal code](models/synthetic_thermal/code/) and [preprocessing](models/synthetic_thermal/preprocessing/); thermal CSVs or prepared windows | The CSV cleaning pipeline is included; the original signal generator and trained weights are absent. |
+
+The separate PDM pipeline covers patient-held-out Apnea-ECG and Sleep-EDF experiments. Its entry points are listed in [scripts](scripts/README.md); saved fold metadata and decisions are under [outputs/detector_training](outputs/detector_training/). Model weights and raw signal arrays are not included.
+
+For the paired narrative comparison on 16 Apnea-ECG cases, see the saved [Table 7 results](outputs/narrative_experiments/scoring/apnea_paired_v7_contextual_freegen_20260917T200000Z/fusion-scoring-v7/table7_results.json) and [experiment artifacts](outputs/narrative_experiments/).
+
 ## Run the PDM and viewer locally
 
 The application uses Python, TensorFlow CPU, Flask, and PostgreSQL/TimescaleDB. Individual model folders list their own dependencies.
