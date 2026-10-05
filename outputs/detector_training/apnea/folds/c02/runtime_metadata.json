@@ -1,0 +1,22 @@
+{
+  "bitwise_reproducibility": false,
+  "elapsed_seconds": 47.60224069999822,
+  "held_out_windows": 501,
+  "keras_version": "3.15.1",
+  "library_versions": {
+    "keras": "3.15.1",
+    "numpy": "2.3.3",
+    "python": "3.13.1",
+    "tensorflow": "2.20.0"
+  },
+  "numpy_version": "2.3.3",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python_version": "3.13.1",
+  "reproducibility_note": "Exact bitwise reproducibility is not guaranteed across TensorFlow builds or hardware.",
+  "resource_note": "CPU-safe prototype; exact bitwise reproducibility is not guaranteed across TensorFlow builds.",
+  "seed": 2026,
+  "tensorflow_version": "2.20.0",
+  "train_windows": 883,
+  "validation_normal_windows": 453,
+  "validation_windows": 453
+}

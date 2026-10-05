@@ -1,0 +1,41 @@
+{
+  "schema_version": "fusion_claims_v7",
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "section": "current_event",
+      "text": "A 60-second apnea window from recording a01, starting at 2000-01-01T03:42:00+00:00 and ending at 03:43:00+00:00, was flagged as an anomaly by the detector.",
+      "evidence_ids": ["window:223:event"]
+    },
+    {
+      "claim_id": "claim-2",
+      "section": "model_and_xai_evidence",
+      "text": "The detector classified the window as an anomaly with a reconstruction error of 0.3607, exceeding the anomaly threshold of 0.0453 by a normalized margin of 6.9644; this is reconstruction threshold evidence, not a probability or calibrated confidence.",
+      "evidence_ids": ["prediction:223:detector"]
+    },
+    {
+      "claim_id": "claim-3",
+      "section": "model_and_xai_evidence",
+      "text": "The model is a BiLSTM temporal-attention autoencoder (version apnea-01-a01_seed2026) trained on the apnea dataset, with test patient a01 and fold ID apnea-01-a01.",
+      "evidence_ids": ["model:1:provenance"]
+    },
+    {
+      "claim_id": "claim-4",
+      "section": "model_and_xai_evidence",
+      "text": "The signal summary for the window includes 6000 samples from the primary ECG channel at 100 Hz, with additional derived channels (mean, std, min, max, range, slope, energy) available.",
+      "evidence_ids": ["window:223:signal-summary"]
+    },
+    {
+      "claim_id": "claim-5",
+      "section": "model_and_xai_evidence",
+      "text": "Temporal attention for the window peaked at 2000-01-01T03:42:19.200000+00:00 with a maximum value of 0.0115 and mean 0.0100; this represents shared window-level temporal relevance, not probability, calibrated confidence, or channel-specific importance.",
+      "evidence_ids": ["window:223:attention-summary"]
+    },
+    {
+      "claim_id": "claim-6",
+      "section": "evidence_grounded_summary",
+      "text": "The current event is an anomaly detection in a 60-second apnea window from recording a01, supported by reconstruction error above threshold and temporal attention peaking early in the window; no longitudinal PDM context or clinical context was supplied in this evidence package.",
+      "evidence_ids": ["window:223:event", "prediction:223:detector", "window:223:attention-summary", "pdm:patient:1:status:223", "clinical:patient:1:summary:223"]
+    }
+  ]
+}

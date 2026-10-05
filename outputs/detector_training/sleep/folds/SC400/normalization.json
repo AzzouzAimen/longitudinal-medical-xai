@@ -1,0 +1,17 @@
+{
+  "fit_scope": "training-normal windows only",
+  "mean": [
+    -5.196438905841205e-07,
+    5.9162974963555826e-08,
+    -3.5421322763795615e-07
+  ],
+  "normalization_patients": [
+    "SC402"
+  ],
+  "std": [
+    1.4574209671991412e-05,
+    1.3211530131229665e-05,
+    2.2708962205797434e-05
+  ],
+  "train_normal_window_count": 828
+}

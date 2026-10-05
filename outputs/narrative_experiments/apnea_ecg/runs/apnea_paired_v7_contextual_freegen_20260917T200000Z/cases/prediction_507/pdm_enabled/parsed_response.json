@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "evidence_ids": [
+        "window:507:event",
+        "prediction:507:detector"
+      ],
+      "section": "current_event",
+      "text": "The 60-second window from 2000-01-02T00:17:00+00:00 to 00:18:00+00:00 in recording a02 was classified as normal by the detector, with a reconstruction error of 0.075 and a normalized margin of -0.924, well below the anomaly threshold of 0.984."
+    },
+    {
+      "claim_id": "claim-2",
+      "evidence_ids": [
+        "model:2:provenance",
+        "window:507:signal-summary",
+        "window:507:attention-summary"
+      ],
+      "section": "model_and_xai_evidence",
+      "text": "The detector is a BiLSTM temporal-attention autoencoder (model fusion_apnea_loso_a02, version apnea-02-a02_seed2026) trained on the apnea dataset; no signal-level or attention-level evidence was available for this window, so the classification relies solely on reconstruction error."
+    },
+    {
+      "claim_id": "claim-3",
+      "evidence_ids": [
+        "history:patient:2:recent-summary:507"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "In the five minutes preceding the current window (00:12 to 00:16), all five events were classified as normal, with reconstruction errors ranging from 0.071 to 0.162 and no anomalies detected."
+    },
+    {
+      "claim_id": "claim-4",
+      "evidence_ids": [
+        "aggregate:patient:2:recent-summary:507"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "Across four 5-minute buckets from 00:00 to 00:15, the mean reconstruction error decreased from 0.187 to 0.106, with zero anomalies in every bucket, indicating a stable or improving trend."
+    },
+    {
+      "claim_id": "claim-5",
+      "evidence_ids": [
+        "recurrence:patient:2:before:2000-01-02T00:17:00+00:00"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "Over the 17 windows analyzed before the current event (00:00 to 00:16), no anomalies were recorded, with a mean reconstruction error of 0.164 and a maximum of 0.448."
+    },
+    {
+      "claim_id": "claim-6",
+      "evidence_ids": [
+        "clinical:patient:2:summary:507"
+      ],
+      "section": "recorded_clinical_context",
+      "text": "No clinical context was supplied for this patient; the clinical summary is marked as a synthetic prototype with zero diagnoses and zero visits."
+    },
+    {
+      "claim_id": "claim-7",
+      "evidence_ids": [
+        "prediction:507:detector",
+        "history:patient:2:recent-summary:507",
+        "aggregate:patient:2:recent-summary:507",
+        "recurrence:patient:2:before:2000-01-02T00:17:00+00:00",
+        "window:507:attention-summary"
+      ],
+      "section": "evidence_grounded_summary",
+      "text": "The current normal classification is consistent with the recent history, aggregate trend, and recurrence summary, all of which show no anomalies and generally low reconstruction error; however, the detector's reconstruction threshold is not a probability or calibrated confidence, and attention evidence was unavailable."
+    }
+  ],
+  "narrative_sections": {
+    "current_event": "The 60-second window from 2000-01-02T00:17:00+00:00 to 00:18:00+00:00 in recording a02 was classified as normal by the detector, with a reconstruction error of 0.075 and a normalized margin of -0.924, well below the anomaly threshold of 0.984. [evidence: window:507:event; prediction:507:detector]",
+    "evidence_grounded_summary": "The current normal classification is consistent with the recent history, aggregate trend, and recurrence summary, all of which show no anomalies and generally low reconstruction error; however, the detector's reconstruction threshold is not a probability or calibrated confidence, and attention evidence was unavailable. [evidence: prediction:507:detector; history:patient:2:recent-summary:507; aggregate:patient:2:recent-summary:507; recurrence:patient:2:before:2000-01-02T00:17:00+00:00; window:507:attention-summary]",
+    "model_and_xai_evidence": "The detector is a BiLSTM temporal-attention autoencoder (model fusion_apnea_loso_a02, version apnea-02-a02_seed2026) trained on the apnea dataset; no signal-level or attention-level evidence was available for this window, so the classification relies solely on reconstruction error. [evidence: model:2:provenance; window:507:signal-summary; window:507:attention-summary]",
+    "previous_monitoring_history": "In the five minutes preceding the current window (00:12 to 00:16), all five events were classified as normal, with reconstruction errors ranging from 0.071 to 0.162 and no anomalies detected. [evidence: history:patient:2:recent-summary:507] Across four 5-minute buckets from 00:00 to 00:15, the mean reconstruction error decreased from 0.187 to 0.106, with zero anomalies in every bucket, indicating a stable or improving trend. [evidence: aggregate:patient:2:recent-summary:507] Over the 17 windows analyzed before the current event (00:00 to 00:16), no anomalies were recorded, with a mean reconstruction error of 0.164 and a maximum of 0.448. [evidence: recurrence:patient:2:before:2000-01-02T00:17:00+00:00]",
+    "recorded_clinical_context": "No clinical context was supplied for this patient; the clinical summary is marked as a synthetic prototype with zero diagnoses and zero visits. [evidence: clinical:patient:2:summary:507]"
+  },
+  "schema_version": "fusion_narrative_v7",
+  "source_schema_version": "fusion_claims_v7"
+}

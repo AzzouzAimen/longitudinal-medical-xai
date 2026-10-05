@@ -1,0 +1,69 @@
+{
+  "artifact_status": "validated",
+  "dataset": "apnea",
+  "fold_count": 6,
+  "folds": [
+    {
+      "artifact_hashes": "folds/a01/artifact_hashes.json",
+      "fold_manifest": "folds/a01/fold_manifest.json",
+      "fold_manifest_sha256": "fb18cab3e93db6b8b741d5797191c3f24533eda35ba6dba8683d9f760df2b2c0",
+      "model_checkpoint": "folds/a01/model.keras",
+      "model_checkpoint_sha256": "356acf41a6ef45f5ad86f0330544292e9f65a5ff53d16b4aa5dfbad860c86767",
+      "test_patient": "a01"
+    },
+    {
+      "artifact_hashes": "folds/a02/artifact_hashes.json",
+      "fold_manifest": "folds/a02/fold_manifest.json",
+      "fold_manifest_sha256": "147d8e205666ffa8abd73e6d202f0941a5eb7b00aa57ddd57efc42eb63a82b65",
+      "model_checkpoint": "folds/a02/model.keras",
+      "model_checkpoint_sha256": "f1f9f7f474c596bcf57a269a420b4e1388dfd9b3836f07504f20bf7fb6b9c430",
+      "test_patient": "a02"
+    },
+    {
+      "artifact_hashes": "folds/a03/artifact_hashes.json",
+      "fold_manifest": "folds/a03/fold_manifest.json",
+      "fold_manifest_sha256": "de99d890f608cc136e2fe5bab29f2a41cb5e2c0a342792697079f4be95a8441b",
+      "model_checkpoint": "folds/a03/model.keras",
+      "model_checkpoint_sha256": "2f29ef43ef970f8fd8d3076b62d37d2e431d5148daf6648a94816a2de809186a",
+      "test_patient": "a03"
+    },
+    {
+      "artifact_hashes": "folds/c01/artifact_hashes.json",
+      "fold_manifest": "folds/c01/fold_manifest.json",
+      "fold_manifest_sha256": "7bc87dbec9169a207d5b579fa73d1d3b43e08ad46b404e3f09d06c1f71b9907c",
+      "model_checkpoint": "folds/c01/model.keras",
+      "model_checkpoint_sha256": "1605211aa1cbe8f7cbd64663791c135fe9f6b3736f5be8073c6288710cbcc01f",
+      "test_patient": "c01"
+    },
+    {
+      "artifact_hashes": "folds/c02/artifact_hashes.json",
+      "fold_manifest": "folds/c02/fold_manifest.json",
+      "fold_manifest_sha256": "9baf7fb5e98ccfb8ea78ec99fa80935361b86a46480845f29fbd5de1d2de9f20",
+      "model_checkpoint": "folds/c02/model.keras",
+      "model_checkpoint_sha256": "48d4871f30ec1ce0953e8ad5d1228406e613b36bbba5ddb0f08ca886dbee89c9",
+      "test_patient": "c02"
+    },
+    {
+      "artifact_hashes": "folds/c03/artifact_hashes.json",
+      "fold_manifest": "folds/c03/fold_manifest.json",
+      "fold_manifest_sha256": "42f9ed0e127340c7cb0e4d7db15f2a1e9f1af9388fe9a532378c6836194b95e3",
+      "model_checkpoint": "folds/c03/model.keras",
+      "model_checkpoint_sha256": "0ca8f423b3729142f3411b680ecc08ac4b7d44f3efae5cf47173e4c71438a912",
+      "test_patient": "c03"
+    }
+  ],
+  "limitations": [],
+  "patients": [
+    "a01",
+    "a02",
+    "a03",
+    "c01",
+    "c02",
+    "c03"
+  ],
+  "provenance": "all fold/model hashes are SHA-256 and official annotations remain evaluation-only; provisional artifacts are not valid downstream evidence until --validate-only succeeds",
+  "schema_version": "fusion-loso-manifest-v1",
+  "seed": 2026,
+  "split_strategy": "deterministic cyclic nested patient LOSO",
+  "validation_note": "All required fold/model/artifact hashes and cyclic provenance were verified."
+}

@@ -1,0 +1,57 @@
+{
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "evidence_ids": [
+        "window:2360:event"
+      ],
+      "section": "current_event",
+      "text": "A 60-second apnea event was detected in recording c02 starting at 2000-01-05T05:40:00+00:00 and ending at 2000-01-05T05:41:00+00:00, corresponding to window index 340."
+    },
+    {
+      "claim_id": "claim-2",
+      "evidence_ids": [
+        "prediction:2360:detector"
+      ],
+      "section": "model_and_xai_evidence",
+      "text": "The detector flagged this window as an anomaly with a reconstruction error of 3.628, exceeding the threshold of 3.521 by a margin of 0.108 (normalized margin 0.031); these values are reconstruction threshold evidence and not probabilities or calibrated confidence."
+    },
+    {
+      "claim_id": "claim-3",
+      "evidence_ids": [
+        "model:5:provenance"
+      ],
+      "section": "model_and_xai_evidence",
+      "text": "The detector is a BiLSTM temporal-attention autoencoder (model version apnea-05-c02_seed2026, fold apnea-05-c02) trained on the apnea dataset and evaluated on test patient c02."
+    },
+    {
+      "claim_id": "claim-4",
+      "evidence_ids": [
+        "window:2360:signal-summary",
+        "window:2360:attention-summary"
+      ],
+      "section": "model_and_xai_evidence",
+      "text": "No signal-level summary or attention-based explanation is available for this window; attention semantics indicate shared window-level temporal relevance, not channel-specific importance or causal evidence."
+    },
+    {
+      "claim_id": "claim-5",
+      "evidence_ids": [
+        "window:2360:event",
+        "prediction:2360:detector",
+        "window:2360:signal-summary",
+        "window:2360:attention-summary"
+      ],
+      "section": "evidence_grounded_summary",
+      "text": "The current evidence supports an anomaly alert for the 60-second window in c02, based on reconstruction error exceeding the threshold, with no additional signal or attention explanation available."
+    }
+  ],
+  "narrative_sections": {
+    "current_event": "A 60-second apnea event was detected in recording c02 starting at 2000-01-05T05:40:00+00:00 and ending at 2000-01-05T05:41:00+00:00, corresponding to window index 340. [evidence: window:2360:event]",
+    "evidence_grounded_summary": "The current evidence supports an anomaly alert for the 60-second window in c02, based on reconstruction error exceeding the threshold, with no additional signal or attention explanation available. [evidence: window:2360:event; prediction:2360:detector; window:2360:signal-summary; window:2360:attention-summary]",
+    "model_and_xai_evidence": "The detector flagged this window as an anomaly with a reconstruction error of 3.628, exceeding the threshold of 3.521 by a margin of 0.108 (normalized margin 0.031); these values are reconstruction threshold evidence and not probabilities or calibrated confidence. [evidence: prediction:2360:detector] The detector is a BiLSTM temporal-attention autoencoder (model version apnea-05-c02_seed2026, fold apnea-05-c02) trained on the apnea dataset and evaluated on test patient c02. [evidence: model:5:provenance] No signal-level summary or attention-based explanation is available for this window; attention semantics indicate shared window-level temporal relevance, not channel-specific importance or causal evidence. [evidence: window:2360:signal-summary; window:2360:attention-summary]",
+    "previous_monitoring_history": "",
+    "recorded_clinical_context": ""
+  },
+  "schema_version": "fusion_narrative_v7",
+  "source_schema_version": "fusion_claims_v7"
+}

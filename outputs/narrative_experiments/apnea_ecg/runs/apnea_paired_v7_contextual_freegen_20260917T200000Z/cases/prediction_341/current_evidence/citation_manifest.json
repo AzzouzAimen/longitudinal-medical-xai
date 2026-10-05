@@ -1,0 +1,58 @@
+{
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "evidence_ids": [
+        "window:341:event"
+      ],
+      "section": "current_event"
+    },
+    {
+      "claim_id": "claim-2",
+      "evidence_ids": [
+        "prediction:341:detector"
+      ],
+      "section": "model_and_xai_evidence"
+    },
+    {
+      "claim_id": "claim-3",
+      "evidence_ids": [
+        "model:1:provenance"
+      ],
+      "section": "model_and_xai_evidence"
+    },
+    {
+      "claim_id": "claim-4",
+      "evidence_ids": [
+        "window:341:signal-summary",
+        "window:341:attention-summary"
+      ],
+      "section": "model_and_xai_evidence"
+    },
+    {
+      "claim_id": "claim-5",
+      "evidence_ids": [
+        "window:341:event",
+        "prediction:341:detector",
+        "window:341:signal-summary",
+        "window:341:attention-summary",
+        "pdm:patient:1:status:341",
+        "clinical:patient:1:summary:341"
+      ],
+      "section": "evidence_grounded_summary"
+    }
+  ],
+  "condition": "Current-Evidence",
+  "narrative_hash": "7b67adef68ab6bcd1f13ae3ab6307a0aa9ef0184ff73846cd6da35e35a79ae2d",
+  "narrative_id": 238,
+  "package_hash": "7d37f8f69daf598297a617423a63085e69eab56098e645c2982f05e7bd07d570",
+  "prediction_id": 341,
+  "run_id": "apnea_paired_v7_contextual_freegen_20260917T200000Z",
+  "schema_version": "fusion-citation-manifest-v7",
+  "validation": {
+    "duplicate_claim_ids": [],
+    "unique_claim_ids": true,
+    "unknown_evidence_ids": [],
+    "valid_evidence_ids": true
+  }
+}

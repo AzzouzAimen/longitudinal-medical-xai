@@ -1,0 +1,45 @@
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.playwright-mcp/
+.dist/
+tmp/
+temp/
+resources/
+STUDENT PROJECT/
+# Downloaded datasets and generated binary artifacts
+data/
+raw_data/
+cleaned_data/
+*.keras
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.edf
+*.dat
+*.hea
+*.atr
+*.dump
+# Local logs and packaging
+*.log
+*.zip
+*.rar
+*.7z
+# Frozen JSON/CSV evidence under outputs/ is intentionally tracked.
+.repo-cleanup-archive/
+JAISE2026-fin.pdf
+
+# Local exploratory outputs and generated model results
+outputs/data_preparation/
+outputs/*.json
+outputs/*.txt
+results/

@@ -1,0 +1,158 @@
+{
+  "benchmark": {
+    "all_correctness_checks_passed": true,
+    "dataset_count": 2,
+    "paper_ready_results": {
+      "aggregation_observation": "Two-night five-minute temporal aggregation: TimescaleDB 16.0% faster (43.09 ms vs PostgreSQL 51.28 ms).",
+      "claims_to_weaken": [
+        "Remove any blanket claim that TimescaleDB is faster than PostgreSQL; report workload-specific medians, including PostgreSQL wins.",
+        "Do not compare compressed Timescale storage/latency against uncompressed PostgreSQL as the primary comparison.",
+        "Do not claim a five-dataset benchmark; only Apnea-ECG and Sleep-EDF are implemented here.",
+        "Do not describe shifted dates as clinical observations or model-evaluation data.",
+        "Keep ingestion secondary and report its variability."
+      ],
+      "compression_observation": "Timescale historical columnstore reduced its total footprint by 90.7% (442.32 MB to 41.31 MB; 10.71:1).",
+      "history_observation": "Full two-night patient-history retrieval: TimescaleDB 0.6% faster (1283.22 ms vs PostgreSQL 1291.19 ms).",
+      "ingestion_observation": "Full-data ingestion: TimescaleDB was 40.8% faster by median (12.25s vs 20.68s).",
+      "simple_range_observation": "Five-minute ECG indexed range: TimescaleDB 3.7% slower (62.04 ms vs PostgreSQL 59.84 ms).",
+      "storage_observation": "Uncompressed storage: TimescaleDB used 0.8% more total space (442.32 MB vs 438.73 MB).",
+      "supported_claims": [
+        "For the measured five-minute indexed ECG range: TimescaleDB 3.7% slower (62.04 ms vs PostgreSQL 59.84 ms).",
+        "For the measured two-night patient-history retrieval: TimescaleDB 0.6% faster (1283.22 ms vs PostgreSQL 1291.19 ms).",
+        "For the measured longitudinal five-minute raw aggregation: TimescaleDB 16.0% faster (43.09 ms vs PostgreSQL 51.28 ms).",
+        "Uncompressed storage: TimescaleDB used 0.8% more total space (442.32 MB vs 438.73 MB).",
+        "Timescale historical columnstore reduced its total footprint by 90.7% (442.32 MB to 41.31 MB; 10.71:1).",
+        "One-day partitioning produced multiple chunks; discuss pruning only where saved plans demonstrate it."
+      ],
+      "table": [
+        [
+          "Ingestion median",
+          "20.68 s",
+          "12.25 s",
+          "Full-data ingestion: TimescaleDB was 40.8% faster by median (12.25s vs 20.68s)."
+        ],
+        [
+          "5-minute ECG range median",
+          "59.84 ms",
+          "62.04 ms",
+          "Result: TimescaleDB 3.7% slower (62.04 ms vs PostgreSQL 59.84 ms)."
+        ],
+        [
+          "Full patient-history median",
+          "1291.19 ms",
+          "1283.22 ms",
+          "Result: TimescaleDB 0.6% faster (1283.22 ms vs PostgreSQL 1291.19 ms)."
+        ],
+        [
+          "Longitudinal 5-minute aggregate",
+          "51.28 ms",
+          "43.09 ms",
+          "Result: TimescaleDB 16.0% faster (43.09 ms vs PostgreSQL 51.28 ms)."
+        ],
+        [
+          "Hourly downsampling",
+          "47.93 ms",
+          "41.33 ms",
+          "Result: TimescaleDB 13.8% faster (41.33 ms vs PostgreSQL 47.93 ms)."
+        ],
+        [
+          "Uncompressed total storage",
+          "438.73 MB",
+          "442.32 MB",
+          "Uncompressed storage: TimescaleDB used 0.8% more total space (442.32 MB vs 438.73 MB)."
+        ],
+        [
+          "Timescale historical columnstore",
+          "not applicable",
+          "41.31 MB",
+          "Timescale historical columnstore reduced its total footprint by 90.7% (442.32 MB to 41.31 MB; 10.71:1)."
+        ]
+      ]
+    },
+    "path": "outputs/benchmarks/pdm_benchmark_final_20260911T173133Z.json",
+    "production_source_unchanged": true,
+    "sha256": "fd12711c52a9d8b4b0d52d22bcc39e2fd4bccfc12d813aa5bb94e37d790e4101"
+  },
+  "chunks": [
+    {
+      "chunk_count": 2,
+      "hypertable_name": "_materialized_hypertable_5"
+    },
+    {
+      "chunk_count": 5,
+      "hypertable_name": "attention_data"
+    },
+    {
+      "chunk_count": 6,
+      "hypertable_name": "prediction_series"
+    },
+    {
+      "chunk_count": 5,
+      "hypertable_name": "signal_data"
+    }
+  ],
+  "continuous_aggregate": {
+    "catalog": {
+      "compression_enabled": false,
+      "hypertable_name": "prediction_series",
+      "hypertable_schema": "public",
+      "materialization_hypertable_name": "_materialized_hypertable_5",
+      "materialization_hypertable_schema": "_timescaledb_internal",
+      "materialized_only": true,
+      "view_definition": " SELECT time_bucket('00:05:00'::interval, \"timestamp\") AS bucket,\n    patient_id,\n    model_id,\n    avg(reconstruction_error) AS mean_reconstruction_error,\n    max(reconstruction_error) AS max_reconstruction_error,\n    avg(anomaly_margin) AS mean_anomaly_margin,\n    count(*) AS total_count,\n    sum(\n        CASE\n            WHEN is_anomaly THEN 1\n            ELSE 0\n        END) AS anomaly_count,\n    ((sum(\n        CASE\n            WHEN is_anomaly THEN 1\n            ELSE 0\n        END))::double precision / (NULLIF(count(*), 0))::double precision) AS anomaly_rate\n   FROM prediction_series\n  GROUP BY (time_bucket('00:05:00'::interval, \"timestamp\")), patient_id, model_id;",
+      "view_name": "pdm_prediction_5m",
+      "view_owner": "postgres",
+      "view_schema": "public"
+    },
+    "full_recalculation_mismatch_count": 0,
+    "materialized_and_current": true,
+    "maximum_bucket": "2000-01-06T07:30:00+00:00",
+    "minimum_bucket": "1989-03-29T22:15:00+00:00",
+    "prediction_series_rows": 9264,
+    "represented_source_rows": 9264,
+    "row_count": 1231,
+    "scheduled_policy_expected": false,
+    "scheduled_policy_reason": "historical/static source timestamps use explicit full refresh; a now()-relative rolling policy would miss them"
+  },
+  "hypertables": [
+    {
+      "compression_enabled": false,
+      "hypertable_name": "attention_data",
+      "hypertable_schema": "public",
+      "num_chunks": 5
+    },
+    {
+      "compression_enabled": false,
+      "hypertable_name": "prediction_series",
+      "hypertable_schema": "public",
+      "num_chunks": 6
+    },
+    {
+      "compression_enabled": false,
+      "hypertable_name": "signal_data",
+      "hypertable_schema": "public",
+      "num_chunks": 5
+    },
+    {
+      "compression_enabled": false,
+      "hypertable_name": "signal_feature_data",
+      "hypertable_schema": "public",
+      "num_chunks": 0
+    }
+  ],
+  "retrieval_consumer": {
+    "source_sha256": "9d9f5b4b5c47a843051b7026ee940a18edd394135a89dcb1ff38229788ff18fb",
+    "uses_pdm_prediction_5m": true
+  },
+  "saved_query_row_count": 12,
+  "schema_version": "phase16-pdm-alignment-v1",
+  "scope": {
+    "benchmark_rerun": false,
+    "local_datasets": [
+      "Apnea-ECG",
+      "Sleep-EDF"
+    ],
+    "professor_five_dataset_results_replaced": false,
+    "timestamp_remapping_is_patient_evidence": false
+  }
+}

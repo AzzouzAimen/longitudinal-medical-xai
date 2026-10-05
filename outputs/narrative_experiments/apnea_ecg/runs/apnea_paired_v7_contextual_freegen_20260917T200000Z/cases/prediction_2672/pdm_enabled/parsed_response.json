@@ -1,0 +1,97 @@
+{
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "evidence_ids": [
+        "window:2672:event"
+      ],
+      "section": "current_event",
+      "text": "At 2000-01-06T02:31:00+00:00, a 60-second apnea window (window index 151) from recording c03 was flagged as an anomaly by the detector."
+    },
+    {
+      "claim_id": "claim-2",
+      "evidence_ids": [
+        "prediction:2672:detector"
+      ],
+      "section": "model_and_xai_evidence",
+      "text": "The detector classified the window as an anomaly with a reconstruction error of 0.3056, exceeding the threshold of 0.2722; the anomaly margin was 0.0333, and the normalized margin was 0.1225."
+    },
+    {
+      "claim_id": "claim-3",
+      "evidence_ids": [
+        "model:6:provenance"
+      ],
+      "section": "model_and_xai_evidence",
+      "text": "The model is a BiLSTM temporal-attention autoencoder (version apnea-06-c03_seed2026) trained on the apnea dataset, with test patient c03 and fold ID apnea-06-c03."
+    },
+    {
+      "claim_id": "claim-4",
+      "evidence_ids": [
+        "window:2672:signal-summary",
+        "window:2672:attention-summary"
+      ],
+      "section": "model_and_xai_evidence",
+      "text": "No signal-level or attention-level evidence is available for this window; attention semantics indicate shared window-level temporal relevance, not channel-specific importance."
+    },
+    {
+      "claim_id": "claim-5",
+      "evidence_ids": [
+        "history:patient:6:recent-summary:2672"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "In the five minutes preceding the current event, all five windows (from 02:26 to 02:30) were also flagged as anomalies, with reconstruction errors ranging from 0.2861 to 0.3766."
+    },
+    {
+      "claim_id": "claim-6",
+      "evidence_ids": [
+        "history:patient:6:recent-summary:2672"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "The recent history shows a continuous run of anomalies with no normal windows in the last five minutes, indicating sustained anomalous activity leading up to the current event."
+    },
+    {
+      "claim_id": "claim-7",
+      "evidence_ids": [
+        "aggregate:patient:6:recent-summary:2672"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "The aggregate trend from 01:35 to 02:30 shows a decrease in mean reconstruction error from 0.4691 to 0.3225, while the anomaly rate remained at 1.0 across all 12 buckets."
+    },
+    {
+      "claim_id": "claim-8",
+      "evidence_ids": [
+        "recurrence:patient:6:before:2000-01-06T02:31:00+00:00"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "The recurrence summary indicates that all 151 analyzed windows before the current event were anomalies, with a mean reconstruction error of 0.4215 and a mean anomaly margin of 0.1493."
+    },
+    {
+      "claim_id": "claim-9",
+      "evidence_ids": [
+        "clinical:patient:6:summary:2672"
+      ],
+      "section": "recorded_clinical_context",
+      "text": "No clinical context was supplied for this patient; the clinical summary is marked as a synthetic prototype with no diagnoses or visits recorded."
+    },
+    {
+      "claim_id": "claim-10",
+      "evidence_ids": [
+        "window:2672:event",
+        "prediction:2672:detector",
+        "history:patient:6:recent-summary:2672",
+        "recurrence:patient:6:before:2000-01-06T02:31:00+00:00"
+      ],
+      "section": "evidence_grounded_summary",
+      "text": "The current anomaly is part of a sustained pattern of anomalies in patient c03, with all recent and historical windows flagged as anomalous; the detector's reconstruction error is above threshold, but no signal or attention evidence is available to further characterize the event."
+    }
+  ],
+  "narrative_sections": {
+    "current_event": "At 2000-01-06T02:31:00+00:00, a 60-second apnea window (window index 151) from recording c03 was flagged as an anomaly by the detector. [evidence: window:2672:event]",
+    "evidence_grounded_summary": "The current anomaly is part of a sustained pattern of anomalies in patient c03, with all recent and historical windows flagged as anomalous; the detector's reconstruction error is above threshold, but no signal or attention evidence is available to further characterize the event. [evidence: window:2672:event; prediction:2672:detector; history:patient:6:recent-summary:2672; recurrence:patient:6:before:2000-01-06T02:31:00+00:00]",
+    "model_and_xai_evidence": "The detector classified the window as an anomaly with a reconstruction error of 0.3056, exceeding the threshold of 0.2722; the anomaly margin was 0.0333, and the normalized margin was 0.1225. [evidence: prediction:2672:detector] The model is a BiLSTM temporal-attention autoencoder (version apnea-06-c03_seed2026) trained on the apnea dataset, with test patient c03 and fold ID apnea-06-c03. [evidence: model:6:provenance] No signal-level or attention-level evidence is available for this window; attention semantics indicate shared window-level temporal relevance, not channel-specific importance. [evidence: window:2672:signal-summary; window:2672:attention-summary]",
+    "previous_monitoring_history": "In the five minutes preceding the current event, all five windows (from 02:26 to 02:30) were also flagged as anomalies, with reconstruction errors ranging from 0.2861 to 0.3766. [evidence: history:patient:6:recent-summary:2672] The recent history shows a continuous run of anomalies with no normal windows in the last five minutes, indicating sustained anomalous activity leading up to the current event. [evidence: history:patient:6:recent-summary:2672] The aggregate trend from 01:35 to 02:30 shows a decrease in mean reconstruction error from 0.4691 to 0.3225, while the anomaly rate remained at 1.0 across all 12 buckets. [evidence: aggregate:patient:6:recent-summary:2672] The recurrence summary indicates that all 151 analyzed windows before the current event were anomalies, with a mean reconstruction error of 0.4215 and a mean anomaly margin of 0.1493. [evidence: recurrence:patient:6:before:2000-01-06T02:31:00+00:00]",
+    "recorded_clinical_context": "No clinical context was supplied for this patient; the clinical summary is marked as a synthetic prototype with no diagnoses or visits recorded. [evidence: clinical:patient:6:summary:2672]"
+  },
+  "schema_version": "fusion_narrative_v7",
+  "source_schema_version": "fusion_claims_v7"
+}

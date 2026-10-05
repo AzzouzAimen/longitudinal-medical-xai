@@ -1,0 +1,108 @@
+{
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "evidence_ids": [
+        "window:87:event"
+      ],
+      "section": "current_event",
+      "text": "A 60-second apnea window from recording a01 starting at 2000-01-01T01:26:00+00:00 was flagged as an anomaly by the detector."
+    },
+    {
+      "claim_id": "claim-2",
+      "evidence_ids": [
+        "prediction:87:detector"
+      ],
+      "section": "model_and_xai_evidence",
+      "text": "The detector classified the window as anomaly with a reconstruction error of 0.3485, exceeding the threshold of 0.0453; the anomaly margin was 0.3032 (normalized margin 6.6939)."
+    },
+    {
+      "claim_id": "claim-3",
+      "evidence_ids": [
+        "model:1:provenance"
+      ],
+      "section": "model_and_xai_evidence",
+      "text": "The model is a BiLSTM temporal-attention autoencoder (version apnea-01-a01_seed2026) trained on the apnea dataset and evaluated on test patient a01."
+    },
+    {
+      "claim_id": "claim-4",
+      "evidence_ids": [
+        "window:87:signal-summary",
+        "window:87:attention-summary"
+      ],
+      "section": "model_and_xai_evidence",
+      "text": "No signal-level or attention-level evidence was available for this window; attention semantics indicate shared window-level temporal relevance, not channel-specific importance."
+    },
+    {
+      "claim_id": "claim-5",
+      "evidence_ids": [
+        "history:patient:1:recent-summary:87"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "In the five minutes preceding the current event, the detector flagged five consecutive anomalies (from 01:21 to 01:25), with reconstruction errors ranging from 0.3072 to 0.4182."
+    },
+    {
+      "claim_id": "claim-6",
+      "evidence_ids": [
+        "history:patient:1:recent-summary:87"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "The recent history shows a sustained pattern of anomalies with no normal windows in the preceding five minutes, indicating the current event is part of an ongoing sequence."
+    },
+    {
+      "claim_id": "claim-7",
+      "evidence_ids": [
+        "aggregate:patient:1:recent-summary:87"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "The aggregate trend over the last 12 buckets (from 00:30 to 01:25) shows an increasing endpoint direction, with mean reconstruction error rising from 0.3106 to 0.3368."
+    },
+    {
+      "claim_id": "claim-8",
+      "evidence_ids": [
+        "aggregate:patient:1:recent-summary:87"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "The aggregate trend indicates a high anomaly rate (1.0) across all buckets, with the maximum anomaly count of 5 occurring in the final bucket."
+    },
+    {
+      "claim_id": "claim-9",
+      "evidence_ids": [
+        "recurrence:patient:1:before:2000-01-01T01:26:00+00:00"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "Recurrence analysis over the 86 windows before the current event shows every window was flagged as anomalous, with a mean reconstruction error of 0.3361 and a maximum of 0.5261."
+    },
+    {
+      "claim_id": "claim-10",
+      "evidence_ids": [
+        "clinical:patient:1:summary:87"
+      ],
+      "section": "recorded_clinical_context",
+      "text": "The patient has a recorded visit for nonspecific tiredness with no sleep-related diagnosis; the clinical context is marked as synthetic_prototype."
+    },
+    {
+      "claim_id": "claim-11",
+      "evidence_ids": [
+        "prediction:87:detector",
+        "window:87:signal-summary",
+        "window:87:attention-summary",
+        "history:patient:1:recent-summary:87",
+        "aggregate:patient:1:recent-summary:87",
+        "recurrence:patient:1:before:2000-01-01T01:26:00+00:00",
+        "clinical:patient:1:summary:87"
+      ],
+      "section": "evidence_grounded_summary",
+      "text": "The current anomaly is supported by detector evidence, but signal and attention evidence are unavailable; historical and aggregate data indicate a persistent anomaly pattern, and clinical context is limited to a synthetic prototype note."
+    }
+  ],
+  "narrative_sections": {
+    "current_event": "A 60-second apnea window from recording a01 starting at 2000-01-01T01:26:00+00:00 was flagged as an anomaly by the detector. [evidence: window:87:event]",
+    "evidence_grounded_summary": "The current anomaly is supported by detector evidence, but signal and attention evidence are unavailable; historical and aggregate data indicate a persistent anomaly pattern, and clinical context is limited to a synthetic prototype note. [evidence: prediction:87:detector; window:87:signal-summary; window:87:attention-summary; history:patient:1:recent-summary:87; aggregate:patient:1:recent-summary:87; recurrence:patient:1:before:2000-01-01T01:26:00+00:00; clinical:patient:1:summary:87]",
+    "model_and_xai_evidence": "The detector classified the window as anomaly with a reconstruction error of 0.3485, exceeding the threshold of 0.0453; the anomaly margin was 0.3032 (normalized margin 6.6939). [evidence: prediction:87:detector] The model is a BiLSTM temporal-attention autoencoder (version apnea-01-a01_seed2026) trained on the apnea dataset and evaluated on test patient a01. [evidence: model:1:provenance] No signal-level or attention-level evidence was available for this window; attention semantics indicate shared window-level temporal relevance, not channel-specific importance. [evidence: window:87:signal-summary; window:87:attention-summary]",
+    "previous_monitoring_history": "In the five minutes preceding the current event, the detector flagged five consecutive anomalies (from 01:21 to 01:25), with reconstruction errors ranging from 0.3072 to 0.4182. [evidence: history:patient:1:recent-summary:87] The recent history shows a sustained pattern of anomalies with no normal windows in the preceding five minutes, indicating the current event is part of an ongoing sequence. [evidence: history:patient:1:recent-summary:87] The aggregate trend over the last 12 buckets (from 00:30 to 01:25) shows an increasing endpoint direction, with mean reconstruction error rising from 0.3106 to 0.3368. [evidence: aggregate:patient:1:recent-summary:87] The aggregate trend indicates a high anomaly rate (1.0) across all buckets, with the maximum anomaly count of 5 occurring in the final bucket. [evidence: aggregate:patient:1:recent-summary:87] Recurrence analysis over the 86 windows before the current event shows every window was flagged as anomalous, with a mean reconstruction error of 0.3361 and a maximum of 0.5261. [evidence: recurrence:patient:1:before:2000-01-01T01:26:00+00:00]",
+    "recorded_clinical_context": "The patient has a recorded visit for nonspecific tiredness with no sleep-related diagnosis; the clinical context is marked as synthetic_prototype. [evidence: clinical:patient:1:summary:87]"
+  },
+  "schema_version": "fusion_narrative_v7",
+  "source_schema_version": "fusion_claims_v7"
+}

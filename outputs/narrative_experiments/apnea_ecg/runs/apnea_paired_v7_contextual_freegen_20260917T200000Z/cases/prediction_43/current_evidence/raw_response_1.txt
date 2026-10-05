@@ -1,0 +1,41 @@
+{
+  "schema_version": "fusion_claims_v7",
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "section": "current_event",
+      "text": "A 60-second apnea event was detected in recording a01 starting at 2000-01-01T00:42:00+00:00 and ending at 00:43:00+00:00, corresponding to window index 42.",
+      "evidence_ids": ["window:43:event"]
+    },
+    {
+      "claim_id": "claim-2",
+      "section": "model_and_xai_evidence",
+      "text": "The detector flagged this window as an anomaly with a reconstruction error of 0.3232, exceeding the anomaly threshold of 0.0453, yielding a normalized margin of 6.136; these values are reconstruction threshold evidence and not probabilities or calibrated confidence.",
+      "evidence_ids": ["prediction:43:detector"]
+    },
+    {
+      "claim_id": "claim-3",
+      "section": "model_and_xai_evidence",
+      "text": "The model is a BiLSTM temporal-attention autoencoder (version apnea-01-a01_seed2026) trained on the apnea dataset, with test patient a01 and fold ID apnea-01-a01.",
+      "evidence_ids": ["model:1:provenance"]
+    },
+    {
+      "claim_id": "claim-4",
+      "section": "model_and_xai_evidence",
+      "text": "The primary signal channel is ECG with 6000 samples at 100 Hz; additional derived channels include mean, std, min, max, range, slope, and energy.",
+      "evidence_ids": ["window:43:signal-summary"]
+    },
+    {
+      "claim_id": "claim-5",
+      "section": "model_and_xai_evidence",
+      "text": "Temporal attention for this window has a mean of 0.0100 and peaks at 00:42:29.400+00:00; this represents shared window-level temporal relevance, not probability, calibrated confidence, or channel-specific importance.",
+      "evidence_ids": ["window:43:attention-summary"]
+    },
+    {
+      "claim_id": "claim-6",
+      "section": "evidence_grounded_summary",
+      "text": "The current event is supported by detector, signal, and attention evidence; no longitudinal PDM context or clinical context was supplied in this package.",
+      "evidence_ids": ["pdm:patient:1:status:43", "clinical:patient:1:summary:43"]
+    }
+  ]
+}

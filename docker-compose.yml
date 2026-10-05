@@ -1,0 +1,30 @@
+name: JAISE2026
+
+services:
+  db:
+    restart: unless-stopped
+    image: timescale/timescaledb:latest-pg16
+    container_name: JAISE2026-timescaledb
+    environment:
+      POSTGRES_DB: pdm
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+    ports:
+      # Host PostgreSQL already occupies 5432; expose the container on 5433.
+      - "5433:5432"
+    volumes:
+      # Use the project-specific PDM volume. Other Docker volumes are untouched.
+      - JAISE2026_pdm_project_pgdata:/var/lib/postgresql/data
+      - ./schemas/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+      - ./schemas/init_timescale.sql:/docker-entrypoint-initdb.d/02-timescale.sql:ro
+      - ./schemas/migrations/001_fusion_alignment.sql:/docker-entrypoint-initdb.d/03-fusion-alignment.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d pdm"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+volumes:
+  JAISE2026_pdm_project_pgdata:
+    name: JAISE2026_pdm_project_pgdata
+    external: true

@@ -1,0 +1,58 @@
+{
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "evidence_ids": [
+        "window:1305:event",
+        "prediction:1305:detector"
+      ],
+      "section": "current_event"
+    },
+    {
+      "claim_id": "claim-2",
+      "evidence_ids": [
+        "prediction:1305:detector"
+      ],
+      "section": "model_and_xai_evidence"
+    },
+    {
+      "claim_id": "claim-3",
+      "evidence_ids": [
+        "model:3:provenance"
+      ],
+      "section": "model_and_xai_evidence"
+    },
+    {
+      "claim_id": "claim-4",
+      "evidence_ids": [
+        "window:1305:signal-summary",
+        "window:1305:attention-summary"
+      ],
+      "section": "model_and_xai_evidence"
+    },
+    {
+      "claim_id": "claim-5",
+      "evidence_ids": [
+        "window:1305:event",
+        "prediction:1305:detector",
+        "model:3:provenance",
+        "window:1305:signal-summary",
+        "window:1305:attention-summary"
+      ],
+      "section": "evidence_grounded_summary"
+    }
+  ],
+  "condition": "Current-Evidence",
+  "narrative_hash": "03a150acc0fb0099e0f4c16025bda397b94dbd1c8b8cf817fda0e914c07d836a",
+  "narrative_id": 256,
+  "package_hash": "4d5e5df8ec4cdcb5e86f4285a5af501d2b5f3bede44cdb9a21663b9cd687eeb3",
+  "prediction_id": 1305,
+  "run_id": "apnea_paired_v7_contextual_freegen_20260917T200000Z",
+  "schema_version": "fusion-citation-manifest-v7",
+  "validation": {
+    "duplicate_claim_ids": [],
+    "unique_claim_ids": true,
+    "unknown_evidence_ids": [],
+    "valid_evidence_ids": true
+  }
+}

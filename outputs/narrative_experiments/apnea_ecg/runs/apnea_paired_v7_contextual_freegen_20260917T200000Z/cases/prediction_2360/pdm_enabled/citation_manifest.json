@@ -1,0 +1,80 @@
+{
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "evidence_ids": [
+        "window:2360:event"
+      ],
+      "section": "current_event"
+    },
+    {
+      "claim_id": "claim-2",
+      "evidence_ids": [
+        "prediction:2360:detector"
+      ],
+      "section": "model_and_xai_evidence"
+    },
+    {
+      "claim_id": "claim-3",
+      "evidence_ids": [
+        "model:5:provenance",
+        "window:2360:signal-summary",
+        "window:2360:attention-summary"
+      ],
+      "section": "model_and_xai_evidence"
+    },
+    {
+      "claim_id": "claim-4",
+      "evidence_ids": [
+        "history:patient:5:recent-summary:2360"
+      ],
+      "section": "previous_monitoring_history"
+    },
+    {
+      "claim_id": "claim-5",
+      "evidence_ids": [
+        "aggregate:patient:5:recent-summary:2360"
+      ],
+      "section": "previous_monitoring_history"
+    },
+    {
+      "claim_id": "claim-6",
+      "evidence_ids": [
+        "recurrence:patient:5:before:2000-01-05T05:40:00+00:00"
+      ],
+      "section": "previous_monitoring_history"
+    },
+    {
+      "claim_id": "claim-7",
+      "evidence_ids": [
+        "clinical:patient:5:summary:2360"
+      ],
+      "section": "recorded_clinical_context"
+    },
+    {
+      "claim_id": "claim-8",
+      "evidence_ids": [
+        "prediction:2360:detector",
+        "history:patient:5:recent-summary:2360",
+        "aggregate:patient:5:recent-summary:2360",
+        "window:2360:signal-summary",
+        "window:2360:attention-summary",
+        "clinical:patient:5:summary:2360"
+      ],
+      "section": "evidence_grounded_summary"
+    }
+  ],
+  "condition": "PDM-Enabled",
+  "narrative_hash": "10134fb49706d7567979998aa857577099d5f4b76b4ca6959ae77e7bd4717b99",
+  "narrative_id": 245,
+  "package_hash": "adfc9f1b87bd0ebda36a00e245e714ae644cc339342146fe8a4dcbe3357bfeed",
+  "prediction_id": 2360,
+  "run_id": "apnea_paired_v7_contextual_freegen_20260917T200000Z",
+  "schema_version": "fusion-citation-manifest-v7",
+  "validation": {
+    "duplicate_claim_ids": [],
+    "unique_claim_ids": true,
+    "unknown_evidence_ids": [],
+    "valid_evidence_ids": true
+  }
+}

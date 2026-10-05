@@ -1,0 +1,1146 @@
+{
+  "citation_evidence": [
+    {
+      "evidence_id": "window:2149:event",
+      "evidence_type": "current_event_summary",
+      "facts": {
+        "duration_seconds": 60.0,
+        "end_time": "2000-01-05T02:10:00+00:00",
+        "modality": "apnea",
+        "source_recording_name": "c02",
+        "start_time": "2000-01-05T02:09:00+00:00",
+        "window_index": 129
+      },
+      "scope": "current"
+    },
+    {
+      "evidence_id": "prediction:2149:detector",
+      "evidence_type": "detector_summary",
+      "facts": {
+        "anomaly_margin": -1.461660385131836,
+        "anomaly_threshold": 3.5205154418945312,
+        "is_anomaly": false,
+        "normalized_margin": -0.41518363127680463,
+        "predicted_class": "normal",
+        "reconstruction_error": 2.0588550567626953,
+        "semantics": "reconstruction threshold evidence; not probability or calibrated confidence"
+      },
+      "scope": "current"
+    },
+    {
+      "evidence_id": "model:5:provenance",
+      "evidence_type": "model_provenance",
+      "facts": {
+        "architecture": "BiLSTM temporal-attention autoencoder",
+        "evidence_id": null,
+        "fold_id": "apnea-05-c02",
+        "fold_manifest": "outputs/fusion_models/apnea/folds/c02",
+        "model_checkpoint_sha256": "48d4871f30ec1ce0953e8ad5d1228406e613b36bbba5ddb0f08ca886dbee89c9",
+        "model_name": "fusion_apnea_loso_c02",
+        "model_version": "apnea-05-c02_seed2026",
+        "test_patient": "c02",
+        "training_dataset": "apnea"
+      },
+      "scope": "current"
+    },
+    {
+      "evidence_id": "window:2149:signal-summary",
+      "evidence_type": "signal_summary",
+      "facts": {
+        "available": true,
+        "channel_names": [
+          "ECG",
+          "mean",
+          "std",
+          "min",
+          "max",
+          "range",
+          "slope",
+          "energy"
+        ],
+        "primary_channel": "ECG",
+        "primary_sample_count": 6000,
+        "primary_sampling_rate_hz": 100.0
+      },
+      "scope": "current",
+      "source_evidence_ids": [
+        "window:2149:signal:raw"
+      ]
+    },
+    {
+      "evidence_id": "window:2149:attention-summary",
+      "evidence_type": "attention_summary",
+      "facts": {
+        "available": true,
+        "channel_level_evidence_available": false,
+        "maximum": 0.011272926814854145,
+        "mean": 0.010000000018626451,
+        "method": "temporal_attention",
+        "minimum": 0.008589801378548145,
+        "peak_time": "2000-01-05T02:09:00+00:00",
+        "sample_count": 100,
+        "semantics": "shared window-level temporal relevance; not probability or calibrated confidence; not channel-specific importance; no channel owner"
+      },
+      "scope": "current",
+      "source_evidence_ids": [
+        "window:2149:attention",
+        "prediction:2149:xai"
+      ]
+    },
+    {
+      "evidence_id": "pdm:patient:5:status:2149",
+      "evidence_type": "pdm_context_status",
+      "facts": {
+        "aggregate_trend_supplied": true,
+        "history_supplied": true,
+        "included": true,
+        "recurrence_summary_supplied": true
+      },
+      "scope": "package"
+    },
+    {
+      "evidence_id": "history:patient:5:recent-summary:2149",
+      "evidence_type": "recent_history_summary",
+      "facts": {
+        "anomaly_count": 0,
+        "earliest_time": "2000-01-05T02:04:00+00:00",
+        "event_count": 5,
+        "events": [
+          {
+            "anomaly_margin": -1.2877557277679443,
+            "normalized_margin": -0.36578613246330516,
+            "predicted_class": "normal",
+            "prediction_id": 2148,
+            "reconstruction_error": 2.232759714126587,
+            "timestamp": "2000-01-05T02:08:00+00:00"
+          },
+          {
+            "anomaly_margin": -1.384244441986084,
+            "normalized_margin": -0.3931936856499531,
+            "predicted_class": "normal",
+            "prediction_id": 2147,
+            "reconstruction_error": 2.1362709999084473,
+            "timestamp": "2000-01-05T02:07:00+00:00"
+          },
+          {
+            "anomaly_margin": -1.3954722881317139,
+            "normalized_margin": -0.39638294765744697,
+            "predicted_class": "normal",
+            "prediction_id": 2146,
+            "reconstruction_error": 2.1250431537628174,
+            "timestamp": "2000-01-05T02:06:00+00:00"
+          },
+          {
+            "anomaly_margin": -1.261948823928833,
+            "normalized_margin": -0.3584556991034607,
+            "predicted_class": "normal",
+            "prediction_id": 2145,
+            "reconstruction_error": 2.2585666179656982,
+            "timestamp": "2000-01-05T02:05:00+00:00"
+          },
+          {
+            "anomaly_margin": -1.4143645763397217,
+            "normalized_margin": -0.40174928918323255,
+            "predicted_class": "normal",
+            "prediction_id": 2144,
+            "reconstruction_error": 2.1061508655548096,
+            "timestamp": "2000-01-05T02:04:00+00:00"
+          }
+        ],
+        "maximum_reconstruction_error": 2.2585666179656982,
+        "minimum_reconstruction_error": 2.1061508655548096,
+        "most_recent_time": "2000-01-05T02:08:00+00:00",
+        "normal_count": 5
+      },
+      "scope": "context",
+      "source_evidence_ids": [
+        "history:prediction:2148",
+        "history:prediction:2147",
+        "history:prediction:2146",
+        "history:prediction:2145",
+        "history:prediction:2144"
+      ]
+    },
+    {
+      "evidence_id": "aggregate:patient:5:recent-summary:2149",
+      "evidence_type": "aggregate_trend_summary",
+      "facts": {
+        "bucket_count": 12,
+        "endpoint_direction": "increased",
+        "first_bucket": "2000-01-05T01:10:00+00:00",
+        "first_mean_reconstruction_error": 1.7765888690948486,
+        "last_bucket": "2000-01-05T02:05:00+00:00",
+        "last_mean_reconstruction_error": 2.162299108505249,
+        "maximum_anomaly_count": 1,
+        "maximum_anomaly_rate": 0.2,
+        "maximum_mean_reconstruction_error": 2.8981586933135985,
+        "minimum_anomaly_count": 0,
+        "minimum_anomaly_rate": 0.0,
+        "minimum_mean_reconstruction_error": 1.6835041284561156
+      },
+      "scope": "context",
+      "source_evidence_ids": [
+        "aggregate:patient:5:model:5:bucket:2000-01-05T01:10:00+00:00",
+        "aggregate:patient:5:model:5:bucket:2000-01-05T01:15:00+00:00",
+        "aggregate:patient:5:model:5:bucket:2000-01-05T01:20:00+00:00",
+        "aggregate:patient:5:model:5:bucket:2000-01-05T01:25:00+00:00",
+        "aggregate:patient:5:model:5:bucket:2000-01-05T01:30:00+00:00",
+        "aggregate:patient:5:model:5:bucket:2000-01-05T01:35:00+00:00",
+        "aggregate:patient:5:model:5:bucket:2000-01-05T01:40:00+00:00",
+        "aggregate:patient:5:model:5:bucket:2000-01-05T01:45:00+00:00",
+        "aggregate:patient:5:model:5:bucket:2000-01-05T01:50:00+00:00",
+        "aggregate:patient:5:model:5:bucket:2000-01-05T01:55:00+00:00",
+        "aggregate:patient:5:model:5:bucket:2000-01-05T02:00:00+00:00",
+        "aggregate:patient:5:model:5:bucket:2000-01-05T02:05:00+00:00"
+      ]
+    },
+    {
+      "evidence_id": "recurrence:patient:5:before:2000-01-05T02:09:00+00:00",
+      "evidence_type": "recurrence_summary",
+      "facts": {
+        "analyzed_window_count": 129,
+        "anomaly_count": 9,
+        "anomaly_rate": 0.06976744186046512,
+        "before_time": "2000-01-05T02:09:00+00:00",
+        "first_event_time": "2000-01-05T00:00:00+00:00",
+        "latest_event_time": "2000-01-05T02:08:00+00:00",
+        "max_reconstruction_error": 129.26181030273438,
+        "mean_anomaly_margin": 0.5998988528844229,
+        "mean_reconstruction_error": 4.120414294778954,
+        "patient_id": 5
+      },
+      "scope": "context"
+    },
+    {
+      "evidence_id": "clinical:patient:5:summary:2149",
+      "evidence_type": "clinical_context_summary",
+      "facts": {
+        "diagnoses": [],
+        "diagnosis_count": 0,
+        "source": "synthetic_prototype",
+        "supplied": false,
+        "visit_count": 0,
+        "visits": []
+      },
+      "scope": "context"
+    }
+  ],
+  "current_evidence": {
+    "attention_evidence": {
+      "available": true,
+      "evidence_id": "window:2149:attention",
+      "maximum": 0.011272926814854145,
+      "mean": 0.010000000018626451,
+      "minimum": 0.008589801378548145,
+      "peak_time": "2000-01-05T02:09:00+00:00",
+      "sample_count": 100,
+      "semantics": "shared window-level temporal relevance; not probability"
+    },
+    "event": {
+      "duration_seconds": 60.0,
+      "end_sample": 780000,
+      "end_time": "2000-01-05T02:10:00+00:00",
+      "evidence_id": "window:2149:event",
+      "modality": "apnea",
+      "source_recording_name": "c02",
+      "start_sample": 774000,
+      "start_time": "2000-01-05T02:09:00+00:00",
+      "window_index": 129
+    },
+    "identity": {
+      "model_id": 5,
+      "patient_code": "APNEA_c02",
+      "patient_id": 5,
+      "prediction_id": 2149,
+      "recording_id": "apnea_c02",
+      "window_id": 2149
+    },
+    "model_evidence": {
+      "anomaly_margin": -1.461660385131836,
+      "anomaly_threshold": 3.5205154418945312,
+      "evidence_id": "prediction:2149:detector",
+      "is_anomaly": false,
+      "normalized_margin": -0.41518363127680463,
+      "predicted_class": "normal",
+      "reconstruction_error": 2.0588550567626953,
+      "semantics": "reconstruction threshold evidence; not probability or calibrated confidence"
+    },
+    "model_provenance": {
+      "architecture": "BiLSTM temporal-attention autoencoder",
+      "evidence_id": "model:5:provenance",
+      "fold_id": "apnea-05-c02",
+      "fold_manifest": "outputs/fusion_models/apnea/folds/c02",
+      "model_checkpoint_sha256": "48d4871f30ec1ce0953e8ad5d1228406e613b36bbba5ddb0f08ca886dbee89c9",
+      "model_name": "fusion_apnea_loso_c02",
+      "model_version": "apnea-05-c02_seed2026",
+      "test_patient": "c02",
+      "training_dataset": "apnea"
+    },
+    "provenance": {
+      "dense_evidence_materialized": true,
+      "patient_evidence_id": "patient:5",
+      "prediction_series_id": "prediction:2149",
+      "source": "pdm_database",
+      "window_evidence_id": "window:2149"
+    },
+    "reconstruction_evidence": {
+      "available": true,
+      "evidence_id": "window:2149:signal:reconstruction",
+      "stored_value_count": 700,
+      "streams": [
+        {
+          "channel": "mean",
+          "maximum": -0.0006230481170992341,
+          "mean": -0.005038339372291045,
+          "minimum": -0.005214673520711699,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 97,
+          "unit": null
+        },
+        {
+          "channel": "std",
+          "maximum": 0.4477140061755973,
+          "mean": 0.3761301614177403,
+          "minimum": 0.28605745081754264,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 98,
+          "unit": null
+        },
+        {
+          "channel": "min",
+          "maximum": -0.45982078047702,
+          "mean": -0.9329415695831682,
+          "minimum": -0.9578593409257152,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 99,
+          "unit": null
+        },
+        {
+          "channel": "max",
+          "maximum": 1.9171207299986008,
+          "mean": 1.8930753277104384,
+          "minimum": 1.2172302947577691,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 100,
+          "unit": null
+        },
+        {
+          "channel": "range",
+          "maximum": 2.829669043330057,
+          "mean": 2.7467809604279716,
+          "minimum": 1.6771236678925199,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 101,
+          "unit": null
+        },
+        {
+          "channel": "slope",
+          "maximum": 0.0009030207586580297,
+          "mean": 0.0008330630506684397,
+          "minimum": -8.029663221345226e-05,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 102,
+          "unit": null
+        },
+        {
+          "channel": "energy",
+          "maximum": 0.7868237012096415,
+          "mean": 0.5901094864594524,
+          "minimum": 0.2795182138646055,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 103,
+          "unit": null
+        }
+      ]
+    },
+    "residual_evidence": {
+      "available": true,
+      "evidence_id": "window:2149:signal:residual",
+      "stored_value_count": 700,
+      "streams": [
+        {
+          "channel": "mean",
+          "maximum": 2.4985013008117676,
+          "mean": 0.1159161500632763,
+          "minimum": -2.7568061351776123,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 104,
+          "unit": null
+        },
+        {
+          "channel": "std",
+          "maximum": 0.35274752974510193,
+          "mean": -0.13340215265750885,
+          "minimum": -0.9647648334503174,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 105,
+          "unit": null
+        },
+        {
+          "channel": "min",
+          "maximum": 2.6363718509674072,
+          "mean": -1.3911582905054092,
+          "minimum": -4.085270881652832,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 106,
+          "unit": null
+        },
+        {
+          "channel": "max",
+          "maximum": -0.574397087097168,
+          "mean": -1.1811463940143585,
+          "minimum": -1.3597326278686523,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 107,
+          "unit": null
+        },
+        {
+          "channel": "range",
+          "maximum": 0.6599990129470825,
+          "mean": -0.48375202596187594,
+          "minimum": -1.661967158317566,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 108,
+          "unit": null
+        },
+        {
+          "channel": "slope",
+          "maximum": 4.115398406982422,
+          "mean": -0.04894684787839651,
+          "minimum": -3.4418952465057373,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 109,
+          "unit": null
+        },
+        {
+          "channel": "energy",
+          "maximum": -0.15419462323188782,
+          "mean": -0.2977368837594986,
+          "minimum": -0.47928810119628906,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 110,
+          "unit": null
+        }
+      ]
+    },
+    "signal_evidence": {
+      "available": true,
+      "evidence_id": "window:2149:signal:raw",
+      "stored_value_count": 6700,
+      "streams": [
+        {
+          "channel": "ECG",
+          "maximum": 0.87,
+          "mean": -3.666666666665087e-05,
+          "minimum": -2.18,
+          "sample_count": 6000,
+          "sampling_rate_hz": 100.0,
+          "signal_id": 89,
+          "unit": null
+        },
+        {
+          "channel": "mean",
+          "maximum": 0.10266666859388351,
+          "mean": -3.666689386591315e-05,
+          "minimum": -0.12416666001081467,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 90,
+          "unit": null
+        },
+        {
+          "channel": "std",
+          "maximum": 0.4578183889389038,
+          "mean": 0.3429951034486294,
+          "minimum": 0.1421809047460556,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 91,
+          "unit": null
+        },
+        {
+          "channel": "min",
+          "maximum": -0.04500000178813934,
+          "mean": -1.4099500020593405,
+          "minimum": -2.180000066757202,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 92,
+          "unit": null
+        },
+        {
+          "channel": "max",
+          "maximum": 0.8700000047683716,
+          "mean": 0.7174000000953674,
+          "minimum": 0.5600000023841858,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 93,
+          "unit": null
+        },
+        {
+          "channel": "range",
+          "maximum": 2.940000057220459,
+          "mean": 2.1273500084877015,
+          "minimum": 0.6449999809265137,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 94,
+          "unit": null
+        },
+        {
+          "channel": "slope",
+          "maximum": 0.03525424003601074,
+          "mean": 0.0004237288529839134,
+          "minimum": -0.027881355956196785,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 95,
+          "unit": null
+        },
+        {
+          "channel": "energy",
+          "maximum": 0.20988665521144867,
+          "mean": 0.13322198260575532,
+          "minimum": 0.020413748919963837,
+          "sample_count": 100,
+          "sampling_rate_hz": 1.6666666666666667,
+          "signal_id": 96,
+          "unit": null
+        }
+      ]
+    },
+    "xai_evidence": {
+      "available": true,
+      "channel_evidence": [],
+      "channel_semantics": "shared-model channel residual evidence; not an independent detector",
+      "evidence_id": "prediction:2149:xai",
+      "explanations": [
+        {
+          "description": "Shared window-level temporal relevance; attention has no channel owner.",
+          "explanation_id": 98,
+          "method": "temporal_attention",
+          "type": "window_level_temporal_relevance"
+        }
+      ]
+    }
+  },
+  "current_evidence_hash": "507118be582bb208f44d5b6e87d5305ff7cc729e77cd7c890331ae61759b34ae",
+  "evaluation_concepts": {
+    "context": [
+      {
+        "concept_id": "recent_history",
+        "evidence_id": "history:patient:5:recent-summary:2149",
+        "match_fields": [
+          "event_count",
+          "anomaly_count",
+          "normal_count",
+          "most_recent_time",
+          "earliest_time",
+          "minimum_reconstruction_error",
+          "maximum_reconstruction_error",
+          "events"
+        ],
+        "match_values": [
+          5,
+          0,
+          5,
+          "2000-01-05T02:08:00+00:00",
+          "2000-01-05T02:04:00+00:00",
+          2.1061508655548096,
+          2.2585666179656982,
+          [
+            {
+              "anomaly_margin": -1.2877557277679443,
+              "normalized_margin": -0.36578613246330516,
+              "predicted_class": "normal",
+              "prediction_id": 2148,
+              "reconstruction_error": 2.232759714126587,
+              "timestamp": "2000-01-05T02:08:00+00:00"
+            },
+            {
+              "anomaly_margin": -1.384244441986084,
+              "normalized_margin": -0.3931936856499531,
+              "predicted_class": "normal",
+              "prediction_id": 2147,
+              "reconstruction_error": 2.1362709999084473,
+              "timestamp": "2000-01-05T02:07:00+00:00"
+            },
+            {
+              "anomaly_margin": -1.3954722881317139,
+              "normalized_margin": -0.39638294765744697,
+              "predicted_class": "normal",
+              "prediction_id": 2146,
+              "reconstruction_error": 2.1250431537628174,
+              "timestamp": "2000-01-05T02:06:00+00:00"
+            },
+            {
+              "anomaly_margin": -1.261948823928833,
+              "normalized_margin": -0.3584556991034607,
+              "predicted_class": "normal",
+              "prediction_id": 2145,
+              "reconstruction_error": 2.2585666179656982,
+              "timestamp": "2000-01-05T02:05:00+00:00"
+            },
+            {
+              "anomaly_margin": -1.4143645763397217,
+              "normalized_margin": -0.40174928918323255,
+              "predicted_class": "normal",
+              "prediction_id": 2144,
+              "reconstruction_error": 2.1061508655548096,
+              "timestamp": "2000-01-05T02:04:00+00:00"
+            }
+          ]
+        ]
+      },
+      {
+        "concept_id": "aggregate_trend",
+        "evidence_id": "aggregate:patient:5:recent-summary:2149",
+        "match_fields": [
+          "bucket_count",
+          "first_bucket",
+          "last_bucket",
+          "first_mean_reconstruction_error",
+          "last_mean_reconstruction_error",
+          "minimum_mean_reconstruction_error",
+          "maximum_mean_reconstruction_error",
+          "endpoint_direction",
+          "minimum_anomaly_count",
+          "maximum_anomaly_count",
+          "minimum_anomaly_rate",
+          "maximum_anomaly_rate"
+        ],
+        "match_values": [
+          12,
+          "2000-01-05T01:10:00+00:00",
+          "2000-01-05T02:05:00+00:00",
+          1.7765888690948486,
+          2.162299108505249,
+          1.6835041284561156,
+          2.8981586933135985,
+          "increased",
+          0,
+          1,
+          0.0,
+          0.2
+        ]
+      },
+      {
+        "concept_id": "recurrence",
+        "evidence_id": "recurrence:patient:5:before:2000-01-05T02:09:00+00:00",
+        "match_fields": [
+          "patient_id",
+          "before_time",
+          "analyzed_window_count",
+          "anomaly_count",
+          "anomaly_rate",
+          "mean_reconstruction_error",
+          "max_reconstruction_error",
+          "mean_anomaly_margin",
+          "first_event_time",
+          "latest_event_time"
+        ],
+        "match_values": [
+          5,
+          "2000-01-05T02:09:00+00:00",
+          129,
+          9,
+          0.06976744186046512,
+          4.120414294778954,
+          129.26181030273438,
+          0.5998988528844229,
+          "2000-01-05T00:00:00+00:00",
+          "2000-01-05T02:08:00+00:00"
+        ]
+      },
+      {
+        "concept_id": "clinical_context",
+        "evidence_id": "clinical:patient:5:summary:2149",
+        "match_fields": [
+          "supplied",
+          "source",
+          "visit_count",
+          "diagnosis_count",
+          "visits",
+          "diagnoses"
+        ],
+        "match_values": [
+          false,
+          "synthetic_prototype",
+          0,
+          0,
+          [],
+          []
+        ]
+      }
+    ],
+    "current": [
+      {
+        "concept_id": "event_timing",
+        "evidence_id": "window:2149:event",
+        "match_fields": [
+          "start_time",
+          "duration_seconds"
+        ],
+        "match_values": [
+          "2000-01-05T02:09:00+00:00",
+          60.0
+        ]
+      },
+      {
+        "concept_id": "detector_decision",
+        "evidence_id": "prediction:2149:detector",
+        "match_fields": [
+          "predicted_class"
+        ],
+        "match_values": [
+          "normal"
+        ]
+      },
+      {
+        "concept_id": "reconstruction_comparison",
+        "evidence_id": "prediction:2149:detector",
+        "match_fields": [
+          "reconstruction_error",
+          "anomaly_threshold"
+        ],
+        "match_values": [
+          2.0588550567626953,
+          3.5205154418945312
+        ]
+      },
+      {
+        "concept_id": "detector_margin",
+        "evidence_id": "prediction:2149:detector",
+        "match_fields": [
+          "anomaly_margin",
+          "normalized_margin"
+        ],
+        "match_values": [
+          -1.461660385131836,
+          -0.41518363127680463
+        ]
+      },
+      {
+        "concept_id": "signal_evidence",
+        "evidence_id": "window:2149:signal-summary",
+        "match_fields": [
+          "primary_channel",
+          "primary_sample_count"
+        ],
+        "match_values": [
+          "ECG",
+          6000
+        ]
+      },
+      {
+        "concept_id": "attention_result",
+        "evidence_id": "window:2149:attention-summary",
+        "match_fields": [
+          "peak_time",
+          "maximum"
+        ],
+        "match_values": [
+          "2000-01-05T02:09:00+00:00",
+          0.011272926814854145
+        ]
+      },
+      {
+        "concept_id": "xai_interpretation",
+        "evidence_id": "window:2149:attention-summary",
+        "match_fields": [
+          "semantics"
+        ],
+        "match_values": [
+          "shared window-level temporal relevance",
+          "no channel owner"
+        ]
+      }
+    ],
+    "schema_version": "fusion-evaluation-concepts-v3"
+  },
+  "package_hash": "8be10b488a382ab19d0f74e4fa45a7887546bf958e1cb3ef80b3ca77f73298c4",
+  "package_metadata": {
+    "current_evidence_hash": "507118be582bb208f44d5b6e87d5305ff7cc729e77cd7c890331ae61759b34ae",
+    "evidence_package_version": 3,
+    "generation_policy_sha256": "725ce0dc7e9859a4ef203fedc8d642b8cdc26db91e019886f5bf25395c374e1d",
+    "generation_policy_version": "generation_policy_v3",
+    "generation_settings": {
+      "chat_template_kwargs": {
+        "thinking": false
+      },
+      "max_tokens": 16000,
+      "temperature": 0.1,
+      "top_p": 0.9
+    },
+    "llm_model_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "model_provenance": {
+      "architecture": "BiLSTM temporal-attention autoencoder",
+      "evidence_id": "model:5:provenance",
+      "fold_id": "apnea-05-c02",
+      "fold_manifest": "outputs/fusion_models/apnea/folds/c02",
+      "model_checkpoint_sha256": "48d4871f30ec1ce0953e8ad5d1228406e613b36bbba5ddb0f08ca886dbee89c9",
+      "model_name": "fusion_apnea_loso_c02",
+      "model_version": "apnea-05-c02_seed2026",
+      "test_patient": "c02",
+      "training_dataset": "apnea"
+    },
+    "prompt_sha256": "1e19c2df51a14ab8f2e90368e0a327aa91a9cfc0ee8500207fca02f07ca1d71f",
+    "prompt_version": "fusion_prompt_v3",
+    "provider": "Featherless",
+    "response_schema_version": "fusion_claims_v3",
+    "source_database_ids": {
+      "model_id": 5,
+      "patient_id": 5,
+      "prediction_id": 2149,
+      "recording_id": "apnea_c02",
+      "window_id": 2149
+    }
+  },
+  "pdm_context": {
+    "aggregate_trend": [
+      {
+        "anomaly_count": 0,
+        "anomaly_rate": 0.0,
+        "bucket": "2000-01-05T01:10:00+00:00",
+        "evidence_id": "aggregate:patient:5:model:5:bucket:2000-01-05T01:10:00+00:00",
+        "max_reconstruction_error": 1.8868533372879028,
+        "mean_anomaly_margin": -1.7439265727996827,
+        "mean_reconstruction_error": 1.7765888690948486,
+        "model_id": 5,
+        "patient_id": 5,
+        "total_count": 5
+      },
+      {
+        "anomaly_count": 0,
+        "anomaly_rate": 0.0,
+        "bucket": "2000-01-05T01:15:00+00:00",
+        "evidence_id": "aggregate:patient:5:model:5:bucket:2000-01-05T01:15:00+00:00",
+        "max_reconstruction_error": 1.728204369544983,
+        "mean_anomaly_margin": -1.8370113134384156,
+        "mean_reconstruction_error": 1.6835041284561156,
+        "model_id": 5,
+        "patient_id": 5,
+        "total_count": 5
+      },
+      {
+        "anomaly_count": 1,
+        "anomaly_rate": 0.2,
+        "bucket": "2000-01-05T01:20:00+00:00",
+        "evidence_id": "aggregate:patient:5:model:5:bucket:2000-01-05T01:20:00+00:00",
+        "max_reconstruction_error": 5.954099655151367,
+        "mean_anomaly_margin": -0.6223567485809326,
+        "mean_reconstruction_error": 2.8981586933135985,
+        "model_id": 5,
+        "patient_id": 5,
+        "total_count": 5
+      },
+      {
+        "anomaly_count": 0,
+        "anomaly_rate": 0.0,
+        "bucket": "2000-01-05T01:25:00+00:00",
+        "evidence_id": "aggregate:patient:5:model:5:bucket:2000-01-05T01:25:00+00:00",
+        "max_reconstruction_error": 2.2376198768615723,
+        "mean_anomaly_margin": -1.3798645973205566,
+        "mean_reconstruction_error": 2.1406508445739747,
+        "model_id": 5,
+        "patient_id": 5,
+        "total_count": 5
+      },
+      {
+        "anomaly_count": 0,
+        "anomaly_rate": 0.0,
+        "bucket": "2000-01-05T01:30:00+00:00",
+        "evidence_id": "aggregate:patient:5:model:5:bucket:2000-01-05T01:30:00+00:00",
+        "max_reconstruction_error": 2.332599639892578,
+        "mean_anomaly_margin": -1.3405382633209229,
+        "mean_reconstruction_error": 2.1799771785736084,
+        "model_id": 5,
+        "patient_id": 5,
+        "total_count": 5
+      },
+      {
+        "anomaly_count": 0,
+        "anomaly_rate": 0.0,
+        "bucket": "2000-01-05T01:35:00+00:00",
+        "evidence_id": "aggregate:patient:5:model:5:bucket:2000-01-05T01:35:00+00:00",
+        "max_reconstruction_error": 2.235445022583008,
+        "mean_anomaly_margin": -1.363973903656006,
+        "mean_reconstruction_error": 2.1565415382385256,
+        "model_id": 5,
+        "patient_id": 5,
+        "total_count": 5
+      },
+      {
+        "anomaly_count": 0,
+        "anomaly_rate": 0.0,
+        "bucket": "2000-01-05T01:40:00+00:00",
+        "evidence_id": "aggregate:patient:5:model:5:bucket:2000-01-05T01:40:00+00:00",
+        "max_reconstruction_error": 2.1207194328308105,
+        "mean_anomaly_margin": -1.4097768783569335,
+        "mean_reconstruction_error": 2.1107385635375975,
+        "model_id": 5,
+        "patient_id": 5,
+        "total_count": 5
+      },
+      {
+        "anomaly_count": 0,
+        "anomaly_rate": 0.0,
+        "bucket": "2000-01-05T01:45:00+00:00",
+        "evidence_id": "aggregate:patient:5:model:5:bucket:2000-01-05T01:45:00+00:00",
+        "max_reconstruction_error": 2.268889904022217,
+        "mean_anomaly_margin": -1.361082172393799,
+        "mean_reconstruction_error": 2.1594332695007323,
+        "model_id": 5,
+        "patient_id": 5,
+        "total_count": 5
+      },
+      {
+        "anomaly_count": 0,
+        "anomaly_rate": 0.0,
+        "bucket": "2000-01-05T01:50:00+00:00",
+        "evidence_id": "aggregate:patient:5:model:5:bucket:2000-01-05T01:50:00+00:00",
+        "max_reconstruction_error": 2.228466510772705,
+        "mean_anomaly_margin": -1.4029667854309082,
+        "mean_reconstruction_error": 2.1175486564636232,
+        "model_id": 5,
+        "patient_id": 5,
+        "total_count": 5
+      },
+      {
+        "anomaly_count": 0,
+        "anomaly_rate": 0.0,
+        "bucket": "2000-01-05T01:55:00+00:00",
+        "evidence_id": "aggregate:patient:5:model:5:bucket:2000-01-05T01:55:00+00:00",
+        "max_reconstruction_error": 2.214900255203247,
+        "mean_anomaly_margin": -1.3862839221954346,
+        "mean_reconstruction_error": 2.134231519699097,
+        "model_id": 5,
+        "patient_id": 5,
+        "total_count": 5
+      },
+      {
+        "anomaly_count": 0,
+        "anomaly_rate": 0.0,
+        "bucket": "2000-01-05T02:00:00+00:00",
+        "evidence_id": "aggregate:patient:5:model:5:bucket:2000-01-05T02:00:00+00:00",
+        "max_reconstruction_error": 2.2378787994384766,
+        "mean_anomaly_margin": -1.3639138221740723,
+        "mean_reconstruction_error": 2.156601619720459,
+        "model_id": 5,
+        "patient_id": 5,
+        "total_count": 5
+      },
+      {
+        "anomaly_count": 0,
+        "anomaly_rate": 0.0,
+        "bucket": "2000-01-05T02:05:00+00:00",
+        "evidence_id": "aggregate:patient:5:model:5:bucket:2000-01-05T02:05:00+00:00",
+        "max_reconstruction_error": 2.2585666179656982,
+        "mean_anomaly_margin": -1.3582163333892823,
+        "mean_reconstruction_error": 2.162299108505249,
+        "model_id": 5,
+        "patient_id": 5,
+        "total_count": 5
+      }
+    ],
+    "clinical_context": {
+      "diagnoses": [],
+      "patient_id": 5,
+      "source": "synthetic_prototype",
+      "visits": []
+    },
+    "detailed_history": [
+      {
+        "anomaly_margin": -1.2877557277679443,
+        "anomaly_threshold": 3.5205154418945312,
+        "end_time": "2000-01-05T02:09:00+00:00",
+        "evidence_id": "history:prediction:2148",
+        "is_anomaly": false,
+        "model_id": 5,
+        "model_name": "fusion_apnea_loso_c02",
+        "model_version": "apnea-05-c02_seed2026",
+        "normalized_margin": -0.36578613246330516,
+        "patient_code": "APNEA_c02",
+        "patient_id": 5,
+        "predicted_class": "normal",
+        "prediction_id": 2148,
+        "reconstruction_error": 2.232759714126587,
+        "recording_id": "apnea_c02",
+        "seconds_before_current": 60.0,
+        "start_time": "2000-01-05T02:08:00+00:00",
+        "timestamp": "2000-01-05T02:08:00+00:00",
+        "window_id": 2148,
+        "window_index": 128,
+        "xai_summary": {
+          "attention_max": 0.011308454908430576,
+          "attention_mean": 0.010000000474974513,
+          "attention_min": 0.008745448663830757,
+          "attention_sample_count": 100,
+          "available": true,
+          "description": "Shared window-level temporal relevance; attention has no channel owner.",
+          "method": "temporal_attention",
+          "type": "window_level_temporal_relevance"
+        }
+      },
+      {
+        "anomaly_margin": -1.384244441986084,
+        "anomaly_threshold": 3.5205154418945312,
+        "end_time": "2000-01-05T02:08:00+00:00",
+        "evidence_id": "history:prediction:2147",
+        "is_anomaly": false,
+        "model_id": 5,
+        "model_name": "fusion_apnea_loso_c02",
+        "model_version": "apnea-05-c02_seed2026",
+        "normalized_margin": -0.3931936856499531,
+        "patient_code": "APNEA_c02",
+        "patient_id": 5,
+        "predicted_class": "normal",
+        "prediction_id": 2147,
+        "reconstruction_error": 2.1362709999084473,
+        "recording_id": "apnea_c02",
+        "seconds_before_current": 120.0,
+        "start_time": "2000-01-05T02:07:00+00:00",
+        "timestamp": "2000-01-05T02:07:00+00:00",
+        "window_id": 2147,
+        "window_index": 127,
+        "xai_summary": {
+          "attention_max": 0.011365183629095554,
+          "attention_mean": 0.00999999986961484,
+          "attention_min": 0.008898868225514889,
+          "attention_sample_count": 100,
+          "available": true,
+          "description": "Shared window-level temporal relevance; attention has no channel owner.",
+          "method": "temporal_attention",
+          "type": "window_level_temporal_relevance"
+        }
+      },
+      {
+        "anomaly_margin": -1.3954722881317139,
+        "anomaly_threshold": 3.5205154418945312,
+        "end_time": "2000-01-05T02:07:00+00:00",
+        "evidence_id": "history:prediction:2146",
+        "is_anomaly": false,
+        "model_id": 5,
+        "model_name": "fusion_apnea_loso_c02",
+        "model_version": "apnea-05-c02_seed2026",
+        "normalized_margin": -0.39638294765744697,
+        "patient_code": "APNEA_c02",
+        "patient_id": 5,
+        "predicted_class": "normal",
+        "prediction_id": 2146,
+        "reconstruction_error": 2.1250431537628174,
+        "recording_id": "apnea_c02",
+        "seconds_before_current": 180.0,
+        "start_time": "2000-01-05T02:06:00+00:00",
+        "timestamp": "2000-01-05T02:06:00+00:00",
+        "window_id": 2146,
+        "window_index": 126,
+        "xai_summary": {
+          "attention_max": null,
+          "attention_mean": null,
+          "attention_min": null,
+          "attention_sample_count": 0,
+          "available": false,
+          "description": null,
+          "method": null,
+          "type": null
+        }
+      },
+      {
+        "anomaly_margin": -1.261948823928833,
+        "anomaly_threshold": 3.5205154418945312,
+        "end_time": "2000-01-05T02:06:00+00:00",
+        "evidence_id": "history:prediction:2145",
+        "is_anomaly": false,
+        "model_id": 5,
+        "model_name": "fusion_apnea_loso_c02",
+        "model_version": "apnea-05-c02_seed2026",
+        "normalized_margin": -0.3584556991034607,
+        "patient_code": "APNEA_c02",
+        "patient_id": 5,
+        "predicted_class": "normal",
+        "prediction_id": 2145,
+        "reconstruction_error": 2.2585666179656982,
+        "recording_id": "apnea_c02",
+        "seconds_before_current": 240.0,
+        "start_time": "2000-01-05T02:05:00+00:00",
+        "timestamp": "2000-01-05T02:05:00+00:00",
+        "window_id": 2145,
+        "window_index": 125,
+        "xai_summary": {
+          "attention_max": null,
+          "attention_mean": null,
+          "attention_min": null,
+          "attention_sample_count": 0,
+          "available": false,
+          "description": null,
+          "method": null,
+          "type": null
+        }
+      },
+      {
+        "anomaly_margin": -1.4143645763397217,
+        "anomaly_threshold": 3.5205154418945312,
+        "end_time": "2000-01-05T02:05:00+00:00",
+        "evidence_id": "history:prediction:2144",
+        "is_anomaly": false,
+        "model_id": 5,
+        "model_name": "fusion_apnea_loso_c02",
+        "model_version": "apnea-05-c02_seed2026",
+        "normalized_margin": -0.40174928918323255,
+        "patient_code": "APNEA_c02",
+        "patient_id": 5,
+        "predicted_class": "normal",
+        "prediction_id": 2144,
+        "reconstruction_error": 2.1061508655548096,
+        "recording_id": "apnea_c02",
+        "seconds_before_current": 300.0,
+        "start_time": "2000-01-05T02:04:00+00:00",
+        "timestamp": "2000-01-05T02:04:00+00:00",
+        "window_id": 2144,
+        "window_index": 124,
+        "xai_summary": {
+          "attention_max": null,
+          "attention_mean": null,
+          "attention_min": null,
+          "attention_sample_count": 0,
+          "available": false,
+          "description": null,
+          "method": null,
+          "type": null
+        }
+      }
+    ],
+    "history_policy": "five latest same-patient events strictly before current event",
+    "included": true,
+    "recurrence_summary": {
+      "analyzed_window_count": 129,
+      "anomaly_count": 9,
+      "anomaly_rate": 0.06976744186046512,
+      "before_time": "2000-01-05T02:09:00+00:00",
+      "evidence_id": "recurrence:patient:5:before:2000-01-05T02:09:00+00:00",
+      "first_event_time": "2000-01-05T00:00:00+00:00",
+      "latest_event_time": "2000-01-05T02:08:00+00:00",
+      "max_reconstruction_error": 129.26181030273438,
+      "mean_anomaly_margin": 0.5998988528844229,
+      "mean_reconstruction_error": 4.120414294778954,
+      "patient_id": 5
+    },
+    "trend_policy": "twelve latest earlier five-minute aggregate buckets"
+  }
+}

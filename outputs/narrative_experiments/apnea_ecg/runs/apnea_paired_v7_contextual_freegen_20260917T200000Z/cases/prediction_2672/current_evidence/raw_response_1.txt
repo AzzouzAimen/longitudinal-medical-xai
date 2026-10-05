@@ -1,0 +1,35 @@
+{
+  "schema_version": "fusion_claims_v7",
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "section": "current_event",
+      "text": "A 60-second apnea event was detected in recording c03 starting at 2000-01-06T02:31:00+00:00 and ending at 2000-01-06T02:32:00+00:00 (window index 151).",
+      "evidence_ids": ["window:2672:event"]
+    },
+    {
+      "claim_id": "claim-2",
+      "section": "model_and_xai_evidence",
+      "text": "The detector flagged this window as an anomaly with reconstruction error 0.3056, exceeding the threshold of 0.2722 by a margin of 0.0333 (normalized margin 0.1225); these values are reconstruction threshold evidence and not probabilities or calibrated confidence.",
+      "evidence_ids": ["prediction:2672:detector"]
+    },
+    {
+      "claim_id": "claim-3",
+      "section": "model_and_xai_evidence",
+      "text": "The detector is a BiLSTM temporal-attention autoencoder (model version apnea-06-c03_seed2026, fold apnea-06-c03) trained on the apnea dataset and tested on patient c03.",
+      "evidence_ids": ["model:6:provenance"]
+    },
+    {
+      "claim_id": "claim-4",
+      "section": "model_and_xai_evidence",
+      "text": "No signal-level summary or attention-based explanation is available for this window; attention would represent shared window-level temporal relevance, not causal or channel-specific importance.",
+      "evidence_ids": ["window:2672:signal-summary", "window:2672:attention-summary"]
+    },
+    {
+      "claim_id": "claim-5",
+      "section": "evidence_grounded_summary",
+      "text": "The current evidence indicates an apnea anomaly in patient c03 at the specified time, supported by the detector's reconstruction error exceeding its threshold, with no signal or attention explanations available and no longitudinal or clinical context supplied.",
+      "evidence_ids": ["window:2672:event", "prediction:2672:detector", "window:2672:signal-summary", "window:2672:attention-summary", "pdm:patient:6:status:2672", "clinical:patient:6:summary:2672"]
+    }
+  ]
+}

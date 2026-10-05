@@ -1,0 +1,38 @@
+Finalize GroupAggregate  (cost=10.15..13766.23 rows=75924 width=40) (actual time=2.381..34.162 rows=28 loops=1)
+  Group Key: (time_bucket('00:05:00'::interval, ts_signal_data_final."timestamp", '2026-08-31 00:00:00+00'::timestamp with time zone))
+  Buffers: shared hit=2388
+  ->  Custom Scan (ChunkAppend) on ts_signal_data_final  (cost=10.15..11689.79 rows=75006 width=64) (actual time=1.551..34.086 rows=28 loops=1)
+        Order: time_bucket('00:05:00'::interval, ts_signal_data_final."timestamp", '2026-08-31 00:00:00+00'::timestamp with time zone)
+        Buffers: shared hit=2388
+        ->  Partial GroupAggregate  (cost=10.15..5845.60 rows=37585 width=64) (actual time=1.551..16.638 rows=14 loops=1)
+              Group Key: time_bucket('00:05:00'::interval, _hyper_89_290_chunk."timestamp", '2026-08-31 00:00:00+00'::timestamp with time zone)
+              Buffers: shared hit=1189
+              ->  Custom Scan (ColumnarScan) on _hyper_89_290_chunk  (cost=10.15..3767.04 rows=128700 width=16) (actual time=0.371..12.953 rows=39000 loops=1)
+                    Filter: ((channel)::text = 'EEG Fpz-Cz'::text)
+                    Rows Removed by Filter: 89700
+                    Buffers: shared hit=1189
+                    ->  Sort  (cost=10.13..10.46 rows=129 width=124) (actual time=0.047..0.086 rows=129 loops=1)
+                          Sort Key: _hyper_89_290_chunk_compressed._ts_meta_v2_last_timestamp
+                          Sort Method: quicksort  Memory: 50kB
+                          Buffers: shared hit=4
+                          ->  Seq Scan on _hyper_89_290_chunk_compressed  (cost=0.00..5.61 rows=129 width=124) (actual time=0.007..0.020 rows=129 loops=1)
+                                Filter: (patient_id = 68)
+                                Buffers: shared hit=4
+        ->  Partial GroupAggregate  (cost=10.79..5844.19 rows=37421 width=64) (actual time=1.640..17.432 rows=14 loops=1)
+              Group Key: time_bucket('00:05:00'::interval, _hyper_89_291_chunk."timestamp", '2026-08-31 00:00:00+00'::timestamp with time zone)
+              Buffers: shared hit=1199
+              ->  Custom Scan (ColumnarScan) on _hyper_89_291_chunk  (cost=10.79..3767.68 rows=128700 width=16) (actual time=0.421..13.829 rows=39000 loops=1)
+                    Filter: (("timestamp" >= '2026-09-06 00:00:00+00'::timestamp with time zone) AND ("timestamp" < '2026-09-07 07:44:29.900001+00'::timestamp with time zone) AND ((channel)::text = 'EEG Fpz-Cz'::text))
+                    Rows Removed by Filter: 89700
+                    Buffers: shared hit=1199
+                    ->  Sort  (cost=10.78..11.10 rows=129 width=124) (actual time=0.073..0.096 rows=129 loops=1)
+                          Sort Key: _hyper_89_291_chunk_compressed._ts_meta_v2_last_timestamp
+                          Sort Method: quicksort  Memory: 48kB
+                          Buffers: shared hit=4
+                          ->  Seq Scan on _hyper_89_291_chunk_compressed  (cost=0.00..6.26 rows=129 width=124) (actual time=0.013..0.035 rows=129 loops=1)
+                                Filter: ((_ts_meta_v2_first_timestamp >= '2026-09-06 00:00:00+00'::timestamp with time zone) AND (_ts_meta_v2_last_timestamp < '2026-09-07 07:44:29.900001+00'::timestamp with time zone) AND (patient_id = 68))
+                                Buffers: shared hit=4
+Planning:
+  Buffers: shared hit=25
+Planning Time: 0.668 ms
+Execution Time: 34.309 ms

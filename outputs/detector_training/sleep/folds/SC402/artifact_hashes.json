@@ -1,0 +1,15 @@
+{
+  "evaluation_annotations.json": "48b7da5642f73dd4990e3cec917a20540bf83739f74176da20a790dfd69074bd",
+  "held_out_attention.npy": "7981fe3fe7f2b92660cd29c8637b7ac7c9f80254d2e6c9ed6b80159d67ce4a2b",
+  "held_out_channel_errors.npy": "f971e6abca42d83dc0e6ba7b35ff71fab0ced9b809d90db9249195e6e8ddf5f3",
+  "held_out_decisions.json": "7f5b6ddb50d532efb6845ef505081dd05f5a728122e5c558af3976ce48f4e9b4",
+  "held_out_errors.npy": "5c318c7aed311e85b4728547a0c7c2c50359d678f36773169dc8dd11bd6d3ec9",
+  "held_out_reconstruction.npy": "1330f5467285dc90e186c77187d2f8a172f327f772e57b6a189d9d975da01cd9",
+  "held_out_residual.npy": "73d3ae65acbe1a4397431fe5171a974c2f876f3d989ba1cad9864155a9fc1bd6",
+  "model.keras": "d9b31ec5b8a76d49b56a157b36a1e6d54fb925f718c3577dd78e50559a6edaa3",
+  "model_config.json": "e79caef7f9f2e031461174a7734d0a0f83273c2bca274cae4e4bfc1a38c30b30",
+  "normalization.json": "4061aaf5cddf77fc1f71f551a60ea54555f05b3a606d049e6436b4ee6da94be7",
+  "runtime_metadata.json": "826bc8b3a3e18b63c59eb9cc3d9436fca16e31b3298e533764ae9ce94024f383",
+  "thresholds.json": "ce1ae539a1ada70f5a8a1d0779a4c209a824cd8e69edc2d784aa94a16e0dbb77",
+  "training_history.json": "1462b42b9e91bb35e494eeccd19c81bdf54bd6837bc9cd29aaea2a46b6e215e9"
+}

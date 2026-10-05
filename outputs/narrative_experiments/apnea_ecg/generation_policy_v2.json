@@ -1,0 +1,53 @@
+{
+  "schema_version": "fusion-generation-policy-v2",
+  "policy_version": "generation_policy_v2",
+  "prompt_version": "fusion_prompt_v1",
+  "prompt_path": "outputs/evidence_fusion/apnea/prompt_v1.txt",
+  "prompt_sha256": "7bba19bb9d1591ff788b668a0ba9759eca77e386596e5655ca27e92a1c0cb77f",
+  "provider": "Featherless",
+  "base_url": "https://api.featherless.ai/v1",
+  "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "generation_settings": {
+    "temperature": 0.1,
+    "top_p": 0.9,
+    "max_tokens": 16000,
+    "chat_template_kwargs": {
+      "thinking": false
+    }
+  },
+  "response_schema_version": "fusion_narrative_v1",
+  "model_availability": {
+    "checked_at_utc": "2026-09-16T16:07:04Z",
+    "available_on_current_plan": true,
+    "model_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "context_length": 262144,
+    "is_gated": false,
+    "model_class": "deepseek4-284b",
+    "owned_by": "Feather"
+  },
+  "execution_amendment": {
+    "reason": "Provider returned two empty visible responses after consuming the full token budget; explicit non-thinking mode is required for structured generation.",
+    "superseded_run_id": "apnea_paired_v1_20260916T183000Z",
+    "provider_documentation": "https://featherless.ai/docs/chat-template-kwargs"
+  },
+  "transport_retry": {
+    "maximum_attempts": 4,
+    "backoff_seconds": [1, 2, 4],
+    "retryable_http_statuses": [408, 409, 429, 500, 502, 503, 504],
+    "retry_connection_and_timeout_errors": true,
+    "identical_request_required": true
+  },
+  "malformed_json_retry": {
+    "maximum_additional_requests": 1,
+    "identical_request_required": true,
+    "preserve_every_raw_response": true,
+    "after_final_failure": "retain parse_failure flag and raw response for manual parsing without selective regeneration"
+  },
+  "raw_response_policy": "Preserve raw content and provider metadata for every request attempt.",
+  "provider_defaults_policy": "Record provider-returned defaults and response metadata when available.",
+  "no_pilot_policy": {
+    "pilot_subset_allowed": false,
+    "material_change_after_generation": "mark the whole run superseded, increment prompt or package version, and regenerate every frozen case in both conditions",
+    "selective_regeneration_allowed": false
+  }
+}

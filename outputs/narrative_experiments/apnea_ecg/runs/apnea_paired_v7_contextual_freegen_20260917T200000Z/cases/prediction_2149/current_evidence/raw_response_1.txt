@@ -1,0 +1,35 @@
+{
+  "schema_version": "fusion_claims_v7",
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "section": "current_event",
+      "text": "A 60-second apnea recording window from patient c02 starting at 2000-01-05T02:09:00+00:00 was evaluated and classified as normal.",
+      "evidence_ids": ["window:2149:event", "prediction:2149:detector"]
+    },
+    {
+      "claim_id": "claim-2",
+      "section": "model_and_xai_evidence",
+      "text": "The detector's reconstruction error was 2.059, below the anomaly threshold of 3.521, yielding a negative anomaly margin of -1.462 and a normalized margin of -0.415; these values are threshold evidence, not probabilities or calibrated confidence.",
+      "evidence_ids": ["prediction:2149:detector"]
+    },
+    {
+      "claim_id": "claim-3",
+      "section": "model_and_xai_evidence",
+      "text": "The model is a BiLSTM temporal-attention autoencoder (version apnea-05-c02_seed2026) trained on the apnea dataset and evaluated on patient c02.",
+      "evidence_ids": ["model:5:provenance"]
+    },
+    {
+      "claim_id": "claim-4",
+      "section": "model_and_xai_evidence",
+      "text": "The signal summary includes ECG as the primary channel with 6000 samples at 100 Hz, and the attention summary indicates shared window-level temporal relevance with a mean attention of 0.010 and peak at the window start; this is not channel-specific importance or causal evidence.",
+      "evidence_ids": ["window:2149:signal-summary", "window:2149:attention-summary"]
+    },
+    {
+      "claim_id": "claim-5",
+      "section": "evidence_grounded_summary",
+      "text": "The current evidence indicates a normal classification for the window, supported by reconstruction error below threshold and consistent signal and attention summaries; no historical or clinical context was supplied.",
+      "evidence_ids": ["window:2149:event", "prediction:2149:detector", "window:2149:signal-summary", "window:2149:attention-summary", "pdm:patient:5:status:2149", "clinical:patient:5:summary:2149"]
+    }
+  ]
+}

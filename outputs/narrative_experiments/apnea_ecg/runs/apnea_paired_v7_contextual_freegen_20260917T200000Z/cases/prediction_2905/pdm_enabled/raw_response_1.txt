@@ -1,0 +1,53 @@
+{
+  "schema_version": "fusion_claims_v7",
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "section": "current_event",
+      "text": "A 60-second apnea window from recording c03 starting at 2000-01-06T06:24:00+00:00 was flagged as an anomaly by the detector.",
+      "evidence_ids": ["window:2905:event", "prediction:2905:detector"]
+    },
+    {
+      "claim_id": "claim-2",
+      "section": "model_and_xai_evidence",
+      "text": "The detector is a BiLSTM temporal-attention autoencoder (model fusion_apnea_loso_c03, fold apnea-06-c03) and flagged the window with reconstruction error 0.4166, exceeding the threshold 0.2722; the anomaly margin was 0.1444 (normalized 0.5303).",
+      "evidence_ids": ["model:6:provenance", "prediction:2905:detector"]
+    },
+    {
+      "claim_id": "claim-3",
+      "section": "model_and_xai_evidence",
+      "text": "No signal-level or attention-level evidence was available for this window; attention is not channel-specific and does not indicate causal importance.",
+      "evidence_ids": ["window:2905:signal-summary", "window:2905:attention-summary"]
+    },
+    {
+      "claim_id": "claim-4",
+      "section": "previous_monitoring_history",
+      "text": "The five most recent windows before this event (from 06:19 to 06:23) were all flagged as anomalies, with reconstruction errors increasing from 0.3399 to 0.4164.",
+      "evidence_ids": ["history:patient:6:recent-summary:2905"]
+    },
+    {
+      "claim_id": "claim-5",
+      "section": "aggregate_trend",
+      "text": "Over the 12 five-minute buckets from 05:25 to 06:20, the mean reconstruction error decreased from 0.4405 to 0.3863, while the anomaly rate remained high (0.8 to 1.0).",
+      "evidence_ids": ["aggregate:patient:6:recent-summary:2905"]
+    },
+    {
+      "claim_id": "claim-6",
+      "section": "recurrence_summary",
+      "text": "Across the 384 windows analyzed before this event, 355 (92.4%) were flagged as anomalies, with a mean reconstruction error of 0.3956 and a maximum of 1.9539.",
+      "evidence_ids": ["recurrence:patient:6:before:2000-01-06T06:24:00+00:00"]
+    },
+    {
+      "claim_id": "claim-7",
+      "section": "recorded_clinical_context",
+      "text": "No clinical context was supplied for this patient; the clinical summary is marked as synthetic_prototype with no diagnoses or visits.",
+      "evidence_ids": ["clinical:patient:6:summary:2905"]
+    },
+    {
+      "claim_id": "claim-8",
+      "section": "evidence_grounded_summary",
+      "text": "The current anomaly is part of a sustained pattern: all recent windows were anomalous, the aggregate trend shows high anomaly rates, and over 92% of prior windows were flagged, though no clinical context is available.",
+      "evidence_ids": ["prediction:2905:detector", "history:patient:6:recent-summary:2905", "aggregate:patient:6:recent-summary:2905", "recurrence:patient:6:before:2000-01-06T06:24:00+00:00", "clinical:patient:6:summary:2905"]
+    }
+  ]
+}

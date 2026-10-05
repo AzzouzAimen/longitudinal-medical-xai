@@ -1,0 +1,4 @@
+# Assembled from source imports; not a version-pinned environment lock.
+numpy
+pandas
+torch

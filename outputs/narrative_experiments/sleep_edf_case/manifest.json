@@ -1,0 +1,15 @@
+{
+  "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "narrative_id": 37,
+  "package_hash": "0bc69b48411e71cb8dd736262d79c71f07f824ea894dfff53647342703a85b8c",
+  "prediction_id": 7197,
+  "prompt_sha256": "4d991c5ccf2ed710a6c0279f2ba42eca5354d77592d1625c0298110971c68166",
+  "response_validation": {
+    "duplicate_claim_ids": [],
+    "unique_claim_ids": true,
+    "unknown_evidence_ids": [],
+    "valid_evidence_ids": true
+  },
+  "schema_version": "sleep-case-manifest-v1",
+  "status": "complete"
+}

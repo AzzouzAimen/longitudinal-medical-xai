@@ -1,0 +1,53 @@
+{
+  "schema_version": "fusion_claims_v7",
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "section": "current_event",
+      "text": "A 60-second apnea-modality window from recording c02, starting at 2000-01-05T05:40:00+00:00 and ending at 2000-01-05T05:41:00+00:00 (window index 340), was flagged as an anomaly by the detector.",
+      "evidence_ids": ["window:2360:event"]
+    },
+    {
+      "claim_id": "claim-2",
+      "section": "model_and_xai_evidence",
+      "text": "The detector classified the window as an anomaly with a reconstruction error of 3.628, exceeding the anomaly threshold of 3.521 by a margin of 0.108 (normalized margin 0.031); the detector semantics note this is reconstruction threshold evidence, not probability or calibrated confidence.",
+      "evidence_ids": ["prediction:2360:detector"]
+    },
+    {
+      "claim_id": "claim-3",
+      "section": "model_and_xai_evidence",
+      "text": "The model is a BiLSTM temporal-attention autoencoder (model version apnea-05-c02_seed2026, fold apnea-05-c02) trained on the apnea dataset with test patient c02; no signal-level or attention-level evidence was available for this window.",
+      "evidence_ids": ["model:5:provenance", "window:2360:signal-summary", "window:2360:attention-summary"]
+    },
+    {
+      "claim_id": "claim-4",
+      "section": "previous_monitoring_history",
+      "text": "In the five minutes preceding the current event, the patient had one prior anomaly at 2000-01-05T05:39:00+00:00 (reconstruction error 3.550) and four normal windows with reconstruction errors between 3.418 and 3.472, indicating a recent rise in reconstruction error leading to the current anomaly.",
+      "evidence_ids": ["history:patient:5:recent-summary:2360"]
+    },
+    {
+      "claim_id": "claim-5",
+      "section": "previous_monitoring_history",
+      "text": "The aggregate trend from 2000-01-05T04:40:00+00:00 to 2000-01-05T05:35:00+00:00 shows an increasing endpoint direction, with mean reconstruction error rising from 2.140 to 3.464 and a maximum anomaly rate of 0.6 in any bucket, supporting a progressive elevation in reconstruction error.",
+      "evidence_ids": ["aggregate:patient:5:recent-summary:2360"]
+    },
+    {
+      "claim_id": "claim-6",
+      "section": "previous_monitoring_history",
+      "text": "Across the 340 windows analyzed before the current event, 20 anomalies were recorded (5.9% anomaly rate), with the latest prior anomaly at 2000-01-05T05:39:00+00:00 and a maximum reconstruction error of 129.262, indicating recurrent anomaly activity in this patient.",
+      "evidence_ids": ["recurrence:patient:5:before:2000-01-05T05:40:00+00:00"]
+    },
+    {
+      "claim_id": "claim-7",
+      "section": "recorded_clinical_context",
+      "text": "No clinical context was supplied for this patient; the clinical summary is marked as synthetic_prototype with zero diagnoses and zero visits.",
+      "evidence_ids": ["clinical:patient:5:summary:2360"]
+    },
+    {
+      "claim_id": "claim-8",
+      "section": "evidence_grounded_summary",
+      "text": "The current anomaly at 05:40 is consistent with a rising reconstruction error trend observed over the past hour and follows a prior anomaly one minute earlier, but no signal-level or attention-level explanation is available, and clinical context is absent.",
+      "evidence_ids": ["prediction:2360:detector", "history:patient:5:recent-summary:2360", "aggregate:patient:5:recent-summary:2360", "window:2360:signal-summary", "window:2360:attention-summary", "clinical:patient:5:summary:2360"]
+    }
+  ]
+}

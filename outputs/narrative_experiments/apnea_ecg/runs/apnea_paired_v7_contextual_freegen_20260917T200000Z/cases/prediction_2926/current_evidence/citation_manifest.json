@@ -1,0 +1,55 @@
+{
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "evidence_ids": [
+        "window:2926:event"
+      ],
+      "section": "current_event"
+    },
+    {
+      "claim_id": "claim-2",
+      "evidence_ids": [
+        "prediction:2926:detector"
+      ],
+      "section": "model_and_xai_evidence"
+    },
+    {
+      "claim_id": "claim-3",
+      "evidence_ids": [
+        "model:6:provenance"
+      ],
+      "section": "model_and_xai_evidence"
+    },
+    {
+      "claim_id": "claim-4",
+      "evidence_ids": [
+        "window:2926:signal-summary",
+        "window:2926:attention-summary"
+      ],
+      "section": "model_and_xai_evidence"
+    },
+    {
+      "claim_id": "claim-5",
+      "evidence_ids": [
+        "prediction:2926:detector",
+        "window:2926:signal-summary",
+        "window:2926:attention-summary"
+      ],
+      "section": "evidence_grounded_summary"
+    }
+  ],
+  "condition": "Current-Evidence",
+  "narrative_hash": "c6dfc52a14a8585ff4e182f5f153e5f1848afc8a1b4638be0753a9975575c13e",
+  "narrative_id": 248,
+  "package_hash": "1489a109409e496014d7feff28f762f14a0243f124f8425df057bf20ba397a95",
+  "prediction_id": 2926,
+  "run_id": "apnea_paired_v7_contextual_freegen_20260917T200000Z",
+  "schema_version": "fusion-citation-manifest-v7",
+  "validation": {
+    "duplicate_claim_ids": [],
+    "unique_claim_ids": true,
+    "unknown_evidence_ids": [],
+    "valid_evidence_ids": true
+  }
+}

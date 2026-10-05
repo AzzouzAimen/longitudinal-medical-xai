@@ -1,0 +1,109 @@
+{
+  "attempts": [
+    {
+      "grounding_validation": {
+        "issue_codes": [],
+        "valid": true
+      },
+      "raw_response": "{\n  \"schema_version\": \"fusion_claims_v7\",\n  \"claims\": [\n    {\n      \"claim_id\": \"claim-1\",\n      \"section\": \"current_event\",\n      \"text\": \"A 60-second apnea event was detected in recording c03 starting at 2000-01-06T02:31:00+00:00 and ending at 2000-01-06T02:32:00+00:00 (window index 151).\",\n      \"evidence_ids\": [\"window:2672:event\"]\n    },\n    {\n      \"claim_id\": \"claim-2\",\n      \"section\": \"model_and_xai_evidence\",\n      \"text\": \"The detector flagged this window as an anomaly with reconstruction error 0.3056, exceeding the threshold of 0.2722 by a margin of 0.0333 (normalized margin 0.1225); these values are reconstruction threshold evidence and not probabilities or calibrated confidence.\",\n      \"evidence_ids\": [\"prediction:2672:detector\"]\n    },\n    {\n      \"claim_id\": \"claim-3\",\n      \"section\": \"model_and_xai_evidence\",\n      \"text\": \"The detector is a BiLSTM temporal-attention autoencoder (model version apnea-06-c03_seed2026, fold apnea-06-c03) trained on the apnea dataset and tested on patient c03.\",\n      \"evidence_ids\": [\"model:6:provenance\"]\n    },\n    {\n      \"claim_id\": \"claim-4\",\n      \"section\": \"model_and_xai_evidence\",\n      \"text\": \"No signal-level summary or attention-based explanation is available for this window; attention would represent shared window-level temporal relevance, not causal or channel-specific importance.\",\n      \"evidence_ids\": [\"window:2672:signal-summary\", \"window:2672:attention-summary\"]\n    },\n    {\n      \"claim_id\": \"claim-5\",\n      \"section\": \"evidence_grounded_summary\",\n      \"text\": \"The current evidence indicates an apnea anomaly in patient c03 at the specified time, supported by the detector's reconstruction error exceeding its threshold, with no signal or attention explanations available and no longitudinal or clinical context supplied.\",\n      \"evidence_ids\": [\"window:2672:event\", \"prediction:2672:detector\", \"window:2672:signal-summary\", \"window:2672:attention-summary\", \"pdm:patient:6:status:2672\", \"clinical:patient:6:summary:2672\"]\n    }\n  ]\n}",
+      "response_metadata": {
+        "id": "44590852-973e-4652-b94d-12964fd37d49",
+        "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+        "usage": {
+          "cached_tokens": 256,
+          "completion_tokens": 540,
+          "completion_tokens_details": null,
+          "prompt_tokens": 1091,
+          "prompt_tokens_details": null,
+          "total_tokens": 1631
+        }
+      },
+      "response_number": 1,
+      "transport_attempt": 1,
+      "transport_error": null
+    }
+  ],
+  "grounding_failure": false,
+  "manual_parse_required": false,
+  "parse_failure": false,
+  "parsed": {
+    "claims": [
+      {
+        "claim_id": "claim-1",
+        "evidence_ids": [
+          "window:2672:event"
+        ],
+        "section": "current_event",
+        "text": "A 60-second apnea event was detected in recording c03 starting at 2000-01-06T02:31:00+00:00 and ending at 2000-01-06T02:32:00+00:00 (window index 151)."
+      },
+      {
+        "claim_id": "claim-2",
+        "evidence_ids": [
+          "prediction:2672:detector"
+        ],
+        "section": "model_and_xai_evidence",
+        "text": "The detector flagged this window as an anomaly with reconstruction error 0.3056, exceeding the threshold of 0.2722 by a margin of 0.0333 (normalized margin 0.1225); these values are reconstruction threshold evidence and not probabilities or calibrated confidence."
+      },
+      {
+        "claim_id": "claim-3",
+        "evidence_ids": [
+          "model:6:provenance"
+        ],
+        "section": "model_and_xai_evidence",
+        "text": "The detector is a BiLSTM temporal-attention autoencoder (model version apnea-06-c03_seed2026, fold apnea-06-c03) trained on the apnea dataset and tested on patient c03."
+      },
+      {
+        "claim_id": "claim-4",
+        "evidence_ids": [
+          "window:2672:signal-summary",
+          "window:2672:attention-summary"
+        ],
+        "section": "model_and_xai_evidence",
+        "text": "No signal-level summary or attention-based explanation is available for this window; attention would represent shared window-level temporal relevance, not causal or channel-specific importance."
+      },
+      {
+        "claim_id": "claim-5",
+        "evidence_ids": [
+          "window:2672:event",
+          "prediction:2672:detector",
+          "window:2672:signal-summary",
+          "window:2672:attention-summary",
+          "pdm:patient:6:status:2672",
+          "clinical:patient:6:summary:2672"
+        ],
+        "section": "evidence_grounded_summary",
+        "text": "The current evidence indicates an apnea anomaly in patient c03 at the specified time, supported by the detector's reconstruction error exceeding its threshold, with no signal or attention explanations available and no longitudinal or clinical context supplied."
+      }
+    ],
+    "narrative_sections": {
+      "current_event": "A 60-second apnea event was detected in recording c03 starting at 2000-01-06T02:31:00+00:00 and ending at 2000-01-06T02:32:00+00:00 (window index 151). [evidence: window:2672:event]",
+      "evidence_grounded_summary": "The current evidence indicates an apnea anomaly in patient c03 at the specified time, supported by the detector's reconstruction error exceeding its threshold, with no signal or attention explanations available and no longitudinal or clinical context supplied. [evidence: window:2672:event; prediction:2672:detector; window:2672:signal-summary; window:2672:attention-summary; pdm:patient:6:status:2672; clinical:patient:6:summary:2672]",
+      "model_and_xai_evidence": "The detector flagged this window as an anomaly with reconstruction error 0.3056, exceeding the threshold of 0.2722 by a margin of 0.0333 (normalized margin 0.1225); these values are reconstruction threshold evidence and not probabilities or calibrated confidence. [evidence: prediction:2672:detector] The detector is a BiLSTM temporal-attention autoencoder (model version apnea-06-c03_seed2026, fold apnea-06-c03) trained on the apnea dataset and tested on patient c03. [evidence: model:6:provenance] No signal-level summary or attention-based explanation is available for this window; attention would represent shared window-level temporal relevance, not causal or channel-specific importance. [evidence: window:2672:signal-summary; window:2672:attention-summary]",
+      "previous_monitoring_history": "",
+      "recorded_clinical_context": ""
+    },
+    "schema_version": "fusion_narrative_v7",
+    "source_schema_version": "fusion_claims_v7"
+  },
+  "request": {
+    "extra_body": {
+      "chat_template_kwargs": {
+        "thinking": false
+      }
+    },
+    "max_tokens": 1400,
+    "messages": [
+      {
+        "content": "You are an evidence-grounded narrative assistant supporting review of an anomaly detector. Write a monitoring narrative using only the supplied citation_evidence catalog.\n\nWhen only current-event evidence is supplied, write a concise alert narrative containing the essential current event and its strongest detector, signal, and XAI evidence.\n\nWhen PDM longitudinal context is supplied, write a broader contextual narrative. Preserve the current-event explanation, then add one focused claim for each supplied context category: recent monitoring history, aggregate trend, recurrence summary, and clinical context. Explain what the historical evidence adds without replacing or changing the current detector result. Be selective within each category rather than repeating every field or number.\n\nDo not diagnose, recommend treatment, or add medical facts from outside the supplied evidence. Preserve recorded uncertainty and provenance, including synthetic_prototype labels. Detector quantities are not probabilities or calibrated confidence. Attention represents shared window-level temporal relevance, not causal evidence or channel-specific importance.\n\nEvery factual claim must cite the evidence_id values that support it. Keep claims focused so their citations can be evaluated. Do not mention hidden evaluation data, official annotations, TP/FP/TN/FN categories, or the paired experimental condition.\n\nReturn one JSON object only, without Markdown fences or commentary:\n{\n  \"schema_version\": \"fusion_claims_v7\",\n  \"claims\": [\n    {\n      \"claim_id\": \"claim-1\",\n      \"section\": \"current_event | model_and_xai_evidence | previous_monitoring_history | recorded_clinical_context | evidence_grounded_summary\",\n      \"text\": \"one factual claim\",\n      \"evidence_ids\": [\"one or more exact evidence_id values\"]\n    }\n  ]\n}\n\nDo not output narrative_sections or fields not shown above.\n",
+        "role": "system"
+      },
+      {
+        "content": "{\"citation_evidence\":[{\"evidence_id\":\"window:2672:event\",\"evidence_type\":\"current_event_summary\",\"facts\":{\"duration_seconds\":60.0,\"end_time\":\"2000-01-06T02:32:00+00:00\",\"modality\":\"apnea\",\"source_recording_name\":\"c03\",\"start_time\":\"2000-01-06T02:31:00+00:00\",\"window_index\":151},\"scope\":\"current\"},{\"evidence_id\":\"prediction:2672:detector\",\"evidence_type\":\"detector_summary\",\"facts\":{\"anomaly_margin\":0.03334909677505493,\"anomaly_threshold\":0.2722233831882477,\"is_anomaly\":true,\"normalized_margin\":0.12250636365059571,\"predicted_class\":\"anomaly\",\"reconstruction_error\":0.3055724799633026,\"semantics\":\"reconstruction threshold evidence; not probability or calibrated confidence\"},\"scope\":\"current\"},{\"evidence_id\":\"model:6:provenance\",\"evidence_type\":\"model_provenance\",\"facts\":{\"architecture\":\"BiLSTM temporal-attention autoencoder\",\"evidence_id\":null,\"fold_id\":\"apnea-06-c03\",\"fold_manifest\":\"outputs/fusion_models/apnea/folds/c03\",\"model_checkpoint_sha256\":\"0ca8f423b3729142f3411b680ecc08ac4b7d44f3efae5cf47173e4c71438a912\",\"model_name\":\"fusion_apnea_loso_c03\",\"model_version\":\"apnea-06-c03_seed2026\",\"test_patient\":\"c03\",\"training_dataset\":\"apnea\"},\"scope\":\"current\"},{\"evidence_id\":\"window:2672:signal-summary\",\"evidence_type\":\"signal_summary\",\"facts\":{\"available\":false,\"channel_names\":[],\"primary_channel\":null,\"primary_sample_count\":null,\"primary_sampling_rate_hz\":null},\"scope\":\"current\",\"source_evidence_ids\":[\"window:2672:signal:raw\"]},{\"evidence_id\":\"window:2672:attention-summary\",\"evidence_type\":\"attention_summary\",\"facts\":{\"available\":false,\"channel_level_evidence_available\":false,\"maximum\":null,\"mean\":null,\"method\":null,\"minimum\":null,\"peak_time\":null,\"sample_count\":0,\"semantics\":\"shared window-level temporal relevance; not probability or calibrated confidence; not channel-specific importance; no channel owner\"},\"scope\":\"current\",\"source_evidence_ids\":[\"window:2672:attention\",\"prediction:2672:xai\"]},{\"evidence_id\":\"pdm:patient:6:status:2672\",\"evidence_type\":\"pdm_context_status\",\"facts\":{\"aggregate_trend_supplied\":false,\"history_supplied\":false,\"included\":false,\"recurrence_summary_supplied\":false},\"scope\":\"package\"},{\"evidence_id\":\"clinical:patient:6:summary:2672\",\"evidence_type\":\"clinical_context_summary\",\"facts\":{\"diagnoses\":[],\"diagnosis_count\":0,\"source\":\"synthetic_prototype\",\"supplied\":false,\"visit_count\":0,\"visits\":[]},\"scope\":\"package\"}],\"condition\":\"Current-Evidence\",\"evidence_package_version\":3,\"package_hash\":\"43f8c1c80848d84694402a3522c96d2138acc23bf0f91ea07116d6896bf6af0e\"}",
+        "role": "user"
+      }
+    ],
+    "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "temperature": 0.2,
+    "top_p": 0.9
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "attempts": [
+    {
+      "parse_error": "claim content does not match the frozen schema",
+      "raw_response": "{\n  \"schema_version\": \"fusion_claims_v7\",\n  \"claims\": [\n    {\n      \"claim_id\": \"claim-1\",\n      \"section\": \"current_event\",\n      \"text\": \"A 60-second apnea event window from 00:42:00 to 00:43:00 on 2000-01-01 in recording a01 was flagged as an anomaly by the detector.\",\n      \"evidence_ids\": [\"window:43:event\", \"prediction:43:detector\"]\n    },\n    {\n      \"claim_id\": \"claim-2\",\n      \"section\": \"model_and_xai_evidence\",\n      \"text\": \"The detector flagged the window as an anomaly with a reconstruction error of 0.3232, exceeding the threshold of 0.0453, and a normalized margin of 6.14; the model is a BiLSTM temporal-attention autoencoder (version apnea-01-a01_seed2026) and the reconstruction error is not a probability or calibrated confidence.\",\n      \"evidence_ids\": [\"prediction:43:detector\", \"model:1:provenance\"]\n    },\n    {\n      \"claim_id\": \"claim-3\",\n      \"section\": \"model_and_xai_evidence\",\n      \"text\": \"The signal summary for the window indicates 6000 ECG samples at 100 Hz were available, and the temporal attention peaked at 00:42:29.4 with a mean attention of 0.01; attention is shared window-level temporal relevance, not channel-specific importance or causal evidence.\",\n      \"evidence_ids\": [\"window:43:signal-summary\", \"window:43:attention-summary\"]\n    },\n    {\n      \"claim_id\": \"claim-4\",\n      \"section\": \"previous_monitoring_history\",\n      \"text\": \"In the five minutes before the current event, the detector flagged five consecutive anomaly windows (00:37 to 00:41), with reconstruction errors ranging from 0.2728 to 0.3800, and no normal windows in that period.\",\n      \"evidence_ids\": [\"history:patient:1:recent-summary:43\"]\n    },\n    {\n      \"claim_id\": \"claim-5\",\n      \"section\": \"aggregate_trend\",\n      \"text\": \"Across nine 5-minute buckets from 00:00 to 00:40, the mean reconstruction error decreased slightly from 0.3511 to 0.3317, while the anomaly rate remained at 1.0 in every bucket.\",\n      \"evidence_ids\": [\"aggregate:patient:1:recent-summary:43\"]\n    },\n    {\n      \"claim_id\": \"claim-6\",\n      \"section\": \"recurrence_summary\",\n      \"text\": \"In the 42 analyzed windows before the current event, every window was flagged as an anomaly, with a mean reconstruction error of 0.3146 and a maximum of 0.4343.\",\n      \"evidence_ids\": [\"recurrence:patient:1:before:2000-01-01T00:42:00+00:00\"]\n    },\n    {\n      \"claim_id\": \"claim-7\",\n      \"section\": \"recorded_clinical_context\",\n      \"text\": \"The clinical context is a synthetic prototype: the patient reported morning tiredness at a general consultation on 1999-12-10, with no recorded sleep-related diagnosis.\",\n      \"evidence_ids\": [\"clinical:patient:1:summary:43\"]\n    },\n    {\n      \"claim_id\": \"claim-8\",\n      \"section\": \"evidence_grounded_summary\",\n      \"text\": \"The current event is an anomaly detection with strong reconstruction error evidence, and the historical context shows a sustained pattern of anomalies over the preceding 42 minutes, with no normal windows and a stable high anomaly rate.\",\n      \"evidence_ids\": [\"prediction:43:detector\", \"history:patient:1:recent-summary:43\", \"aggregate:patient:1:recent-summary:43\", \"recurrence:patient:1:before:2000-01-01T00:42:00+00:00\"]\n    }\n  ]\n}",
+      "response_metadata": {
+        "id": "f9ea7f2f-1c9c-43a2-ba58-f1005046f68c",
+        "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+        "usage": {
+          "cached_tokens": 768,
+          "completion_tokens": 878,
+          "completion_tokens_details": null,
+          "prompt_tokens": 2427,
+          "prompt_tokens_details": null,
+          "total_tokens": 3305
+        }
+      },
+      "response_number": 1,
+      "transport_attempt": 1,
+      "transport_error": null
+    },
+    {
+      "grounding_validation": {
+        "issue_codes": [],
+        "valid": true
+      },
+      "raw_response": "{\n  \"schema_version\": \"fusion_claims_v7\",\n  \"claims\": [\n    {\n      \"claim_id\": \"claim-1\",\n      \"section\": \"current_event\",\n      \"text\": \"At 2000-01-01T00:42:00+00:00, a 60-second apnea window (window index 42) from recording a01 was flagged as an anomaly by the detector.\",\n      \"evidence_ids\": [\"window:43:event\", \"prediction:43:detector\"]\n    },\n    {\n      \"claim_id\": \"claim-2\",\n      \"section\": \"model_and_xai_evidence\",\n      \"text\": \"The detector reported a reconstruction error of 0.3232, exceeding the anomaly threshold of 0.0453 with a normalized margin of 6.14; this is reconstruction threshold evidence, not a probability or calibrated confidence.\",\n      \"evidence_ids\": [\"prediction:43:detector\"]\n    },\n    {\n      \"claim_id\": \"claim-3\",\n      \"section\": \"model_and_xai_evidence\",\n      \"text\": \"The model is a BiLSTM temporal-attention autoencoder (version apnea-01-a01_seed2026) trained on the apnea dataset with test patient a01.\",\n      \"evidence_ids\": [\"model:1:provenance\"]\n    },\n    {\n      \"claim_id\": \"claim-4\",\n      \"section\": \"model_and_xai_evidence\",\n      \"text\": \"The signal summary indicates 6000 ECG samples at 100 Hz were available for the window; attention analysis shows a peak at 00:42:29.400, representing shared window-level temporal relevance, not channel-specific importance or causal evidence.\",\n      \"evidence_ids\": [\"window:43:signal-summary\", \"window:43:attention-summary\"]\n    },\n    {\n      \"claim_id\": \"claim-5\",\n      \"section\": \"previous_monitoring_history\",\n      \"text\": \"In the five minutes before the current event, the detector flagged five consecutive anomalies (from 00:37 to 00:41), with reconstruction errors ranging from 0.2728 to 0.3800 and no normal windows.\",\n      \"evidence_ids\": [\"history:patient:1:recent-summary:43\"]\n    },\n    {\n      \"claim_id\": \"claim-6\",\n      \"section\": \"previous_monitoring_history\",\n      \"text\": \"The recent history shows a sustained pattern of anomalies immediately preceding the current event, with the most recent prior anomaly at 00:41 having a reconstruction error of 0.2899.\",\n      \"evidence_ids\": [\"history:patient:1:recent-summary:43\"]\n    },\n    {\n      \"claim_id\": \"claim-7\",\n      \"section\": \"previous_monitoring_history\",\n      \"text\": \"Aggregate trend analysis over nine buckets from 00:00 to 00:40 shows the mean reconstruction error decreased slightly from 0.3511 to 0.3317, while the anomaly rate remained at 1.0 in every bucket.\",\n      \"evidence_ids\": [\"aggregate:patient:1:recent-summary:43\"]\n    },\n    {\n      \"claim_id\": \"claim-8\",\n      \"section\": \"previous_monitoring_history\",\n      \"text\": \"Recurrence analysis of the 42 windows before the current event found all 42 were anomalies (rate 1.0), with a mean reconstruction error of 0.3146 and a maximum of 0.4343.\",\n      \"evidence_ids\": [\"recurrence:patient:1:before:2000-01-01T00:42:00+00:00\"]\n    },\n    {\n      \"claim_id\": \"claim-9\",\n      \"section\": \"recorded_clinical_context\",\n      \"text\": \"The clinical context is a synthetic prototype: the patient reported morning tiredness during a general consultation on 1999-12-10, with no recorded sleep-related diagnosis.\",\n      \"evidence_ids\": [\"clinical:patient:1:summary:43\"]\n    },\n    {\n      \"claim_id\": \"claim-10\",\n      \"section\": \"evidence_grounded_summary\",\n      \"text\": \"The current anomaly at 00:42 is part of a continuous run of anomalies since the start of monitoring, with all 42 prior windows flagged; the aggregate trend shows a slight decrease in mean reconstruction error but no change in anomaly rate.\",\n      \"evidence_ids\": [\"recurrence:patient:1:before:2000-01-01T00:42:00+00:00\", \"aggregate:patient:1:recent-summary:43\"]\n    }\n  ]\n}",
+      "response_metadata": {
+        "id": "14a3f91d-fa48-4ae5-b6ec-65c786fa95fc",
+        "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+        "usage": {
+          "cached_tokens": 2304,
+          "completion_tokens": 985,
+          "completion_tokens_details": null,
+          "prompt_tokens": 2427,
+          "prompt_tokens_details": null,
+          "total_tokens": 3412
+        }
+      },
+      "response_number": 2,
+      "transport_attempt": 1,
+      "transport_error": null
+    }
+  ],
+  "grounding_failure": false,
+  "manual_parse_required": false,
+  "parse_failure": false,
+  "parsed": {
+    "claims": [
+      {
+        "claim_id": "claim-1",
+        "evidence_ids": [
+          "window:43:event",
+          "prediction:43:detector"
+        ],
+        "section": "current_event",
+        "text": "At 2000-01-01T00:42:00+00:00, a 60-second apnea window (window index 42) from recording a01 was flagged as an anomaly by the detector."
+      },
+      {
+        "claim_id": "claim-2",
+        "evidence_ids": [
+          "prediction:43:detector"
+        ],
+        "section": "model_and_xai_evidence",
+        "text": "The detector reported a reconstruction error of 0.3232, exceeding the anomaly threshold of 0.0453 with a normalized margin of 6.14; this is reconstruction threshold evidence, not a probability or calibrated confidence."
+      },
+      {
+        "claim_id": "claim-3",
+        "evidence_ids": [
+          "model:1:provenance"
+        ],
+        "section": "model_and_xai_evidence",
+        "text": "The model is a BiLSTM temporal-attention autoencoder (version apnea-01-a01_seed2026) trained on the apnea dataset with test patient a01."
+      },
+      {
+        "claim_id": "claim-4",
+        "evidence_ids": [
+          "window:43:signal-summary",
+          "window:43:attention-summary"
+        ],
+        "section": "model_and_xai_evidence",
+        "text": "The signal summary indicates 6000 ECG samples at 100 Hz were available for the window; attention analysis shows a peak at 00:42:29.400, representing shared window-level temporal relevance, not channel-specific importance or causal evidence."
+      },
+      {
+        "claim_id": "claim-5",
+        "evidence_ids": [
+          "history:patient:1:recent-summary:43"
+        ],
+        "section": "previous_monitoring_history",
+        "text": "In the five minutes before the current event, the detector flagged five consecutive anomalies (from 00:37 to 00:41), with reconstruction errors ranging from 0.2728 to 0.3800 and no normal windows."
+      },
+      {
+        "claim_id": "claim-6",
+        "evidence_ids": [
+          "history:patient:1:recent-summary:43"
+        ],
+        "section": "previous_monitoring_history",
+        "text": "The recent history shows a sustained pattern of anomalies immediately preceding the current event, with the most recent prior anomaly at 00:41 having a reconstruction error of 0.2899."
+      },
+      {
+        "claim_id": "claim-7",
+        "evidence_ids": [
+          "aggregate:patient:1:recent-summary:43"
+        ],
+        "section": "previous_monitoring_history",
+        "text": "Aggregate trend analysis over nine buckets from 00:00 to 00:40 shows the mean reconstruction error decreased slightly from 0.3511 to 0.3317, while the anomaly rate remained at 1.0 in every bucket."
+      },
+      {
+        "claim_id": "claim-8",
+        "evidence_ids": [
+          "recurrence:patient:1:before:2000-01-01T00:42:00+00:00"
+        ],
+        "section": "previous_monitoring_history",
+        "text": "Recurrence analysis of the 42 windows before the current event found all 42 were anomalies (rate 1.0), with a mean reconstruction error of 0.3146 and a maximum of 0.4343."
+      },
+      {
+        "claim_id": "claim-9",
+        "evidence_ids": [
+          "clinical:patient:1:summary:43"
+        ],
+        "section": "recorded_clinical_context",
+        "text": "The clinical context is a synthetic prototype: the patient reported morning tiredness during a general consultation on 1999-12-10, with no recorded sleep-related diagnosis."
+      },
+      {
+        "claim_id": "claim-10",
+        "evidence_ids": [
+          "recurrence:patient:1:before:2000-01-01T00:42:00+00:00",
+          "aggregate:patient:1:recent-summary:43"
+        ],
+        "section": "evidence_grounded_summary",
+        "text": "The current anomaly at 00:42 is part of a continuous run of anomalies since the start of monitoring, with all 42 prior windows flagged; the aggregate trend shows a slight decrease in mean reconstruction error but no change in anomaly rate."
+      }
+    ],
+    "narrative_sections": {
+      "current_event": "At 2000-01-01T00:42:00+00:00, a 60-second apnea window (window index 42) from recording a01 was flagged as an anomaly by the detector. [evidence: window:43:event; prediction:43:detector]",
+      "evidence_grounded_summary": "The current anomaly at 00:42 is part of a continuous run of anomalies since the start of monitoring, with all 42 prior windows flagged; the aggregate trend shows a slight decrease in mean reconstruction error but no change in anomaly rate. [evidence: recurrence:patient:1:before:2000-01-01T00:42:00+00:00; aggregate:patient:1:recent-summary:43]",
+      "model_and_xai_evidence": "The detector reported a reconstruction error of 0.3232, exceeding the anomaly threshold of 0.0453 with a normalized margin of 6.14; this is reconstruction threshold evidence, not a probability or calibrated confidence. [evidence: prediction:43:detector] The model is a BiLSTM temporal-attention autoencoder (version apnea-01-a01_seed2026) trained on the apnea dataset with test patient a01. [evidence: model:1:provenance] The signal summary indicates 6000 ECG samples at 100 Hz were available for the window; attention analysis shows a peak at 00:42:29.400, representing shared window-level temporal relevance, not channel-specific importance or causal evidence. [evidence: window:43:signal-summary; window:43:attention-summary]",
+      "previous_monitoring_history": "In the five minutes before the current event, the detector flagged five consecutive anomalies (from 00:37 to 00:41), with reconstruction errors ranging from 0.2728 to 0.3800 and no normal windows. [evidence: history:patient:1:recent-summary:43] The recent history shows a sustained pattern of anomalies immediately preceding the current event, with the most recent prior anomaly at 00:41 having a reconstruction error of 0.2899. [evidence: history:patient:1:recent-summary:43] Aggregate trend analysis over nine buckets from 00:00 to 00:40 shows the mean reconstruction error decreased slightly from 0.3511 to 0.3317, while the anomaly rate remained at 1.0 in every bucket. [evidence: aggregate:patient:1:recent-summary:43] Recurrence analysis of the 42 windows before the current event found all 42 were anomalies (rate 1.0), with a mean reconstruction error of 0.3146 and a maximum of 0.4343. [evidence: recurrence:patient:1:before:2000-01-01T00:42:00+00:00]",
+      "recorded_clinical_context": "The clinical context is a synthetic prototype: the patient reported morning tiredness during a general consultation on 1999-12-10, with no recorded sleep-related diagnosis. [evidence: clinical:patient:1:summary:43]"
+    },
+    "schema_version": "fusion_narrative_v7",
+    "source_schema_version": "fusion_claims_v7"
+  },
+  "request": {
+    "extra_body": {
+      "chat_template_kwargs": {
+        "thinking": false
+      }
+    },
+    "max_tokens": 1400,
+    "messages": [
+      {
+        "content": "You are an evidence-grounded narrative assistant supporting review of an anomaly detector. Write a monitoring narrative using only the supplied citation_evidence catalog.\n\nWhen only current-event evidence is supplied, write a concise alert narrative containing the essential current event and its strongest detector, signal, and XAI evidence.\n\nWhen PDM longitudinal context is supplied, write a broader contextual narrative. Preserve the current-event explanation, then add one focused claim for each supplied context category: recent monitoring history, aggregate trend, recurrence summary, and clinical context. Explain what the historical evidence adds without replacing or changing the current detector result. Be selective within each category rather than repeating every field or number.\n\nDo not diagnose, recommend treatment, or add medical facts from outside the supplied evidence. Preserve recorded uncertainty and provenance, including synthetic_prototype labels. Detector quantities are not probabilities or calibrated confidence. Attention represents shared window-level temporal relevance, not causal evidence or channel-specific importance.\n\nEvery factual claim must cite the evidence_id values that support it. Keep claims focused so their citations can be evaluated. Do not mention hidden evaluation data, official annotations, TP/FP/TN/FN categories, or the paired experimental condition.\n\nReturn one JSON object only, without Markdown fences or commentary:\n{\n  \"schema_version\": \"fusion_claims_v7\",\n  \"claims\": [\n    {\n      \"claim_id\": \"claim-1\",\n      \"section\": \"current_event | model_and_xai_evidence | previous_monitoring_history | recorded_clinical_context | evidence_grounded_summary\",\n      \"text\": \"one factual claim\",\n      \"evidence_ids\": [\"one or more exact evidence_id values\"]\n    }\n  ]\n}\n\nDo not output narrative_sections or fields not shown above.\n",
+        "role": "system"
+      },
+      {
+        "content": "{\"citation_evidence\":[{\"evidence_id\":\"window:43:event\",\"evidence_type\":\"current_event_summary\",\"facts\":{\"duration_seconds\":60.0,\"end_time\":\"2000-01-01T00:43:00+00:00\",\"modality\":\"apnea\",\"source_recording_name\":\"a01\",\"start_time\":\"2000-01-01T00:42:00+00:00\",\"window_index\":42},\"scope\":\"current\"},{\"evidence_id\":\"prediction:43:detector\",\"evidence_type\":\"detector_summary\",\"facts\":{\"anomaly_margin\":0.2779093608260155,\"anomaly_threshold\":0.04529009014368057,\"is_anomaly\":true,\"normalized_margin\":6.136206837839398,\"predicted_class\":\"anomaly\",\"reconstruction_error\":0.32319945096969604,\"semantics\":\"reconstruction threshold evidence; not probability or calibrated confidence\"},\"scope\":\"current\"},{\"evidence_id\":\"model:1:provenance\",\"evidence_type\":\"model_provenance\",\"facts\":{\"architecture\":\"BiLSTM temporal-attention autoencoder\",\"evidence_id\":null,\"fold_id\":\"apnea-01-a01\",\"fold_manifest\":\"outputs/fusion_models/apnea/folds/a01\",\"model_checkpoint_sha256\":\"356acf41a6ef45f5ad86f0330544292e9f65a5ff53d16b4aa5dfbad860c86767\",\"model_name\":\"fusion_apnea_loso_a01\",\"model_version\":\"apnea-01-a01_seed2026\",\"test_patient\":\"a01\",\"training_dataset\":\"apnea\"},\"scope\":\"current\"},{\"evidence_id\":\"window:43:signal-summary\",\"evidence_type\":\"signal_summary\",\"facts\":{\"available\":true,\"channel_names\":[\"ECG\",\"mean\",\"std\",\"min\",\"max\",\"range\",\"slope\",\"energy\"],\"primary_channel\":\"ECG\",\"primary_sample_count\":6000,\"primary_sampling_rate_hz\":100.0},\"scope\":\"current\",\"source_evidence_ids\":[\"window:43:signal:raw\"]},{\"evidence_id\":\"window:43:attention-summary\",\"evidence_type\":\"attention_summary\",\"facts\":{\"available\":true,\"channel_level_evidence_available\":false,\"maximum\":0.011331882327795029,\"mean\":0.00999999932013452,\"method\":\"temporal_attention\",\"minimum\":0.008916227146983147,\"peak_time\":\"2000-01-01T00:42:29.400000+00:00\",\"sample_count\":100,\"semantics\":\"shared window-level temporal relevance; not probability or calibrated confidence; not channel-specific importance; no channel owner\"},\"scope\":\"current\",\"source_evidence_ids\":[\"window:43:attention\",\"prediction:43:xai\"]},{\"evidence_id\":\"pdm:patient:1:status:43\",\"evidence_type\":\"pdm_context_status\",\"facts\":{\"aggregate_trend_supplied\":true,\"history_supplied\":true,\"included\":true,\"recurrence_summary_supplied\":true},\"scope\":\"package\"},{\"evidence_id\":\"history:patient:1:recent-summary:43\",\"evidence_type\":\"recent_history_summary\",\"facts\":{\"anomaly_count\":5,\"earliest_time\":\"2000-01-01T00:37:00+00:00\",\"event_count\":5,\"events\":[{\"anomaly_margin\":0.24458356946706772,\"normalized_margin\":5.400377183863808,\"predicted_class\":\"anomaly\",\"prediction_id\":42,\"reconstruction_error\":0.2898736596107483,\"timestamp\":\"2000-01-01T00:41:00+00:00\"},{\"anomaly_margin\":0.28264104574918747,\"normalized_margin\":6.240681898678557,\"predicted_class\":\"anomaly\",\"prediction_id\":41,\"reconstruction_error\":0.32793113589286804,\"timestamp\":\"2000-01-01T00:40:00+00:00\"},{\"anomaly_margin\":0.227518729865551,\"normalized_margin\":5.0235874811412184,\"predicted_class\":\"anomaly\",\"prediction_id\":40,\"reconstruction_error\":0.27280882000923157,\"timestamp\":\"2000-01-01T00:39:00+00:00\"},{\"anomaly_margin\":0.3347276970744133,\"normalized_margin\":7.390749190661936,\"predicted_class\":\"anomaly\",\"prediction_id\":39,\"reconstruction_error\":0.38001778721809387,\"timestamp\":\"2000-01-01T00:38:00+00:00\"},{\"anomaly_margin\":0.30344318598508835,\"normalized_margin\":6.699990771103123,\"predicted_class\":\"anomaly\",\"prediction_id\":38,\"reconstruction_error\":0.3487332761287689,\"timestamp\":\"2000-01-01T00:37:00+00:00\"}],\"maximum_reconstruction_error\":0.38001778721809387,\"minimum_reconstruction_error\":0.27280882000923157,\"most_recent_time\":\"2000-01-01T00:41:00+00:00\",\"normal_count\":0},\"scope\":\"context\",\"source_evidence_ids\":[\"history:prediction:42\",\"history:prediction:41\",\"history:prediction:40\",\"history:prediction:39\",\"history:prediction:38\"]},{\"evidence_id\":\"aggregate:patient:1:recent-summary:43\",\"evidence_type\":\"aggregate_trend_summary\",\"facts\":{\"bucket_count\":9,\"endpoint_direction\":\"decreased\",\"first_bucket\":\"2000-01-01T00:00:00+00:00\",\"first_mean_reconstruction_error\":0.3510583281517029,\"last_bucket\":\"2000-01-01T00:40:00+00:00\",\"last_mean_reconstruction_error\":0.3317321062088013,\"maximum_anomaly_count\":5,\"maximum_anomaly_rate\":1.0,\"maximum_mean_reconstruction_error\":0.3510583281517029,\"minimum_anomaly_count\":5,\"minimum_anomaly_rate\":1.0,\"minimum_mean_reconstruction_error\":0.2777157247066498},\"scope\":\"context\",\"source_evidence_ids\":[\"aggregate:patient:1:model:1:bucket:2000-01-01T00:00:00+00:00\",\"aggregate:patient:1:model:1:bucket:2000-01-01T00:05:00+00:00\",\"aggregate:patient:1:model:1:bucket:2000-01-01T00:10:00+00:00\",\"aggregate:patient:1:model:1:bucket:2000-01-01T00:15:00+00:00\",\"aggregate:patient:1:model:1:bucket:2000-01-01T00:20:00+00:00\",\"aggregate:patient:1:model:1:bucket:2000-01-01T00:25:00+00:00\",\"aggregate:patient:1:model:1:bucket:2000-01-01T00:30:00+00:00\",\"aggregate:patient:1:model:1:bucket:2000-01-01T00:35:00+00:00\",\"aggregate:patient:1:model:1:bucket:2000-01-01T00:40:00+00:00\"]},{\"evidence_id\":\"recurrence:patient:1:before:2000-01-01T00:42:00+00:00\",\"evidence_type\":\"recurrence_summary\",\"facts\":{\"analyzed_window_count\":42,\"anomaly_count\":42,\"anomaly_rate\":1.0,\"before_time\":\"2000-01-01T00:42:00+00:00\",\"first_event_time\":\"2000-01-01T00:00:00+00:00\",\"latest_event_time\":\"2000-01-01T00:41:00+00:00\",\"max_reconstruction_error\":0.4342675805091858,\"mean_anomaly_margin\":0.26930321220840725,\"mean_reconstruction_error\":0.3145933023520878,\"patient_id\":1},\"scope\":\"context\"},{\"evidence_id\":\"clinical:patient:1:summary:43\",\"evidence_type\":\"clinical_context_summary\",\"facts\":{\"diagnoses\":[],\"diagnosis_count\":0,\"source\":\"synthetic_prototype\",\"supplied\":true,\"visit_count\":1,\"visits\":[{\"evidence_id\":\"clinical:visit:1\",\"notes\":\"synthetic_prototype: patient reports morning tiredness without a recorded sleep-related diagnosis.\",\"reason\":\"Review of nonspecific tiredness\",\"status\":\"completed\",\"visit_end\":null,\"visit_id\":1,\"visit_start\":\"1999-12-10T09:00:00+00:00\",\"visit_type\":\"general consultation\"}]},\"scope\":\"context\",\"source_evidence_ids\":[\"clinical:visit:1\"]}],\"condition\":\"PDM-Enabled\",\"evidence_package_version\":3,\"package_hash\":\"904f18cfe50d3018c7fa7472861425e17f508c47e5499b9d35ffa1e83de19c6e\"}",
+        "role": "user"
+      }
+    ],
+    "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "temperature": 0.2,
+    "top_p": 0.9
+  }
+}

@@ -1,0 +1,81 @@
+[
+  {
+    "patient_code": "APNEA_a01",
+    "provenance": "synthetic_prototype",
+    "clinical_visits": [
+      {
+        "visit_date": "1999-12-10T09:00:00Z",
+        "visit_type": "general consultation",
+        "reason": "Review of nonspecific tiredness",
+        "notes": "synthetic_prototype: patient reports morning tiredness without a recorded sleep-related diagnosis.",
+        "status": "completed",
+        "provenance": "synthetic_prototype",
+        "symptoms": [
+          {
+            "name": "morning tiredness",
+            "status": "reported",
+            "provenance": "synthetic_prototype"
+          }
+        ]
+      }
+    ],
+    "diagnoses": []
+  },
+  {
+    "patient_code": "APNEA_a03",
+    "provenance": "synthetic_prototype",
+    "clinical_visits": [
+      {
+        "visit_date": "1999-12-15T09:00:00Z",
+        "visit_type": "sleep consultation",
+        "reason": "Evaluation of nighttime breathing concerns",
+        "notes": "synthetic_prototype: patient reports loud snoring and daytime fatigue.",
+        "status": "completed",
+        "provenance": "synthetic_prototype",
+        "symptoms": [
+          {
+            "name": "loud snoring",
+            "status": "reported",
+            "provenance": "synthetic_prototype"
+          },
+          {
+            "name": "daytime fatigue",
+            "status": "reported",
+            "provenance": "synthetic_prototype"
+          }
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "diagnosis_code": "R06.83",
+        "diagnosis_name": "suspected sleep-disordered breathing",
+        "status": "suspected",
+        "notes": "synthetic_prototype: suspected only; not an official PhysioNet diagnosis.",
+        "provenance": "synthetic_prototype"
+      }
+    ]
+  },
+  {
+    "patient_code": "APNEA_c01",
+    "provenance": "synthetic_prototype",
+    "clinical_visits": [
+      {
+        "visit_date": "1999-12-20T09:00:00Z",
+        "visit_type": "routine review",
+        "reason": "Routine sleep-history review",
+        "notes": "synthetic_prototype: patient reports no nighttime breathing concern during this routine review.",
+        "status": "completed",
+        "provenance": "synthetic_prototype",
+        "symptoms": [
+          {
+            "name": "nighttime breathing concern",
+            "status": "not_reported",
+            "provenance": "synthetic_prototype"
+          }
+        ]
+      }
+    ],
+    "diagnoses": []
+  }
+]

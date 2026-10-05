@@ -1,0 +1,42 @@
+{
+  "schema_version": "fusion-generation-policy-v6",
+  "policy_version": "generation_policy_v6",
+  "prompt_version": "fusion_prompt_v6",
+  "prompt_path": "outputs/evidence_fusion/apnea/prompt_v6.txt",
+  "prompt_sha256": "cf41d5d733cd9f40f8dc2b1225b71a4eef4232922ae554f35c7170eaeb075b81",
+  "provider": "Featherless",
+  "base_url": "https://api.featherless.ai/v1",
+  "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "generation_settings": {
+    "temperature": 0.2,
+    "top_p": 0.9,
+    "max_tokens": 1200,
+    "chat_template_kwargs": {"thinking": false}
+  },
+  "response_schema_version": "fusion_claims_v6",
+  "transport_retry": {
+    "maximum_attempts": 4,
+    "backoff_seconds": [1, 2, 4],
+    "retryable_http_statuses": [408, 409, 429, 500, 502, 503, 504],
+    "retry_connection_and_timeout_errors": true,
+    "identical_request_required": true
+  },
+  "malformed_json_retry": {
+    "maximum_additional_requests": 1,
+    "identical_request_required": true,
+    "preserve_every_raw_response": true,
+    "after_final_failure": "retain parse_failure and stop the run"
+  },
+  "grounding_retry": {
+    "maximum_additional_requests": 0,
+    "evaluator_feedback_allowed": false,
+    "content_regeneration_allowed": false
+  },
+  "raw_response_policy": "Preserve raw content and provider metadata for every request attempt.",
+  "evaluation_policy": "Score the first structurally valid response exactly as generated; grounding validation is observational and cannot rewrite, reject, or omit claims.",
+  "no_pilot_policy": {
+    "pilot_subset_allowed": false,
+    "material_change_after_generation": "mark the whole run superseded, increment the contract version, and regenerate every frozen case in both conditions",
+    "selective_regeneration_allowed": false
+  }
+}

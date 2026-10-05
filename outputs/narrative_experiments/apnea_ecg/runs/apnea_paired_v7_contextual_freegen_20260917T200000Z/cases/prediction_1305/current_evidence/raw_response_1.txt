@@ -1,0 +1,35 @@
+{
+  "schema_version": "fusion_claims_v7",
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "section": "current_event",
+      "text": "The 60-second apnea window ending at 2000-01-03T04:48:00+00:00 (window index 287) from recording a03 was classified as normal by the detector.",
+      "evidence_ids": ["window:1305:event", "prediction:1305:detector"]
+    },
+    {
+      "claim_id": "claim-2",
+      "section": "model_and_xai_evidence",
+      "text": "The detector's reconstruction error was 1.3989, well below the anomaly threshold of 190.8744, yielding a normalized margin of -0.9927; these are reconstruction threshold evidence, not probabilities or calibrated confidence.",
+      "evidence_ids": ["prediction:1305:detector"]
+    },
+    {
+      "claim_id": "claim-3",
+      "section": "model_and_xai_evidence",
+      "text": "The model is a BiLSTM temporal-attention autoencoder (fusion_apnea_loso_a03, version apnea-03-a03_seed2026) trained on the apnea dataset and tested on patient a03.",
+      "evidence_ids": ["model:3:provenance"]
+    },
+    {
+      "claim_id": "claim-4",
+      "section": "model_and_xai_evidence",
+      "text": "No signal-level or attention-level evidence was available for this window; attention would represent shared window-level temporal relevance, not causal or channel-specific importance.",
+      "evidence_ids": ["window:1305:signal-summary", "window:1305:attention-summary"]
+    },
+    {
+      "claim_id": "claim-5",
+      "section": "evidence_grounded_summary",
+      "text": "The current evidence indicates a normal classification for this window, supported by the detector's reconstruction margin and model provenance, with no signal or attention evidence available.",
+      "evidence_ids": ["window:1305:event", "prediction:1305:detector", "model:3:provenance", "window:1305:signal-summary", "window:1305:attention-summary"]
+    }
+  ]
+}

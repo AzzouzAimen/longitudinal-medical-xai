@@ -1,0 +1,17 @@
+Sort  (cost=9604.76..9611.41 rows=2659 width=40) (actual time=64.512..64.514 rows=28 loops=1)
+  Sort Key: (date_bin('00:05:00'::interval, "timestamp", '2026-08-31 00:00:00+00'::timestamp with time zone))
+  Sort Method: quicksort  Memory: 26kB
+  Buffers: shared hit=11322
+  ->  HashAggregate  (cost=9413.62..9453.51 rows=2659 width=40) (actual time=64.476..64.495 rows=28 loops=1)
+        Group Key: date_bin('00:05:00'::interval, "timestamp", '2026-08-31 00:00:00+00'::timestamp with time zone)
+        Batches: 1  Memory Usage: 121kB
+        Buffers: shared hit=11322
+        ->  Index Scan using pg_final_patient_time_idx on pg_signal_data_final  (cost=0.43..9380.37 rows=2660 width=16) (actual time=0.039..51.040 rows=78000 loops=1)
+              Index Cond: ((patient_id = 68) AND ("timestamp" >= '2026-09-06 00:00:00+00'::timestamp with time zone) AND ("timestamp" < '2026-09-07 07:44:29.900001+00'::timestamp with time zone))
+              Filter: ((channel)::text = 'EEG Fpz-Cz'::text)
+              Rows Removed by Filter: 179400
+              Buffers: shared hit=11322
+Planning:
+  Buffers: shared hit=2
+Planning Time: 0.249 ms
+Execution Time: 64.705 ms

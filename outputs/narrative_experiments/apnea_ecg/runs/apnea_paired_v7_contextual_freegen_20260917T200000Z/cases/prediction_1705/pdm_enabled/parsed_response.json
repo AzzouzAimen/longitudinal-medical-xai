@@ -1,0 +1,119 @@
+{
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "evidence_ids": [
+        "window:1705:event",
+        "prediction:1705:detector"
+      ],
+      "section": "current_event",
+      "text": "The 60-second apnea window from 2000-01-04T02:48:00+00:00 to 02:49:00+00:00 in recording c01 was classified as normal by the detector."
+    },
+    {
+      "claim_id": "claim-2",
+      "evidence_ids": [
+        "prediction:1705:detector",
+        "model:4:provenance"
+      ],
+      "section": "model_and_xai_evidence",
+      "text": "The detector's reconstruction error was 0.267, below the anomaly threshold of 3.12, yielding a normalized margin of -0.914; the model is a BiLSTM temporal-attention autoencoder (fold apnea-04-c01, test patient c01)."
+    },
+    {
+      "claim_id": "claim-3",
+      "evidence_ids": [
+        "window:1705:signal-summary",
+        "window:1705:attention-summary"
+      ],
+      "section": "model_and_xai_evidence",
+      "text": "No signal-level or attention-level XAI evidence was available for this window; attention semantics are shared window-level temporal relevance and not channel-specific importance."
+    },
+    {
+      "claim_id": "claim-4",
+      "evidence_ids": [
+        "history:patient:4:recent-summary:1705"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "In the five preceding windows (02:43 to 02:47), all predictions were normal with reconstruction errors between 0.230 and 0.274, and no anomalies were recorded."
+    },
+    {
+      "claim_id": "claim-5",
+      "evidence_ids": [
+        "history:patient:4:recent-summary:1705",
+        "prediction:1705:detector"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "The recent history shows a stable normal pattern with no anomaly count, and the current window's reconstruction error (0.267) is consistent with the recent range."
+    },
+    {
+      "claim_id": "claim-6",
+      "evidence_ids": [
+        "aggregate:patient:4:recent-summary:1705"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "Aggregate trend analysis over 12 five-minute buckets from 01:50 to 02:45 shows mean reconstruction error decreasing from 0.284 to 0.263, with zero anomalies in all buckets."
+    },
+    {
+      "claim_id": "claim-7",
+      "evidence_ids": [
+        "aggregate:patient:4:recent-summary:1705",
+        "prediction:1705:detector"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "The aggregate trend indicates a mild downward drift in reconstruction error, reinforcing the current normal classification as part of a stable, non-anomalous period."
+    },
+    {
+      "claim_id": "claim-8",
+      "evidence_ids": [
+        "recurrence:patient:4:before:2000-01-04T02:48:00+00:00"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "Across the 168 windows analyzed before the current event, the anomaly rate was 2.38% (4 anomalies), with a maximum reconstruction error of 452.8 and a mean anomaly margin of 0.805."
+    },
+    {
+      "claim_id": "claim-9",
+      "evidence_ids": [
+        "recurrence:patient:4:before:2000-01-04T02:48:00+00:00",
+        "history:patient:4:recent-summary:1705"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "The recurrence summary shows that anomalies have occurred in the past, but the current window and recent history show no anomaly, indicating the current period is not part of a recurrence."
+    },
+    {
+      "claim_id": "claim-10",
+      "evidence_ids": [
+        "clinical:patient:4:summary:1705"
+      ],
+      "section": "recorded_clinical_context",
+      "text": "The only recorded clinical visit is a routine sleep-history review on 1999-12-20 (synthetic_prototype) with no diagnoses and a note that the patient reported no nighttime breathing concern."
+    },
+    {
+      "claim_id": "claim-11",
+      "evidence_ids": [
+        "clinical:patient:4:summary:1705",
+        "prediction:1705:detector"
+      ],
+      "section": "recorded_clinical_context",
+      "text": "The clinical context is limited to a single routine review with no diagnoses, providing no indication of an underlying condition that would alter the interpretation of the current normal detector result."
+    },
+    {
+      "claim_id": "claim-12",
+      "evidence_ids": [
+        "prediction:1705:detector",
+        "history:patient:4:recent-summary:1705",
+        "aggregate:patient:4:recent-summary:1705",
+        "clinical:patient:4:summary:1705"
+      ],
+      "section": "evidence_grounded_summary",
+      "text": "The current window is classified as normal with reconstruction error below threshold, supported by stable recent history, a decreasing aggregate trend, and a clinical context with no reported concerns."
+    }
+  ],
+  "narrative_sections": {
+    "current_event": "The 60-second apnea window from 2000-01-04T02:48:00+00:00 to 02:49:00+00:00 in recording c01 was classified as normal by the detector. [evidence: window:1705:event; prediction:1705:detector]",
+    "evidence_grounded_summary": "The current window is classified as normal with reconstruction error below threshold, supported by stable recent history, a decreasing aggregate trend, and a clinical context with no reported concerns. [evidence: prediction:1705:detector; history:patient:4:recent-summary:1705; aggregate:patient:4:recent-summary:1705; clinical:patient:4:summary:1705]",
+    "model_and_xai_evidence": "The detector's reconstruction error was 0.267, below the anomaly threshold of 3.12, yielding a normalized margin of -0.914; the model is a BiLSTM temporal-attention autoencoder (fold apnea-04-c01, test patient c01). [evidence: prediction:1705:detector; model:4:provenance] No signal-level or attention-level XAI evidence was available for this window; attention semantics are shared window-level temporal relevance and not channel-specific importance. [evidence: window:1705:signal-summary; window:1705:attention-summary]",
+    "previous_monitoring_history": "In the five preceding windows (02:43 to 02:47), all predictions were normal with reconstruction errors between 0.230 and 0.274, and no anomalies were recorded. [evidence: history:patient:4:recent-summary:1705] The recent history shows a stable normal pattern with no anomaly count, and the current window's reconstruction error (0.267) is consistent with the recent range. [evidence: history:patient:4:recent-summary:1705; prediction:1705:detector] Aggregate trend analysis over 12 five-minute buckets from 01:50 to 02:45 shows mean reconstruction error decreasing from 0.284 to 0.263, with zero anomalies in all buckets. [evidence: aggregate:patient:4:recent-summary:1705] The aggregate trend indicates a mild downward drift in reconstruction error, reinforcing the current normal classification as part of a stable, non-anomalous period. [evidence: aggregate:patient:4:recent-summary:1705; prediction:1705:detector] Across the 168 windows analyzed before the current event, the anomaly rate was 2.38% (4 anomalies), with a maximum reconstruction error of 452.8 and a mean anomaly margin of 0.805. [evidence: recurrence:patient:4:before:2000-01-04T02:48:00+00:00] The recurrence summary shows that anomalies have occurred in the past, but the current window and recent history show no anomaly, indicating the current period is not part of a recurrence. [evidence: recurrence:patient:4:before:2000-01-04T02:48:00+00:00; history:patient:4:recent-summary:1705]",
+    "recorded_clinical_context": "The only recorded clinical visit is a routine sleep-history review on 1999-12-20 (synthetic_prototype) with no diagnoses and a note that the patient reported no nighttime breathing concern. [evidence: clinical:patient:4:summary:1705] The clinical context is limited to a single routine review with no diagnoses, providing no indication of an underlying condition that would alter the interpretation of the current normal detector result. [evidence: clinical:patient:4:summary:1705; prediction:1705:detector]"
+  },
+  "schema_version": "fusion_narrative_v7",
+  "source_schema_version": "fusion_claims_v7"
+}

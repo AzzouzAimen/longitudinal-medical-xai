@@ -1,0 +1,6 @@
+{
+  "condition": "PDM-Enabled",
+  "llm_model_version": "deepseek-ai/DeepSeek-V4-Flash-0731|apnea_paired_v7_contextual_freegen_20260917T200000Z|pdm_enabled",
+  "narrative_id": 239,
+  "prediction_id": 341
+}

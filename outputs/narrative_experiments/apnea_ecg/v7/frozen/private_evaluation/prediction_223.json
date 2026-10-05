@@ -1,0 +1,19 @@
+{
+  "annotation_records": [
+    {
+      "annotation_id": 223,
+      "annotation_type": "apnea_official",
+      "label": "A",
+      "source": "official_evaluation_only"
+    }
+  ],
+  "case_category": "TP",
+  "evaluation_only": true,
+  "official_labels": [
+    "A"
+  ],
+  "prediction_id": 223,
+  "private_model_development_data": true,
+  "separation_policy": "never include this object in an LLM request",
+  "window_id": 223
+}

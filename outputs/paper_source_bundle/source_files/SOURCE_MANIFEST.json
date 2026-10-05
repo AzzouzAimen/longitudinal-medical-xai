@@ -1,0 +1,82 @@
+{
+  "aggregate_query_output.json": {
+    "bytes": 3916,
+    "sha256": "2fc3648bf0bd8c99786834af152f72966bfb87befe8f339f7a0e5bdaa3018cdd",
+    "source": "outputs/database_alignment/measurements/aggregate_query_output.json"
+  },
+  "aggregate_query_plan.json": {
+    "bytes": 6655,
+    "sha256": "e67e9afdf9ed54523e71f54647c48c7ba010a870fe42c8151fbfb141cdec4da0",
+    "source": "outputs/database_alignment/measurements/aggregate_query_plan.json"
+  },
+  "ai_adjudication_decisions.json": {
+    "bytes": 20559,
+    "sha256": "c7a33855973f94632cb70128215d447f096c450c1b68ec1aec6db08f5e8e1d9f",
+    "source": "outputs/narrative_experiments/adjudication/apnea_paired_v7_contextual_freegen_20260917T200000Z/fusion-scoring-v7/ai_adjudication_decisions.json"
+  },
+  "apnea_case_selection.json": {
+    "bytes": 27196,
+    "sha256": "423379552dca0e507c1bf687f70962c77d89691a91d5947d71c58ce80fc3c3f4",
+    "source": "outputs/narrative_experiments/apnea_ecg/v7/frozen/case_selection.json"
+  },
+  "approved_semantic_review.csv": {
+    "bytes": 50302,
+    "sha256": "bd9c66e96fecae92bf10777ee291ffa2371847fd5668ddfe7eab6f377a754139",
+    "source": "outputs/narrative_experiments/scoring/apnea_paired_v7_contextual_freegen_20260917T200000Z/fusion-scoring-v7/approved_semantic_review.csv"
+  },
+  "case_level_results.json": {
+    "bytes": 27679,
+    "sha256": "817a747e3bb381faaeeaacd4f10d6106db7463d8ed3f6dc83d3f2e05caacd0c0",
+    "source": "outputs/narrative_experiments/scoring/apnea_paired_v7_contextual_freegen_20260917T200000Z/fusion-scoring-v7/case_level_results.json"
+  },
+  "generation_policy_v7.json": {
+    "bytes": 1759,
+    "sha256": "dddf5b524114d0961204aa75e94350b37a75cd312748a43395de70cb2bc6cafe",
+    "source": "outputs/narrative_experiments/apnea_ecg/generation_policy_v7.json"
+  },
+  "latency_raw_measurements.csv": {
+    "bytes": 11027,
+    "sha256": "e379a34aa36a17886369c894f3760cd5fa37f194de187209cc2bf4603fa532ac",
+    "source": "outputs/inference_latency/raw_measurements.csv"
+  },
+  "latency_summary.json": {
+    "bytes": 1715,
+    "sha256": "7c0a926ebe0e62fd32e21202aecd88ba42a1e94c65930da73bd013064d6742d5",
+    "source": "outputs/inference_latency/summary.json"
+  },
+  "pdm_alignment.json": {
+    "bytes": 7023,
+    "sha256": "142eee0fab2d5ec3294240431796b8aebe570f18fca3620f4b8c44777abd3601",
+    "source": "outputs/database_alignment/measurements/alignment.json"
+  },
+  "prompt_v7.txt": {
+    "bytes": 1882,
+    "sha256": "0e0a409a02874fbfdb1a8347798c572a4334fd9c4f59a3b74e3ad81a35e3624a",
+    "source": "outputs/narrative_experiments/apnea_ecg/prompt_v7.txt"
+  },
+  "semantic_review_manifest.json": {
+    "bytes": 1403,
+    "sha256": "85ed364063917bd842a9a1b123cc4e0e9c3cacbb41058ca9a48d4771a0db737a",
+    "source": "outputs/narrative_experiments/adjudication/apnea_paired_v7_contextual_freegen_20260917T200000Z/fusion-scoring-v7/review_manifest.json"
+  },
+  "sleep_case_manifest.json": {
+    "bytes": 513,
+    "sha256": "c57aa86af5dd2927b9c861e19c10ebe9a33806248842b33ca4278c22470877e2",
+    "source": "outputs/narrative_experiments/sleep_edf_case/manifest.json"
+  },
+  "sleep_evidence_package.json": {
+    "bytes": 8991,
+    "sha256": "a73e0089dfa5463eb86513ab40c01288a0f537053441bd53137d33a998dec8bc",
+    "source": "outputs/narrative_experiments/sleep_edf_case/evidence_package.json"
+  },
+  "sleep_narrative.json": {
+    "bytes": 6526,
+    "sha256": "d41dc70b0119bdda479fbcc19e2ae736f6b5cdb16cbcf296016f3a4cb8b9c88a",
+    "source": "outputs/narrative_experiments/sleep_edf_case/parsed_response.json"
+  },
+  "table7_results.json": {
+    "bytes": 39236,
+    "sha256": "391de0156d460b7fdf2bf9c7bcc234590027f74c4f2db4e540a60dda678812a2",
+    "source": "outputs/narrative_experiments/scoring/apnea_paired_v7_contextual_freegen_20260917T200000Z/fusion-scoring-v7/table7_results.json"
+  }
+}

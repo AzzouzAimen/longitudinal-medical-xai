@@ -1,0 +1,4015 @@
+{
+  "annotations": [
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 6000,
+      "sample_start": 0,
+      "window_index": 0
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 12000,
+      "sample_start": 6000,
+      "window_index": 1
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 18000,
+      "sample_start": 12000,
+      "window_index": 2
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 24000,
+      "sample_start": 18000,
+      "window_index": 3
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 30000,
+      "sample_start": 24000,
+      "window_index": 4
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 36000,
+      "sample_start": 30000,
+      "window_index": 5
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 42000,
+      "sample_start": 36000,
+      "window_index": 6
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 48000,
+      "sample_start": 42000,
+      "window_index": 7
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 54000,
+      "sample_start": 48000,
+      "window_index": 8
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 60000,
+      "sample_start": 54000,
+      "window_index": 9
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 66000,
+      "sample_start": 60000,
+      "window_index": 10
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 72000,
+      "sample_start": 66000,
+      "window_index": 11
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 78000,
+      "sample_start": 72000,
+      "window_index": 12
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 84000,
+      "sample_start": 78000,
+      "window_index": 13
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 90000,
+      "sample_start": 84000,
+      "window_index": 14
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 96000,
+      "sample_start": 90000,
+      "window_index": 15
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 102000,
+      "sample_start": 96000,
+      "window_index": 16
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 108000,
+      "sample_start": 102000,
+      "window_index": 17
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 114000,
+      "sample_start": 108000,
+      "window_index": 18
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 120000,
+      "sample_start": 114000,
+      "window_index": 19
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 126000,
+      "sample_start": 120000,
+      "window_index": 20
+    },
+    {
+      "official_label": "A",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 132000,
+      "sample_start": 126000,
+      "window_index": 21
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 138000,
+      "sample_start": 132000,
+      "window_index": 22
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 144000,
+      "sample_start": 138000,
+      "window_index": 23
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 150000,
+      "sample_start": 144000,
+      "window_index": 24
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 156000,
+      "sample_start": 150000,
+      "window_index": 25
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 162000,
+      "sample_start": 156000,
+      "window_index": 26
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 168000,
+      "sample_start": 162000,
+      "window_index": 27
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 174000,
+      "sample_start": 168000,
+      "window_index": 28
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 180000,
+      "sample_start": 174000,
+      "window_index": 29
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 186000,
+      "sample_start": 180000,
+      "window_index": 30
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 192000,
+      "sample_start": 186000,
+      "window_index": 31
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 198000,
+      "sample_start": 192000,
+      "window_index": 32
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 204000,
+      "sample_start": 198000,
+      "window_index": 33
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 210000,
+      "sample_start": 204000,
+      "window_index": 34
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 216000,
+      "sample_start": 210000,
+      "window_index": 35
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 222000,
+      "sample_start": 216000,
+      "window_index": 36
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 228000,
+      "sample_start": 222000,
+      "window_index": 37
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 234000,
+      "sample_start": 228000,
+      "window_index": 38
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 240000,
+      "sample_start": 234000,
+      "window_index": 39
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 246000,
+      "sample_start": 240000,
+      "window_index": 40
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 252000,
+      "sample_start": 246000,
+      "window_index": 41
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 258000,
+      "sample_start": 252000,
+      "window_index": 42
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 264000,
+      "sample_start": 258000,
+      "window_index": 43
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 270000,
+      "sample_start": 264000,
+      "window_index": 44
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 276000,
+      "sample_start": 270000,
+      "window_index": 45
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 282000,
+      "sample_start": 276000,
+      "window_index": 46
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 288000,
+      "sample_start": 282000,
+      "window_index": 47
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 294000,
+      "sample_start": 288000,
+      "window_index": 48
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 300000,
+      "sample_start": 294000,
+      "window_index": 49
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 306000,
+      "sample_start": 300000,
+      "window_index": 50
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 312000,
+      "sample_start": 306000,
+      "window_index": 51
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 318000,
+      "sample_start": 312000,
+      "window_index": 52
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 324000,
+      "sample_start": 318000,
+      "window_index": 53
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 330000,
+      "sample_start": 324000,
+      "window_index": 54
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 336000,
+      "sample_start": 330000,
+      "window_index": 55
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 342000,
+      "sample_start": 336000,
+      "window_index": 56
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 348000,
+      "sample_start": 342000,
+      "window_index": 57
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 354000,
+      "sample_start": 348000,
+      "window_index": 58
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 360000,
+      "sample_start": 354000,
+      "window_index": 59
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 366000,
+      "sample_start": 360000,
+      "window_index": 60
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 372000,
+      "sample_start": 366000,
+      "window_index": 61
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 378000,
+      "sample_start": 372000,
+      "window_index": 62
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 384000,
+      "sample_start": 378000,
+      "window_index": 63
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 390000,
+      "sample_start": 384000,
+      "window_index": 64
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 396000,
+      "sample_start": 390000,
+      "window_index": 65
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 402000,
+      "sample_start": 396000,
+      "window_index": 66
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 408000,
+      "sample_start": 402000,
+      "window_index": 67
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 414000,
+      "sample_start": 408000,
+      "window_index": 68
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 420000,
+      "sample_start": 414000,
+      "window_index": 69
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 426000,
+      "sample_start": 420000,
+      "window_index": 70
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 432000,
+      "sample_start": 426000,
+      "window_index": 71
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 438000,
+      "sample_start": 432000,
+      "window_index": 72
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 444000,
+      "sample_start": 438000,
+      "window_index": 73
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 450000,
+      "sample_start": 444000,
+      "window_index": 74
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 456000,
+      "sample_start": 450000,
+      "window_index": 75
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 462000,
+      "sample_start": 456000,
+      "window_index": 76
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 468000,
+      "sample_start": 462000,
+      "window_index": 77
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 474000,
+      "sample_start": 468000,
+      "window_index": 78
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 480000,
+      "sample_start": 474000,
+      "window_index": 79
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 486000,
+      "sample_start": 480000,
+      "window_index": 80
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 492000,
+      "sample_start": 486000,
+      "window_index": 81
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 498000,
+      "sample_start": 492000,
+      "window_index": 82
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 504000,
+      "sample_start": 498000,
+      "window_index": 83
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 510000,
+      "sample_start": 504000,
+      "window_index": 84
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 516000,
+      "sample_start": 510000,
+      "window_index": 85
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 522000,
+      "sample_start": 516000,
+      "window_index": 86
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 528000,
+      "sample_start": 522000,
+      "window_index": 87
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 534000,
+      "sample_start": 528000,
+      "window_index": 88
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 540000,
+      "sample_start": 534000,
+      "window_index": 89
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 546000,
+      "sample_start": 540000,
+      "window_index": 90
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 552000,
+      "sample_start": 546000,
+      "window_index": 91
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 558000,
+      "sample_start": 552000,
+      "window_index": 92
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 564000,
+      "sample_start": 558000,
+      "window_index": 93
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 570000,
+      "sample_start": 564000,
+      "window_index": 94
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 576000,
+      "sample_start": 570000,
+      "window_index": 95
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 582000,
+      "sample_start": 576000,
+      "window_index": 96
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 588000,
+      "sample_start": 582000,
+      "window_index": 97
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 594000,
+      "sample_start": 588000,
+      "window_index": 98
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 600000,
+      "sample_start": 594000,
+      "window_index": 99
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 606000,
+      "sample_start": 600000,
+      "window_index": 100
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 612000,
+      "sample_start": 606000,
+      "window_index": 101
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 618000,
+      "sample_start": 612000,
+      "window_index": 102
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 624000,
+      "sample_start": 618000,
+      "window_index": 103
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 630000,
+      "sample_start": 624000,
+      "window_index": 104
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 636000,
+      "sample_start": 630000,
+      "window_index": 105
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 642000,
+      "sample_start": 636000,
+      "window_index": 106
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 648000,
+      "sample_start": 642000,
+      "window_index": 107
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 654000,
+      "sample_start": 648000,
+      "window_index": 108
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 660000,
+      "sample_start": 654000,
+      "window_index": 109
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 666000,
+      "sample_start": 660000,
+      "window_index": 110
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 672000,
+      "sample_start": 666000,
+      "window_index": 111
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 678000,
+      "sample_start": 672000,
+      "window_index": 112
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 684000,
+      "sample_start": 678000,
+      "window_index": 113
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 690000,
+      "sample_start": 684000,
+      "window_index": 114
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 696000,
+      "sample_start": 690000,
+      "window_index": 115
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 702000,
+      "sample_start": 696000,
+      "window_index": 116
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 708000,
+      "sample_start": 702000,
+      "window_index": 117
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 714000,
+      "sample_start": 708000,
+      "window_index": 118
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 720000,
+      "sample_start": 714000,
+      "window_index": 119
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 726000,
+      "sample_start": 720000,
+      "window_index": 120
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 732000,
+      "sample_start": 726000,
+      "window_index": 121
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 738000,
+      "sample_start": 732000,
+      "window_index": 122
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 744000,
+      "sample_start": 738000,
+      "window_index": 123
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 750000,
+      "sample_start": 744000,
+      "window_index": 124
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 756000,
+      "sample_start": 750000,
+      "window_index": 125
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 762000,
+      "sample_start": 756000,
+      "window_index": 126
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 768000,
+      "sample_start": 762000,
+      "window_index": 127
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 774000,
+      "sample_start": 768000,
+      "window_index": 128
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 780000,
+      "sample_start": 774000,
+      "window_index": 129
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 786000,
+      "sample_start": 780000,
+      "window_index": 130
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 792000,
+      "sample_start": 786000,
+      "window_index": 131
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 798000,
+      "sample_start": 792000,
+      "window_index": 132
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 804000,
+      "sample_start": 798000,
+      "window_index": 133
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 810000,
+      "sample_start": 804000,
+      "window_index": 134
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 816000,
+      "sample_start": 810000,
+      "window_index": 135
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 822000,
+      "sample_start": 816000,
+      "window_index": 136
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 828000,
+      "sample_start": 822000,
+      "window_index": 137
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 834000,
+      "sample_start": 828000,
+      "window_index": 138
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 840000,
+      "sample_start": 834000,
+      "window_index": 139
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 846000,
+      "sample_start": 840000,
+      "window_index": 140
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 852000,
+      "sample_start": 846000,
+      "window_index": 141
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 858000,
+      "sample_start": 852000,
+      "window_index": 142
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 864000,
+      "sample_start": 858000,
+      "window_index": 143
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 870000,
+      "sample_start": 864000,
+      "window_index": 144
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 876000,
+      "sample_start": 870000,
+      "window_index": 145
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 882000,
+      "sample_start": 876000,
+      "window_index": 146
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 888000,
+      "sample_start": 882000,
+      "window_index": 147
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 894000,
+      "sample_start": 888000,
+      "window_index": 148
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 900000,
+      "sample_start": 894000,
+      "window_index": 149
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 906000,
+      "sample_start": 900000,
+      "window_index": 150
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 912000,
+      "sample_start": 906000,
+      "window_index": 151
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 918000,
+      "sample_start": 912000,
+      "window_index": 152
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 924000,
+      "sample_start": 918000,
+      "window_index": 153
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 930000,
+      "sample_start": 924000,
+      "window_index": 154
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 936000,
+      "sample_start": 930000,
+      "window_index": 155
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 942000,
+      "sample_start": 936000,
+      "window_index": 156
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 948000,
+      "sample_start": 942000,
+      "window_index": 157
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 954000,
+      "sample_start": 948000,
+      "window_index": 158
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 960000,
+      "sample_start": 954000,
+      "window_index": 159
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 966000,
+      "sample_start": 960000,
+      "window_index": 160
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 972000,
+      "sample_start": 966000,
+      "window_index": 161
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 978000,
+      "sample_start": 972000,
+      "window_index": 162
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 984000,
+      "sample_start": 978000,
+      "window_index": 163
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 990000,
+      "sample_start": 984000,
+      "window_index": 164
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 996000,
+      "sample_start": 990000,
+      "window_index": 165
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1002000,
+      "sample_start": 996000,
+      "window_index": 166
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1008000,
+      "sample_start": 1002000,
+      "window_index": 167
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1014000,
+      "sample_start": 1008000,
+      "window_index": 168
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1020000,
+      "sample_start": 1014000,
+      "window_index": 169
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1026000,
+      "sample_start": 1020000,
+      "window_index": 170
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1032000,
+      "sample_start": 1026000,
+      "window_index": 171
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1038000,
+      "sample_start": 1032000,
+      "window_index": 172
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1044000,
+      "sample_start": 1038000,
+      "window_index": 173
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1050000,
+      "sample_start": 1044000,
+      "window_index": 174
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1056000,
+      "sample_start": 1050000,
+      "window_index": 175
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1062000,
+      "sample_start": 1056000,
+      "window_index": 176
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1068000,
+      "sample_start": 1062000,
+      "window_index": 177
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1074000,
+      "sample_start": 1068000,
+      "window_index": 178
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1080000,
+      "sample_start": 1074000,
+      "window_index": 179
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1086000,
+      "sample_start": 1080000,
+      "window_index": 180
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1092000,
+      "sample_start": 1086000,
+      "window_index": 181
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1098000,
+      "sample_start": 1092000,
+      "window_index": 182
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1104000,
+      "sample_start": 1098000,
+      "window_index": 183
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1110000,
+      "sample_start": 1104000,
+      "window_index": 184
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1116000,
+      "sample_start": 1110000,
+      "window_index": 185
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1122000,
+      "sample_start": 1116000,
+      "window_index": 186
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1128000,
+      "sample_start": 1122000,
+      "window_index": 187
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1134000,
+      "sample_start": 1128000,
+      "window_index": 188
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1140000,
+      "sample_start": 1134000,
+      "window_index": 189
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1146000,
+      "sample_start": 1140000,
+      "window_index": 190
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1152000,
+      "sample_start": 1146000,
+      "window_index": 191
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1158000,
+      "sample_start": 1152000,
+      "window_index": 192
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1164000,
+      "sample_start": 1158000,
+      "window_index": 193
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1170000,
+      "sample_start": 1164000,
+      "window_index": 194
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1176000,
+      "sample_start": 1170000,
+      "window_index": 195
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1182000,
+      "sample_start": 1176000,
+      "window_index": 196
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1188000,
+      "sample_start": 1182000,
+      "window_index": 197
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1194000,
+      "sample_start": 1188000,
+      "window_index": 198
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1200000,
+      "sample_start": 1194000,
+      "window_index": 199
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1206000,
+      "sample_start": 1200000,
+      "window_index": 200
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1212000,
+      "sample_start": 1206000,
+      "window_index": 201
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1218000,
+      "sample_start": 1212000,
+      "window_index": 202
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1224000,
+      "sample_start": 1218000,
+      "window_index": 203
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1230000,
+      "sample_start": 1224000,
+      "window_index": 204
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1236000,
+      "sample_start": 1230000,
+      "window_index": 205
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1242000,
+      "sample_start": 1236000,
+      "window_index": 206
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1248000,
+      "sample_start": 1242000,
+      "window_index": 207
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1254000,
+      "sample_start": 1248000,
+      "window_index": 208
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1260000,
+      "sample_start": 1254000,
+      "window_index": 209
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1266000,
+      "sample_start": 1260000,
+      "window_index": 210
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1272000,
+      "sample_start": 1266000,
+      "window_index": 211
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1278000,
+      "sample_start": 1272000,
+      "window_index": 212
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1284000,
+      "sample_start": 1278000,
+      "window_index": 213
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1290000,
+      "sample_start": 1284000,
+      "window_index": 214
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1296000,
+      "sample_start": 1290000,
+      "window_index": 215
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1302000,
+      "sample_start": 1296000,
+      "window_index": 216
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1308000,
+      "sample_start": 1302000,
+      "window_index": 217
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1314000,
+      "sample_start": 1308000,
+      "window_index": 218
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1320000,
+      "sample_start": 1314000,
+      "window_index": 219
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1326000,
+      "sample_start": 1320000,
+      "window_index": 220
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1332000,
+      "sample_start": 1326000,
+      "window_index": 221
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1338000,
+      "sample_start": 1332000,
+      "window_index": 222
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1344000,
+      "sample_start": 1338000,
+      "window_index": 223
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1350000,
+      "sample_start": 1344000,
+      "window_index": 224
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1356000,
+      "sample_start": 1350000,
+      "window_index": 225
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1362000,
+      "sample_start": 1356000,
+      "window_index": 226
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1368000,
+      "sample_start": 1362000,
+      "window_index": 227
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1374000,
+      "sample_start": 1368000,
+      "window_index": 228
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1380000,
+      "sample_start": 1374000,
+      "window_index": 229
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1386000,
+      "sample_start": 1380000,
+      "window_index": 230
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1392000,
+      "sample_start": 1386000,
+      "window_index": 231
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1398000,
+      "sample_start": 1392000,
+      "window_index": 232
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1404000,
+      "sample_start": 1398000,
+      "window_index": 233
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1410000,
+      "sample_start": 1404000,
+      "window_index": 234
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1416000,
+      "sample_start": 1410000,
+      "window_index": 235
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1422000,
+      "sample_start": 1416000,
+      "window_index": 236
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1428000,
+      "sample_start": 1422000,
+      "window_index": 237
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1434000,
+      "sample_start": 1428000,
+      "window_index": 238
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1440000,
+      "sample_start": 1434000,
+      "window_index": 239
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1446000,
+      "sample_start": 1440000,
+      "window_index": 240
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1452000,
+      "sample_start": 1446000,
+      "window_index": 241
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1458000,
+      "sample_start": 1452000,
+      "window_index": 242
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1464000,
+      "sample_start": 1458000,
+      "window_index": 243
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1470000,
+      "sample_start": 1464000,
+      "window_index": 244
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1476000,
+      "sample_start": 1470000,
+      "window_index": 245
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1482000,
+      "sample_start": 1476000,
+      "window_index": 246
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1488000,
+      "sample_start": 1482000,
+      "window_index": 247
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1494000,
+      "sample_start": 1488000,
+      "window_index": 248
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1500000,
+      "sample_start": 1494000,
+      "window_index": 249
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1506000,
+      "sample_start": 1500000,
+      "window_index": 250
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1512000,
+      "sample_start": 1506000,
+      "window_index": 251
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1518000,
+      "sample_start": 1512000,
+      "window_index": 252
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1524000,
+      "sample_start": 1518000,
+      "window_index": 253
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1530000,
+      "sample_start": 1524000,
+      "window_index": 254
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1536000,
+      "sample_start": 1530000,
+      "window_index": 255
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1542000,
+      "sample_start": 1536000,
+      "window_index": 256
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1548000,
+      "sample_start": 1542000,
+      "window_index": 257
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1554000,
+      "sample_start": 1548000,
+      "window_index": 258
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1560000,
+      "sample_start": 1554000,
+      "window_index": 259
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1566000,
+      "sample_start": 1560000,
+      "window_index": 260
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1572000,
+      "sample_start": 1566000,
+      "window_index": 261
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1578000,
+      "sample_start": 1572000,
+      "window_index": 262
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1584000,
+      "sample_start": 1578000,
+      "window_index": 263
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1590000,
+      "sample_start": 1584000,
+      "window_index": 264
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1596000,
+      "sample_start": 1590000,
+      "window_index": 265
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1602000,
+      "sample_start": 1596000,
+      "window_index": 266
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1608000,
+      "sample_start": 1602000,
+      "window_index": 267
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1614000,
+      "sample_start": 1608000,
+      "window_index": 268
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1620000,
+      "sample_start": 1614000,
+      "window_index": 269
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1626000,
+      "sample_start": 1620000,
+      "window_index": 270
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1632000,
+      "sample_start": 1626000,
+      "window_index": 271
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1638000,
+      "sample_start": 1632000,
+      "window_index": 272
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1644000,
+      "sample_start": 1638000,
+      "window_index": 273
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1650000,
+      "sample_start": 1644000,
+      "window_index": 274
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1656000,
+      "sample_start": 1650000,
+      "window_index": 275
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1662000,
+      "sample_start": 1656000,
+      "window_index": 276
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1668000,
+      "sample_start": 1662000,
+      "window_index": 277
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1674000,
+      "sample_start": 1668000,
+      "window_index": 278
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1680000,
+      "sample_start": 1674000,
+      "window_index": 279
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1686000,
+      "sample_start": 1680000,
+      "window_index": 280
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1692000,
+      "sample_start": 1686000,
+      "window_index": 281
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1698000,
+      "sample_start": 1692000,
+      "window_index": 282
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1704000,
+      "sample_start": 1698000,
+      "window_index": 283
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1710000,
+      "sample_start": 1704000,
+      "window_index": 284
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1716000,
+      "sample_start": 1710000,
+      "window_index": 285
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1722000,
+      "sample_start": 1716000,
+      "window_index": 286
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1728000,
+      "sample_start": 1722000,
+      "window_index": 287
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1734000,
+      "sample_start": 1728000,
+      "window_index": 288
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1740000,
+      "sample_start": 1734000,
+      "window_index": 289
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1746000,
+      "sample_start": 1740000,
+      "window_index": 290
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1752000,
+      "sample_start": 1746000,
+      "window_index": 291
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1758000,
+      "sample_start": 1752000,
+      "window_index": 292
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1764000,
+      "sample_start": 1758000,
+      "window_index": 293
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1770000,
+      "sample_start": 1764000,
+      "window_index": 294
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1776000,
+      "sample_start": 1770000,
+      "window_index": 295
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1782000,
+      "sample_start": 1776000,
+      "window_index": 296
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1788000,
+      "sample_start": 1782000,
+      "window_index": 297
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1794000,
+      "sample_start": 1788000,
+      "window_index": 298
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1800000,
+      "sample_start": 1794000,
+      "window_index": 299
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1806000,
+      "sample_start": 1800000,
+      "window_index": 300
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1812000,
+      "sample_start": 1806000,
+      "window_index": 301
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1818000,
+      "sample_start": 1812000,
+      "window_index": 302
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1824000,
+      "sample_start": 1818000,
+      "window_index": 303
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1830000,
+      "sample_start": 1824000,
+      "window_index": 304
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1836000,
+      "sample_start": 1830000,
+      "window_index": 305
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1842000,
+      "sample_start": 1836000,
+      "window_index": 306
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1848000,
+      "sample_start": 1842000,
+      "window_index": 307
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1854000,
+      "sample_start": 1848000,
+      "window_index": 308
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1860000,
+      "sample_start": 1854000,
+      "window_index": 309
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1866000,
+      "sample_start": 1860000,
+      "window_index": 310
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1872000,
+      "sample_start": 1866000,
+      "window_index": 311
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1878000,
+      "sample_start": 1872000,
+      "window_index": 312
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1884000,
+      "sample_start": 1878000,
+      "window_index": 313
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1890000,
+      "sample_start": 1884000,
+      "window_index": 314
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1896000,
+      "sample_start": 1890000,
+      "window_index": 315
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1902000,
+      "sample_start": 1896000,
+      "window_index": 316
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1908000,
+      "sample_start": 1902000,
+      "window_index": 317
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1914000,
+      "sample_start": 1908000,
+      "window_index": 318
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1920000,
+      "sample_start": 1914000,
+      "window_index": 319
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1926000,
+      "sample_start": 1920000,
+      "window_index": 320
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1932000,
+      "sample_start": 1926000,
+      "window_index": 321
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1938000,
+      "sample_start": 1932000,
+      "window_index": 322
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1944000,
+      "sample_start": 1938000,
+      "window_index": 323
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1950000,
+      "sample_start": 1944000,
+      "window_index": 324
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1956000,
+      "sample_start": 1950000,
+      "window_index": 325
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1962000,
+      "sample_start": 1956000,
+      "window_index": 326
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1968000,
+      "sample_start": 1962000,
+      "window_index": 327
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1974000,
+      "sample_start": 1968000,
+      "window_index": 328
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1980000,
+      "sample_start": 1974000,
+      "window_index": 329
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1986000,
+      "sample_start": 1980000,
+      "window_index": 330
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1992000,
+      "sample_start": 1986000,
+      "window_index": 331
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 1998000,
+      "sample_start": 1992000,
+      "window_index": 332
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2004000,
+      "sample_start": 1998000,
+      "window_index": 333
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2010000,
+      "sample_start": 2004000,
+      "window_index": 334
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2016000,
+      "sample_start": 2010000,
+      "window_index": 335
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2022000,
+      "sample_start": 2016000,
+      "window_index": 336
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2028000,
+      "sample_start": 2022000,
+      "window_index": 337
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2034000,
+      "sample_start": 2028000,
+      "window_index": 338
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2040000,
+      "sample_start": 2034000,
+      "window_index": 339
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2046000,
+      "sample_start": 2040000,
+      "window_index": 340
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2052000,
+      "sample_start": 2046000,
+      "window_index": 341
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2058000,
+      "sample_start": 2052000,
+      "window_index": 342
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2064000,
+      "sample_start": 2058000,
+      "window_index": 343
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2070000,
+      "sample_start": 2064000,
+      "window_index": 344
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2076000,
+      "sample_start": 2070000,
+      "window_index": 345
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2082000,
+      "sample_start": 2076000,
+      "window_index": 346
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2088000,
+      "sample_start": 2082000,
+      "window_index": 347
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2094000,
+      "sample_start": 2088000,
+      "window_index": 348
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2100000,
+      "sample_start": 2094000,
+      "window_index": 349
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2106000,
+      "sample_start": 2100000,
+      "window_index": 350
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2112000,
+      "sample_start": 2106000,
+      "window_index": 351
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2118000,
+      "sample_start": 2112000,
+      "window_index": 352
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2124000,
+      "sample_start": 2118000,
+      "window_index": 353
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2130000,
+      "sample_start": 2124000,
+      "window_index": 354
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2136000,
+      "sample_start": 2130000,
+      "window_index": 355
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2142000,
+      "sample_start": 2136000,
+      "window_index": 356
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2148000,
+      "sample_start": 2142000,
+      "window_index": 357
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2154000,
+      "sample_start": 2148000,
+      "window_index": 358
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2160000,
+      "sample_start": 2154000,
+      "window_index": 359
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2166000,
+      "sample_start": 2160000,
+      "window_index": 360
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2172000,
+      "sample_start": 2166000,
+      "window_index": 361
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2178000,
+      "sample_start": 2172000,
+      "window_index": 362
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2184000,
+      "sample_start": 2178000,
+      "window_index": 363
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2190000,
+      "sample_start": 2184000,
+      "window_index": 364
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2196000,
+      "sample_start": 2190000,
+      "window_index": 365
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2202000,
+      "sample_start": 2196000,
+      "window_index": 366
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2208000,
+      "sample_start": 2202000,
+      "window_index": 367
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2214000,
+      "sample_start": 2208000,
+      "window_index": 368
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2220000,
+      "sample_start": 2214000,
+      "window_index": 369
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2226000,
+      "sample_start": 2220000,
+      "window_index": 370
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2232000,
+      "sample_start": 2226000,
+      "window_index": 371
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2238000,
+      "sample_start": 2232000,
+      "window_index": 372
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2244000,
+      "sample_start": 2238000,
+      "window_index": 373
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2250000,
+      "sample_start": 2244000,
+      "window_index": 374
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2256000,
+      "sample_start": 2250000,
+      "window_index": 375
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2262000,
+      "sample_start": 2256000,
+      "window_index": 376
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2268000,
+      "sample_start": 2262000,
+      "window_index": 377
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2274000,
+      "sample_start": 2268000,
+      "window_index": 378
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2280000,
+      "sample_start": 2274000,
+      "window_index": 379
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2286000,
+      "sample_start": 2280000,
+      "window_index": 380
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2292000,
+      "sample_start": 2286000,
+      "window_index": 381
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2298000,
+      "sample_start": 2292000,
+      "window_index": 382
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2304000,
+      "sample_start": 2298000,
+      "window_index": 383
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2310000,
+      "sample_start": 2304000,
+      "window_index": 384
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2316000,
+      "sample_start": 2310000,
+      "window_index": 385
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2322000,
+      "sample_start": 2316000,
+      "window_index": 386
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2328000,
+      "sample_start": 2322000,
+      "window_index": 387
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2334000,
+      "sample_start": 2328000,
+      "window_index": 388
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2340000,
+      "sample_start": 2334000,
+      "window_index": 389
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2346000,
+      "sample_start": 2340000,
+      "window_index": 390
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2352000,
+      "sample_start": 2346000,
+      "window_index": 391
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2358000,
+      "sample_start": 2352000,
+      "window_index": 392
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2364000,
+      "sample_start": 2358000,
+      "window_index": 393
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2370000,
+      "sample_start": 2364000,
+      "window_index": 394
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2376000,
+      "sample_start": 2370000,
+      "window_index": 395
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2382000,
+      "sample_start": 2376000,
+      "window_index": 396
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2388000,
+      "sample_start": 2382000,
+      "window_index": 397
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2394000,
+      "sample_start": 2388000,
+      "window_index": 398
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2400000,
+      "sample_start": 2394000,
+      "window_index": 399
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2406000,
+      "sample_start": 2400000,
+      "window_index": 400
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2412000,
+      "sample_start": 2406000,
+      "window_index": 401
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2418000,
+      "sample_start": 2412000,
+      "window_index": 402
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2424000,
+      "sample_start": 2418000,
+      "window_index": 403
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2430000,
+      "sample_start": 2424000,
+      "window_index": 404
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2436000,
+      "sample_start": 2430000,
+      "window_index": 405
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2442000,
+      "sample_start": 2436000,
+      "window_index": 406
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2448000,
+      "sample_start": 2442000,
+      "window_index": 407
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2454000,
+      "sample_start": 2448000,
+      "window_index": 408
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2460000,
+      "sample_start": 2454000,
+      "window_index": 409
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2466000,
+      "sample_start": 2460000,
+      "window_index": 410
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2472000,
+      "sample_start": 2466000,
+      "window_index": 411
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2478000,
+      "sample_start": 2472000,
+      "window_index": 412
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2484000,
+      "sample_start": 2478000,
+      "window_index": 413
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2490000,
+      "sample_start": 2484000,
+      "window_index": 414
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2496000,
+      "sample_start": 2490000,
+      "window_index": 415
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2502000,
+      "sample_start": 2496000,
+      "window_index": 416
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2508000,
+      "sample_start": 2502000,
+      "window_index": 417
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2514000,
+      "sample_start": 2508000,
+      "window_index": 418
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2520000,
+      "sample_start": 2514000,
+      "window_index": 419
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2526000,
+      "sample_start": 2520000,
+      "window_index": 420
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2532000,
+      "sample_start": 2526000,
+      "window_index": 421
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2538000,
+      "sample_start": 2532000,
+      "window_index": 422
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2544000,
+      "sample_start": 2538000,
+      "window_index": 423
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2550000,
+      "sample_start": 2544000,
+      "window_index": 424
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2556000,
+      "sample_start": 2550000,
+      "window_index": 425
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2562000,
+      "sample_start": 2556000,
+      "window_index": 426
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2568000,
+      "sample_start": 2562000,
+      "window_index": 427
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2574000,
+      "sample_start": 2568000,
+      "window_index": 428
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2580000,
+      "sample_start": 2574000,
+      "window_index": 429
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2586000,
+      "sample_start": 2580000,
+      "window_index": 430
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2592000,
+      "sample_start": 2586000,
+      "window_index": 431
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2598000,
+      "sample_start": 2592000,
+      "window_index": 432
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2604000,
+      "sample_start": 2598000,
+      "window_index": 433
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2610000,
+      "sample_start": 2604000,
+      "window_index": 434
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2616000,
+      "sample_start": 2610000,
+      "window_index": 435
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2622000,
+      "sample_start": 2616000,
+      "window_index": 436
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2628000,
+      "sample_start": 2622000,
+      "window_index": 437
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2634000,
+      "sample_start": 2628000,
+      "window_index": 438
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2640000,
+      "sample_start": 2634000,
+      "window_index": 439
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2646000,
+      "sample_start": 2640000,
+      "window_index": 440
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2652000,
+      "sample_start": 2646000,
+      "window_index": 441
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2658000,
+      "sample_start": 2652000,
+      "window_index": 442
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2664000,
+      "sample_start": 2658000,
+      "window_index": 443
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2670000,
+      "sample_start": 2664000,
+      "window_index": 444
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2676000,
+      "sample_start": 2670000,
+      "window_index": 445
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2682000,
+      "sample_start": 2676000,
+      "window_index": 446
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2688000,
+      "sample_start": 2682000,
+      "window_index": 447
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2694000,
+      "sample_start": 2688000,
+      "window_index": 448
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2700000,
+      "sample_start": 2694000,
+      "window_index": 449
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2706000,
+      "sample_start": 2700000,
+      "window_index": 450
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2712000,
+      "sample_start": 2706000,
+      "window_index": 451
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2718000,
+      "sample_start": 2712000,
+      "window_index": 452
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2724000,
+      "sample_start": 2718000,
+      "window_index": 453
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2730000,
+      "sample_start": 2724000,
+      "window_index": 454
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2736000,
+      "sample_start": 2730000,
+      "window_index": 455
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2742000,
+      "sample_start": 2736000,
+      "window_index": 456
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2748000,
+      "sample_start": 2742000,
+      "window_index": 457
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2754000,
+      "sample_start": 2748000,
+      "window_index": 458
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2760000,
+      "sample_start": 2754000,
+      "window_index": 459
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2766000,
+      "sample_start": 2760000,
+      "window_index": 460
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2772000,
+      "sample_start": 2766000,
+      "window_index": 461
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2778000,
+      "sample_start": 2772000,
+      "window_index": 462
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2784000,
+      "sample_start": 2778000,
+      "window_index": 463
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2790000,
+      "sample_start": 2784000,
+      "window_index": 464
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2796000,
+      "sample_start": 2790000,
+      "window_index": 465
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2802000,
+      "sample_start": 2796000,
+      "window_index": 466
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2808000,
+      "sample_start": 2802000,
+      "window_index": 467
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2814000,
+      "sample_start": 2808000,
+      "window_index": 468
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2820000,
+      "sample_start": 2814000,
+      "window_index": 469
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2826000,
+      "sample_start": 2820000,
+      "window_index": 470
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2832000,
+      "sample_start": 2826000,
+      "window_index": 471
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2838000,
+      "sample_start": 2832000,
+      "window_index": 472
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2844000,
+      "sample_start": 2838000,
+      "window_index": 473
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2850000,
+      "sample_start": 2844000,
+      "window_index": 474
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2856000,
+      "sample_start": 2850000,
+      "window_index": 475
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2862000,
+      "sample_start": 2856000,
+      "window_index": 476
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2868000,
+      "sample_start": 2862000,
+      "window_index": 477
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2874000,
+      "sample_start": 2868000,
+      "window_index": 478
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2880000,
+      "sample_start": 2874000,
+      "window_index": 479
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2886000,
+      "sample_start": 2880000,
+      "window_index": 480
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2892000,
+      "sample_start": 2886000,
+      "window_index": 481
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2898000,
+      "sample_start": 2892000,
+      "window_index": 482
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2904000,
+      "sample_start": 2898000,
+      "window_index": 483
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2910000,
+      "sample_start": 2904000,
+      "window_index": 484
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2916000,
+      "sample_start": 2910000,
+      "window_index": 485
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2922000,
+      "sample_start": 2916000,
+      "window_index": 486
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2928000,
+      "sample_start": 2922000,
+      "window_index": 487
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2934000,
+      "sample_start": 2928000,
+      "window_index": 488
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2940000,
+      "sample_start": 2934000,
+      "window_index": 489
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2946000,
+      "sample_start": 2940000,
+      "window_index": 490
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2952000,
+      "sample_start": 2946000,
+      "window_index": 491
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2958000,
+      "sample_start": 2952000,
+      "window_index": 492
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2964000,
+      "sample_start": 2958000,
+      "window_index": 493
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2970000,
+      "sample_start": 2964000,
+      "window_index": 494
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2976000,
+      "sample_start": 2970000,
+      "window_index": 495
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2982000,
+      "sample_start": 2976000,
+      "window_index": 496
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2988000,
+      "sample_start": 2982000,
+      "window_index": 497
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 2994000,
+      "sample_start": 2988000,
+      "window_index": 498
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 3000000,
+      "sample_start": 2994000,
+      "window_index": 499
+    },
+    {
+      "official_label": "N",
+      "patient": "c02",
+      "recording_id": "c02",
+      "sample_end": 3006000,
+      "sample_start": 3000000,
+      "window_index": 500
+    }
+  ],
+  "evaluation_only": true,
+  "private_model_development_data": true,
+  "test_patient": "c02"
+}

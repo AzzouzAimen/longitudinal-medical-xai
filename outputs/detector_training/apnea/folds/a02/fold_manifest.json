@@ -1,0 +1,83 @@
+{
+  "artifact_hashes": {
+    "evaluation_annotations.json": "15d8623cc922a8e3f2a83b445b7c252a5030f59596a93bd40db173ae9490408d",
+    "held_out_attention.npy": "6a035c36eb3a97adbe4625bfb1966d4bf9c37c7600a2fbe81da858e664244fbf",
+    "held_out_channel_errors.npy": "1c1206656144b651931d798e7bbf8d0a388cbbfa90057b6187216ae76d093412",
+    "held_out_decisions.json": "80b75f63e07a42e90cfdcf9f6e5023f8ff1976db532a13af27813835f6eab583",
+    "held_out_errors.npy": "a1fdadc1c7c86a9b5673a5ee36db89e665c23857513a320ac3e8c2296c89a0e2",
+    "held_out_reconstruction.npy": "e6384c4f34e99542233c9da133bc51ea49bac83a4c974d9412360fb60bb11754",
+    "held_out_residual.npy": "c047d31f1d98acf199268ec28d8e1e8922031b4b0f97269f1deb404b193e0167",
+    "model.keras": "f1f9f7f474c596bcf57a269a420b4e1388dfd9b3836f07504f20bf7fb6b9c430",
+    "model_config.json": "9a97b3dfd728f4016d1a27980616936f93837b26a75810efdc10a8e22653e650",
+    "normalization.json": "45487c2ec113ee40b04258aae9130a2748b8f7970f9ac911a9adff1dd699b21b",
+    "runtime_metadata.json": "3b4144b587115b704c28c04d11d5a83db1c15772e84aff8ff4bb25aaacea5a9f",
+    "thresholds.json": "79b472d1f2756363317070c7da5ffe57e515ddab4fac50e821f86b06292b9d46",
+    "training_history.json": "27a6a01d5decdf0da6a3879fb641ffd8748dd30e71c32ccb351cf772cfe8e6ed"
+  },
+  "artifact_hashes_file": "artifact_hashes.json",
+  "artifact_hashes_sha256": "2e14a041b6e1e8ca4f11c17a163ee4b79dd063b9eeab7d73087623d329de53b6",
+  "artifact_policy": "official annotations are evaluation-only and separate from model evidence",
+  "artifact_status": "validated",
+  "channel_threshold_policy": "not applicable",
+  "dataset": "apnea",
+  "early_stopping_patients": [
+    "a03"
+  ],
+  "evaluation_annotations_file": "evaluation_annotations.json",
+  "fitting_patients": [
+    "a01",
+    "c01",
+    "c02",
+    "c03"
+  ],
+  "fold_id": "apnea-02-a02",
+  "held_out_outputs": {
+    "attention": "held_out_attention.npy",
+    "channel_errors": "held_out_channel_errors.npy",
+    "decisions": "held_out_decisions.json",
+    "errors": "held_out_errors.npy",
+    "reconstruction": "held_out_reconstruction.npy",
+    "residual": "held_out_residual.npy"
+  },
+  "index": 1,
+  "model_checkpoint": "model.keras",
+  "model_checkpoint_sha256": "f1f9f7f474c596bcf57a269a420b4e1388dfd9b3836f07504f20bf7fb6b9c430",
+  "normalization_file": "normalization.json",
+  "normalization_patients": [
+    "a01",
+    "c01",
+    "c02",
+    "c03"
+  ],
+  "normalization_policy": "official N windows from training patients only",
+  "official_annotations": "evaluation_only; never model evidence or LLM input",
+  "schema_version": "fusion-fold-v1",
+  "seed": 2026,
+  "test_patient": "a02",
+  "test_recordings": [
+    "a02"
+  ],
+  "threshold_calibration_patients": [
+    "a03"
+  ],
+  "threshold_policy": "validation-patient predictions maximize F1; equal-F1 ties choose the larger threshold",
+  "train_patients": [
+    "a01",
+    "c01",
+    "c02",
+    "c03"
+  ],
+  "train_recordings": [
+    "a01",
+    "c01",
+    "c02",
+    "c03"
+  ],
+  "validation_patient": "a03",
+  "validation_patients": [
+    "a03"
+  ],
+  "validation_recordings": [
+    "a03"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "evidence_ids": [
+        "window:446:event"
+      ],
+      "section": "current_event",
+      "text": "A 60-second apnea window from recording a01, starting at 2000-01-01T07:25:00+00:00 and ending at 07:26:00+00:00, was flagged as an anomaly by the detector."
+    },
+    {
+      "claim_id": "claim-2",
+      "evidence_ids": [
+        "prediction:446:detector"
+      ],
+      "section": "model_and_xai_evidence",
+      "text": "The detector classified the window as anomaly with a reconstruction error of 0.3975, exceeding the anomaly threshold of 0.0453, yielding a normalized margin of 7.78; these values are reconstruction threshold evidence and not probabilities or calibrated confidence."
+    },
+    {
+      "claim_id": "claim-3",
+      "evidence_ids": [
+        "model:1:provenance",
+        "window:446:signal-summary",
+        "window:446:attention-summary"
+      ],
+      "section": "model_and_xai_evidence",
+      "text": "The model is a BiLSTM temporal-attention autoencoder (version apnea-01-a01_seed2026) trained on the apnea dataset with test patient a01; no signal-level or attention-level evidence was available for this window."
+    },
+    {
+      "claim_id": "claim-4",
+      "evidence_ids": [
+        "prediction:446:detector",
+        "window:446:signal-summary",
+        "window:446:attention-summary",
+        "pdm:patient:1:status:446",
+        "clinical:patient:1:summary:446"
+      ],
+      "section": "evidence_grounded_summary",
+      "text": "The current event is supported by detector evidence indicating an anomaly, but signal and attention explanations are unavailable, and no longitudinal or clinical context was supplied."
+    }
+  ],
+  "narrative_sections": {
+    "current_event": "A 60-second apnea window from recording a01, starting at 2000-01-01T07:25:00+00:00 and ending at 07:26:00+00:00, was flagged as an anomaly by the detector. [evidence: window:446:event]",
+    "evidence_grounded_summary": "The current event is supported by detector evidence indicating an anomaly, but signal and attention explanations are unavailable, and no longitudinal or clinical context was supplied. [evidence: prediction:446:detector; window:446:signal-summary; window:446:attention-summary; pdm:patient:1:status:446; clinical:patient:1:summary:446]",
+    "model_and_xai_evidence": "The detector classified the window as anomaly with a reconstruction error of 0.3975, exceeding the anomaly threshold of 0.0453, yielding a normalized margin of 7.78; these values are reconstruction threshold evidence and not probabilities or calibrated confidence. [evidence: prediction:446:detector] The model is a BiLSTM temporal-attention autoencoder (version apnea-01-a01_seed2026) trained on the apnea dataset with test patient a01; no signal-level or attention-level evidence was available for this window. [evidence: model:1:provenance; window:446:signal-summary; window:446:attention-summary]",
+    "previous_monitoring_history": "",
+    "recorded_clinical_context": ""
+  },
+  "schema_version": "fusion_narrative_v7",
+  "source_schema_version": "fusion_claims_v7"
+}

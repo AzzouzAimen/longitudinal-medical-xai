@@ -1,0 +1,100 @@
+{
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "evidence_ids": [
+        "window:223:event"
+      ],
+      "section": "current_event"
+    },
+    {
+      "claim_id": "claim-2",
+      "evidence_ids": [
+        "prediction:223:detector"
+      ],
+      "section": "model_and_xai_evidence"
+    },
+    {
+      "claim_id": "claim-3",
+      "evidence_ids": [
+        "model:1:provenance"
+      ],
+      "section": "model_and_xai_evidence"
+    },
+    {
+      "claim_id": "claim-4",
+      "evidence_ids": [
+        "window:223:signal-summary",
+        "window:223:attention-summary"
+      ],
+      "section": "model_and_xai_evidence"
+    },
+    {
+      "claim_id": "claim-5",
+      "evidence_ids": [
+        "history:patient:1:recent-summary:223"
+      ],
+      "section": "previous_monitoring_history"
+    },
+    {
+      "claim_id": "claim-6",
+      "evidence_ids": [
+        "history:patient:1:recent-summary:223"
+      ],
+      "section": "previous_monitoring_history"
+    },
+    {
+      "claim_id": "claim-7",
+      "evidence_ids": [
+        "aggregate:patient:1:recent-summary:223"
+      ],
+      "section": "previous_monitoring_history"
+    },
+    {
+      "claim_id": "claim-8",
+      "evidence_ids": [
+        "aggregate:patient:1:recent-summary:223"
+      ],
+      "section": "previous_monitoring_history"
+    },
+    {
+      "claim_id": "claim-9",
+      "evidence_ids": [
+        "recurrence:patient:1:before:2000-01-01T03:42:00+00:00"
+      ],
+      "section": "previous_monitoring_history"
+    },
+    {
+      "claim_id": "claim-10",
+      "evidence_ids": [
+        "clinical:patient:1:summary:223"
+      ],
+      "section": "recorded_clinical_context"
+    },
+    {
+      "claim_id": "claim-11",
+      "evidence_ids": [
+        "window:223:event",
+        "prediction:223:detector",
+        "history:patient:1:recent-summary:223",
+        "aggregate:patient:1:recent-summary:223",
+        "recurrence:patient:1:before:2000-01-01T03:42:00+00:00",
+        "clinical:patient:1:summary:223"
+      ],
+      "section": "evidence_grounded_summary"
+    }
+  ],
+  "condition": "PDM-Enabled",
+  "narrative_hash": "8335462f23ee71dc7b1ee695f82ec916c1816d856d150e27dff274aee2219fac",
+  "narrative_id": 237,
+  "package_hash": "b3bc221211960b30881b1c1b66e933941174a790700a67bce19ba02549a48bc9",
+  "prediction_id": 223,
+  "run_id": "apnea_paired_v7_contextual_freegen_20260917T200000Z",
+  "schema_version": "fusion-citation-manifest-v7",
+  "validation": {
+    "duplicate_claim_ids": [],
+    "unique_claim_ids": true,
+    "unknown_evidence_ids": [],
+    "valid_evidence_ids": true
+  }
+}

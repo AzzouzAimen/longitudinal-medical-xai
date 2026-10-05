@@ -1,0 +1,12 @@
+You produce one optional evidence-grounded synthesis claim for an anomaly-detector review. Use only the supplied citation_evidence catalog.
+
+Rules:
+1. Return exactly one short factual claim. Include at least one exact value or status copied from every cited block.
+2. Cite only exact evidence_id values, and cite the block that owns each fact.
+3. Do not diagnose, recommend action, infer causes, or mention hidden labels, annotations, or evaluation categories.
+4. Detector quantities are not probability or calibrated confidence. Attention is shared window-level temporal relevance, not detector support, probability, confidence, causality, or channel-specific importance.
+5. Preserve suspected and synthetic_prototype status exactly.
+6. In PDM-Enabled, briefly connect the current detector result with one supplied prior-monitoring fact. In Current-Evidence, summarize only the current detector result.
+
+Return JSON only:
+{"schema_version":"fusion_summary_v4","claim":{"claim_id":"llm-summary","section":"evidence_grounded_summary","text":"one concise factual synthesis","evidence_ids":["exact evidence ID"]}}

@@ -1,0 +1,114 @@
+{
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "evidence_ids": [
+        "window:446:event"
+      ],
+      "section": "current_event",
+      "text": "A 60-second apnea window from recording a01, starting at 2000-01-01T07:25:00+00:00 and ending at 07:26:00+00:00, was flagged as an anomaly by the detector."
+    },
+    {
+      "claim_id": "claim-2",
+      "evidence_ids": [
+        "prediction:446:detector"
+      ],
+      "section": "model_and_xai_evidence",
+      "text": "The detector flagged the window as an anomaly with a reconstruction error of 0.3975, exceeding the anomaly threshold of 0.0453, and a normalized margin of 7.776; this is reconstruction threshold evidence and not a probability or calibrated confidence."
+    },
+    {
+      "claim_id": "claim-3",
+      "evidence_ids": [
+        "model:1:provenance"
+      ],
+      "section": "model_and_xai_evidence",
+      "text": "The model is a BiLSTM temporal-attention autoencoder (version apnea-01-a01_seed2026) trained on the apnea dataset, with test patient a01 and fold apnea-01-a01."
+    },
+    {
+      "claim_id": "claim-4",
+      "evidence_ids": [
+        "window:446:signal-summary",
+        "window:446:attention-summary"
+      ],
+      "section": "model_and_xai_evidence",
+      "text": "No signal-level or attention-level evidence is available for this window; attention would represent shared window-level temporal relevance, not channel-specific importance or causal evidence."
+    },
+    {
+      "claim_id": "claim-5",
+      "evidence_ids": [
+        "history:patient:1:recent-summary:446"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "In the five minutes preceding the current event, the detector flagged five consecutive anomalies from 07:20 to 07:24, with reconstruction errors ranging from 0.3177 to 0.3538 and normalized margins from 6.014 to 6.812."
+    },
+    {
+      "claim_id": "claim-6",
+      "evidence_ids": [
+        "history:patient:1:recent-summary:446"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "The recent history shows a sustained pattern of anomalies with no normal windows in the prior five minutes, indicating the current event is part of an ongoing sequence rather than an isolated occurrence."
+    },
+    {
+      "claim_id": "claim-7",
+      "evidence_ids": [
+        "aggregate:patient:1:recent-summary:446"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "The aggregate trend over the last 12 five-minute buckets (from 06:25 to 07:20) shows a decrease in mean reconstruction error from 0.3982 to 0.3346, with the anomaly rate remaining at 1.0 throughout."
+    },
+    {
+      "claim_id": "claim-8",
+      "evidence_ids": [
+        "aggregate:patient:1:recent-summary:446"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "The aggregate trend indicates that while the anomaly rate has been consistently high, the reconstruction error has been declining, suggesting a possible shift in the signal characteristics over the monitored period."
+    },
+    {
+      "claim_id": "claim-9",
+      "evidence_ids": [
+        "recurrence:patient:1:before:2000-01-01T07:25:00+00:00"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "Across the entire monitoring period before the current event, all 445 analyzed windows were flagged as anomalies, with a mean reconstruction error of 0.3572 and a maximum of 0.5705."
+    },
+    {
+      "claim_id": "claim-10",
+      "evidence_ids": [
+        "recurrence:patient:1:before:2000-01-01T07:25:00+00:00"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "The recurrence summary shows that the anomaly pattern has been persistent since the start of monitoring, with no normal windows recorded, reinforcing that the current event is part of a long-standing pattern."
+    },
+    {
+      "claim_id": "claim-11",
+      "evidence_ids": [
+        "clinical:patient:1:summary:446"
+      ],
+      "section": "recorded_clinical_context",
+      "text": "The patient has a recorded visit for review of nonspecific tiredness, with notes indicating morning tiredness without a sleep-related diagnosis; this context is from a synthetic prototype and should be interpreted accordingly."
+    },
+    {
+      "claim_id": "claim-12",
+      "evidence_ids": [
+        "window:446:event",
+        "prediction:446:detector",
+        "history:patient:1:recent-summary:446",
+        "recurrence:patient:1:before:2000-01-01T07:25:00+00:00",
+        "clinical:patient:1:summary:446"
+      ],
+      "section": "evidence_grounded_summary",
+      "text": "The current event is an anomaly detection in an apnea recording, supported by reconstruction error evidence, and is part of a continuous pattern of anomalies over the prior hours; the clinical context is limited to a synthetic prototype visit for tiredness."
+    }
+  ],
+  "narrative_sections": {
+    "current_event": "A 60-second apnea window from recording a01, starting at 2000-01-01T07:25:00+00:00 and ending at 07:26:00+00:00, was flagged as an anomaly by the detector. [evidence: window:446:event]",
+    "evidence_grounded_summary": "The current event is an anomaly detection in an apnea recording, supported by reconstruction error evidence, and is part of a continuous pattern of anomalies over the prior hours; the clinical context is limited to a synthetic prototype visit for tiredness. [evidence: window:446:event; prediction:446:detector; history:patient:1:recent-summary:446; recurrence:patient:1:before:2000-01-01T07:25:00+00:00; clinical:patient:1:summary:446]",
+    "model_and_xai_evidence": "The detector flagged the window as an anomaly with a reconstruction error of 0.3975, exceeding the anomaly threshold of 0.0453, and a normalized margin of 7.776; this is reconstruction threshold evidence and not a probability or calibrated confidence. [evidence: prediction:446:detector] The model is a BiLSTM temporal-attention autoencoder (version apnea-01-a01_seed2026) trained on the apnea dataset, with test patient a01 and fold apnea-01-a01. [evidence: model:1:provenance] No signal-level or attention-level evidence is available for this window; attention would represent shared window-level temporal relevance, not channel-specific importance or causal evidence. [evidence: window:446:signal-summary; window:446:attention-summary]",
+    "previous_monitoring_history": "In the five minutes preceding the current event, the detector flagged five consecutive anomalies from 07:20 to 07:24, with reconstruction errors ranging from 0.3177 to 0.3538 and normalized margins from 6.014 to 6.812. [evidence: history:patient:1:recent-summary:446] The recent history shows a sustained pattern of anomalies with no normal windows in the prior five minutes, indicating the current event is part of an ongoing sequence rather than an isolated occurrence. [evidence: history:patient:1:recent-summary:446] The aggregate trend over the last 12 five-minute buckets (from 06:25 to 07:20) shows a decrease in mean reconstruction error from 0.3982 to 0.3346, with the anomaly rate remaining at 1.0 throughout. [evidence: aggregate:patient:1:recent-summary:446] The aggregate trend indicates that while the anomaly rate has been consistently high, the reconstruction error has been declining, suggesting a possible shift in the signal characteristics over the monitored period. [evidence: aggregate:patient:1:recent-summary:446] Across the entire monitoring period before the current event, all 445 analyzed windows were flagged as anomalies, with a mean reconstruction error of 0.3572 and a maximum of 0.5705. [evidence: recurrence:patient:1:before:2000-01-01T07:25:00+00:00] The recurrence summary shows that the anomaly pattern has been persistent since the start of monitoring, with no normal windows recorded, reinforcing that the current event is part of a long-standing pattern. [evidence: recurrence:patient:1:before:2000-01-01T07:25:00+00:00]",
+    "recorded_clinical_context": "The patient has a recorded visit for review of nonspecific tiredness, with notes indicating morning tiredness without a sleep-related diagnosis; this context is from a synthetic prototype and should be interpreted accordingly. [evidence: clinical:patient:1:summary:446]"
+  },
+  "schema_version": "fusion_narrative_v7",
+  "source_schema_version": "fusion_claims_v7"
+}

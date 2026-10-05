@@ -1,0 +1,84 @@
+{
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "evidence_ids": [
+        "window:2149:event",
+        "prediction:2149:detector"
+      ],
+      "section": "current_event"
+    },
+    {
+      "claim_id": "claim-2",
+      "evidence_ids": [
+        "prediction:2149:detector"
+      ],
+      "section": "model_and_xai_evidence"
+    },
+    {
+      "claim_id": "claim-3",
+      "evidence_ids": [
+        "model:5:provenance"
+      ],
+      "section": "model_and_xai_evidence"
+    },
+    {
+      "claim_id": "claim-4",
+      "evidence_ids": [
+        "window:2149:signal-summary",
+        "window:2149:attention-summary"
+      ],
+      "section": "model_and_xai_evidence"
+    },
+    {
+      "claim_id": "claim-5",
+      "evidence_ids": [
+        "history:patient:5:recent-summary:2149"
+      ],
+      "section": "previous_monitoring_history"
+    },
+    {
+      "claim_id": "claim-6",
+      "evidence_ids": [
+        "aggregate:patient:5:recent-summary:2149"
+      ],
+      "section": "previous_monitoring_history"
+    },
+    {
+      "claim_id": "claim-7",
+      "evidence_ids": [
+        "recurrence:patient:5:before:2000-01-05T02:09:00+00:00"
+      ],
+      "section": "previous_monitoring_history"
+    },
+    {
+      "claim_id": "claim-8",
+      "evidence_ids": [
+        "clinical:patient:5:summary:2149"
+      ],
+      "section": "recorded_clinical_context"
+    },
+    {
+      "claim_id": "claim-9",
+      "evidence_ids": [
+        "prediction:2149:detector",
+        "aggregate:patient:5:recent-summary:2149",
+        "recurrence:patient:5:before:2000-01-05T02:09:00+00:00"
+      ],
+      "section": "evidence_grounded_summary"
+    }
+  ],
+  "condition": "PDM-Enabled",
+  "narrative_hash": "ae23622862333d17ed2e50d4364ad5d65f031db86af6a503b7e81ebd12ffb735",
+  "narrative_id": 261,
+  "package_hash": "8be10b488a382ab19d0f74e4fa45a7887546bf958e1cb3ef80b3ca77f73298c4",
+  "prediction_id": 2149,
+  "run_id": "apnea_paired_v7_contextual_freegen_20260917T200000Z",
+  "schema_version": "fusion-citation-manifest-v7",
+  "validation": {
+    "duplicate_claim_ids": [],
+    "unique_claim_ids": true,
+    "unknown_evidence_ids": [],
+    "valid_evidence_ids": true
+  }
+}

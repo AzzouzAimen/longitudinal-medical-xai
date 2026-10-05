@@ -1,0 +1,72 @@
+{
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "evidence_ids": [
+        "window:1305:event",
+        "prediction:1305:detector"
+      ],
+      "section": "current_event",
+      "text": "The 60-second apnea window starting at 2000-01-03T04:47:00+00:00 (window index 287) was classified as normal by the detector."
+    },
+    {
+      "claim_id": "claim-2",
+      "evidence_ids": [
+        "prediction:1305:detector"
+      ],
+      "section": "model_and_xai_evidence",
+      "text": "The detector's reconstruction error was 1.3989, well below the anomaly threshold of 190.87, yielding a normalized margin of -0.9927; the detector's semantics are reconstruction threshold evidence, not probability or calibrated confidence."
+    },
+    {
+      "claim_id": "claim-3",
+      "evidence_ids": [
+        "model:3:provenance",
+        "window:1305:signal-summary",
+        "window:1305:attention-summary"
+      ],
+      "section": "model_and_xai_evidence",
+      "text": "The model is a BiLSTM temporal-attention autoencoder (version apnea-03-a03_seed2026) trained on the apnea dataset and tested on patient a03; no signal-level or attention-level evidence was available for this window."
+    },
+    {
+      "claim_id": "claim-4",
+      "evidence_ids": [
+        "history:patient:3:recent-summary:1305"
+      ],
+      "section": "previous_monitoring_history",
+      "text": "In the five preceding windows (04:42 to 04:46), all predictions were normal with reconstruction errors between 1.32 and 1.40, and no anomalies were recorded."
+    },
+    {
+      "claim_id": "claim-5",
+      "evidence_ids": [
+        "aggregate:patient:3:recent-summary:1305"
+      ],
+      "section": "evidence_grounded_summary",
+      "text": "Across the 12 most recent 5-minute buckets (03:50 to 04:45), the mean reconstruction error increased from 1.141 to 1.349, with zero anomalies in every bucket."
+    },
+    {
+      "claim_id": "claim-6",
+      "evidence_ids": [
+        "recurrence:patient:3:before:2000-01-03T04:47:00+00:00"
+      ],
+      "section": "evidence_grounded_summary",
+      "text": "Over the 287 windows analyzed before 04:47, the anomaly rate was 0.0% and the mean reconstruction error was 1.581, with a maximum reconstruction error of 72.42."
+    },
+    {
+      "claim_id": "claim-7",
+      "evidence_ids": [
+        "clinical:patient:3:summary:1305"
+      ],
+      "section": "recorded_clinical_context",
+      "text": "The patient has a suspected diagnosis of sleep-disordered breathing (R06.83) from a sleep consultation on 1999-12-15, with notes of loud snoring and daytime fatigue; this is a synthetic prototype and not an official PhysioNet diagnosis."
+    }
+  ],
+  "narrative_sections": {
+    "current_event": "The 60-second apnea window starting at 2000-01-03T04:47:00+00:00 (window index 287) was classified as normal by the detector. [evidence: window:1305:event; prediction:1305:detector]",
+    "evidence_grounded_summary": "Across the 12 most recent 5-minute buckets (03:50 to 04:45), the mean reconstruction error increased from 1.141 to 1.349, with zero anomalies in every bucket. [evidence: aggregate:patient:3:recent-summary:1305] Over the 287 windows analyzed before 04:47, the anomaly rate was 0.0% and the mean reconstruction error was 1.581, with a maximum reconstruction error of 72.42. [evidence: recurrence:patient:3:before:2000-01-03T04:47:00+00:00]",
+    "model_and_xai_evidence": "The detector's reconstruction error was 1.3989, well below the anomaly threshold of 190.87, yielding a normalized margin of -0.9927; the detector's semantics are reconstruction threshold evidence, not probability or calibrated confidence. [evidence: prediction:1305:detector] The model is a BiLSTM temporal-attention autoencoder (version apnea-03-a03_seed2026) trained on the apnea dataset and tested on patient a03; no signal-level or attention-level evidence was available for this window. [evidence: model:3:provenance; window:1305:signal-summary; window:1305:attention-summary]",
+    "previous_monitoring_history": "In the five preceding windows (04:42 to 04:46), all predictions were normal with reconstruction errors between 1.32 and 1.40, and no anomalies were recorded. [evidence: history:patient:3:recent-summary:1305]",
+    "recorded_clinical_context": "The patient has a suspected diagnosis of sleep-disordered breathing (R06.83) from a sleep consultation on 1999-12-15, with notes of loud snoring and daytime fatigue; this is a synthetic prototype and not an official PhysioNet diagnosis. [evidence: clinical:patient:3:summary:1305]"
+  },
+  "schema_version": "fusion_narrative_v7",
+  "source_schema_version": "fusion_claims_v7"
+}

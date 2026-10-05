@@ -1,0 +1,35 @@
+{
+  "schema_version": "fusion_claims_v7",
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "section": "current_event",
+      "text": "At 2000-01-06T06:24:00+00:00, a 60-second apnea window (window_index 384) from recording c03 was detected as an anomaly with reconstruction error 0.4166, exceeding the threshold 0.2722 by a margin of 0.1444.",
+      "evidence_ids": ["window:2905:event", "prediction:2905:detector"]
+    },
+    {
+      "claim_id": "claim-2",
+      "section": "model_and_xai_evidence",
+      "text": "The detector is a BiLSTM temporal-attention autoencoder (model fusion_apnea_loso_c03, fold apnea-06-c03) trained on the apnea dataset; signal-level and attention-level explanations were not available for this window.",
+      "evidence_ids": ["model:6:provenance", "window:2905:signal-summary", "window:2905:attention-summary"]
+    },
+    {
+      "claim_id": "claim-3",
+      "section": "previous_monitoring_history",
+      "text": "The five most recent windows (06:19 to 06:23) were all flagged as anomalies, with reconstruction errors increasing from 0.3399 to 0.4164, indicating a sustained period of elevated anomaly activity immediately before the current event.",
+      "evidence_ids": ["history:patient:6:recent-summary:2905"]
+    },
+    {
+      "claim_id": "claim-4",
+      "section": "evidence_grounded_summary",
+      "text": "Across the prior 55 minutes (05:25 to 06:20), the mean reconstruction error decreased from 0.4405 to 0.3863, while anomaly rates remained high (0.8–1.0), and over the entire analyzed period (384 windows) the anomaly rate was 0.9245, indicating a persistent anomaly pattern.",
+      "evidence_ids": ["aggregate:patient:6:recent-summary:2905", "recurrence:patient:6:before:2000-01-06T06:24:00+00:00"]
+    },
+    {
+      "claim_id": "claim-5",
+      "section": "recorded_clinical_context",
+      "text": "No clinical context was supplied for this patient; the clinical summary is marked as a synthetic prototype with no diagnoses or visits recorded.",
+      "evidence_ids": ["clinical:patient:6:summary:2905"]
+    }
+  ]
+}

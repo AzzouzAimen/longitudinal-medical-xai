@@ -1,0 +1,9 @@
+{
+  "channel_threshold_percentile": null,
+  "channel_threshold_semantics": "mean per-channel reconstruction error, not probability",
+  "channel_thresholds": [],
+  "overall": 0.04529009014368057,
+  "overall_selection": "validation F1 maximum",
+  "tie_breaking": "larger threshold",
+  "validation_patient": "a02"
+}

@@ -1,0 +1,146 @@
+{
+  "attempts": [
+    {
+      "raw_response": "{\n  \"schema_version\": \"fusion_narrative_v1\",\n  \"narrative_sections\": {\n    \"current_event\": \"A 30-second monitoring window (window_id 7197) from patient SLEEP_SC401, recording sleep_SC4012E0, starting at 1989-03-31T07:27:30+00:00 and ending at 1989-03-31T07:28:00+00:00. The event is flagged as an anomaly by the shared multivariate reconstruction model, with a reconstruction error of 77.78 and an anomaly margin of 69.66, exceeding the threshold of 8.12.\",\n    \"model_and_xai_evidence\": \"The detector is a shared multivariate reconstruction model (model_id 8, fusion_sleep_loso_SC401) trained on patient SC400 and validated on SC402. The overall anomaly threshold is the 99th percentile of validation-normal stable stage 2 reconstruction errors. Channel-level evidence shows two channels flagged: EEG Fpz-Cz (residual_threshold_flag true, normalized_margin 1.84) and EOG horizontal (residual_threshold_flag true, normalized_margin 9.61). EEG Pz-Oz was not flagged (normalized_margin -0.29). The EOG horizontal channel contributed 96.8% of the reconstruction share. Attention evidence is window-level temporal relevance with no channel owner; peak relevance at 07:27:44.9, mean 0.0033, not a probability.\",\n    \"previous_monitoring_history\": \"The previous night recording (sleep_SC4011E0, starting 1989-03-29T16:49:00+00:00) had 139 anomalies out of 1103 windows (12.6% anomaly rate). Representative anomalies occurred during recorded wake stages, with reconstruction errors up to 55.40. The current event's reconstruction error (77.78) is higher than any previous-night representative error.\",\n    \"recorded_clinical_context\": \"The official Sleep-EDF hypnogram annotation for this window is stage W (wake), supplied as contextual provenance only, not as a diagnosis or proof of detector correctness. Auxiliary signals (not modeled inputs) show respiratory oro-nasal values ranging 187-339, submental EMG around 4.97e-06, and rectal temperature around 37.01°C.\",\n    \"evidence_grounded_summary\": \"In this 30-second window, the shared reconstruction model flagged an anomaly with high reconstruction error, primarily driven by the EOG horizontal channel. The recorded sleep stage is wake. The previous night had frequent anomalies, mostly during wake stages, but the current error is larger. Attention is shared temporal relevance, not channel-specific. No clinical diagnosis is implied.\"\n  },\n  \"claims\": [\n    {\n      \"claim_id\": \"claim-1\",\n      \"section\": \"current_event\",\n      \"text\": \"The event is a 30-second window from patient SLEEP_SC401, recording sleep_SC4012E0, starting at 1989-03-31T07:27:30+00:00 and ending at 1989-03-31T07:28:00+00:00.\",\n      \"evidence_ids\": [\"sleep-window:7197:event\"]\n    },\n    {\n      \"claim_id\": \"claim-2\",\n      \"section\": \"current_event\",\n      \"text\": \"The detector predicted the window as an anomaly with reconstruction error 77.78 and anomaly margin 69.66, exceeding the threshold of 8.12.\",\n      \"evidence_ids\": [\"sleep-prediction:7197:detector\"]\n    },\n    {\n      \"claim_id\": \"claim-3\",\n      \"section\": \"model_and_xai_evidence\",\n      \"text\": \"The model is a shared multivariate reconstruction model (model_id 8) trained on patient SC400 and validated on SC402.\",\n      \"evidence_ids\": [\"sleep-model:8\"]\n    },\n    {\n      \"claim_id\": \"claim-4\",\n      \"section\": \"model_and_xai_evidence\",\n      \"text\": \"The overall anomaly threshold is the 99th percentile of validation-normal stable stage 2 reconstruction errors.\",\n      \"evidence_ids\": [\"sleep-model:8\"]\n    },\n    {\n      \"claim_id\": \"claim-5\",\n      \"section\": \"model_and_xai_evidence\",\n      \"text\": \"EEG Fpz-Cz channel had a residual threshold flag with normalized margin 1.84.\",\n      \"evidence_ids\": [\"sleep-channel:EEG Fpz-Cz\"]\n    },\n    {\n      \"claim_id\": \"claim-6\",\n      \"section\": \"model_and_xai_evidence\",\n      \"text\": \"EOG horizontal channel had a residual threshold flag with normalized margin 9.61 and contribution share 0.968.\",\n      \"evidence_ids\": [\"sleep-channel:EOG horizontal\"]\n    },\n    {\n      \"claim_id\": \"claim-7\",\n      \"section\": \"model_and_xai_evidence\",\n      \"text\": \"EEG Pz-Oz channel did not have a residual threshold flag, with normalized margin -0.29.\",\n      \"evidence_ids\": [\"sleep-channel:EEG Pz-Oz\"]\n    },\n    {\n      \"claim_id\": \"claim-8\",\n      \"section\": \"model_and_xai_evidence\",\n      \"text\": \"Attention evidence is window-level temporal relevance with no channel owner; peak relevance at 07:27:44.9, mean 0.0033.\",\n      \"evidence_ids\": [\"sleep-window:7197:attention\"]\n    },\n    {\n      \"claim_id\": \"claim-9\",\n      \"section\": \"previous_monitoring_history\",\n      \"text\": \"The previous night recording sleep_SC4011E0 had 139 anomalies out of 1103 windows, an anomaly rate of 12.6%.\",\n      \"evidence_ids\": [\"sleep-night:sleep_SC4011E0\"]\n    },\n    {\n      \"claim_id\": \"claim-10\",\n      \"section\": \"previous_monitoring_history\",\n      \"text\": \"Representative previous-night anomalies occurred during recorded wake stages, with reconstruction errors up to 55.40.\",\n      \"evidence_ids\": [\"sleep-history:prediction:4971\", \"sleep-history:prediction:4973\", \"sleep-history:prediction:5998\", \"sleep-history:prediction:6010\", \"sleep-history:prediction:6013\"]\n    },\n    {\n      \"claim_id\": \"claim-11\",\n      \"section\": \"recorded_clinical_context\",\n      \"text\": \"The official Sleep-EDF hypnogram annotation for this window is stage W (wake).\",\n      \"evidence_ids\": [\"sleep-annotation:7791\"]\n    },\n    {\n      \"claim_id\": \"claim-12\",\n      \"section\": \"recorded_clinical_context\",\n      \"text\": \"Auxiliary signals show respiratory oro-nasal values ranging 187-339, submental EMG around 4.97e-06, and rectal temperature around 37.01°C.\",\n      \"evidence_ids\": [\"sleep-aux:7197:Resp oro-nasal\", \"sleep-aux:7197:EMG submental\", \"sleep-aux:7197:Temp rectal\"]\n    },\n    {\n      \"claim_id\": \"claim-13\",\n      \"section\": \"evidence_grounded_summary\",\n      \"text\": \"The current event's reconstruction error (77.78) is higher than any previous-night representative anomaly error (max 55.40).\",\n      \"evidence_ids\": [\"sleep-prediction:7197:detector\", \"sleep-history:prediction:6013\"]\n    }\n  ]\n}",
+      "response_metadata": {
+        "id": "a8a841ab-bd55-48ec-a5e1-b83d9b41485f",
+        "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+        "usage": {
+          "cached_tokens": 0,
+          "completion_tokens": 1631,
+          "completion_tokens_details": null,
+          "prompt_tokens": 2572,
+          "prompt_tokens_details": null,
+          "total_tokens": 4203
+        }
+      },
+      "response_number": 1,
+      "transport_attempt": 1,
+      "transport_error": null
+    }
+  ],
+  "parse_failure": false,
+  "parsed": {
+    "claims": [
+      {
+        "claim_id": "claim-1",
+        "evidence_ids": [
+          "sleep-window:7197:event"
+        ],
+        "section": "current_event",
+        "text": "The event is a 30-second window from patient SLEEP_SC401, recording sleep_SC4012E0, starting at 1989-03-31T07:27:30+00:00 and ending at 1989-03-31T07:28:00+00:00."
+      },
+      {
+        "claim_id": "claim-2",
+        "evidence_ids": [
+          "sleep-prediction:7197:detector"
+        ],
+        "section": "current_event",
+        "text": "The detector predicted the window as an anomaly with reconstruction error 77.78 and anomaly margin 69.66, exceeding the threshold of 8.12."
+      },
+      {
+        "claim_id": "claim-3",
+        "evidence_ids": [
+          "sleep-model:8"
+        ],
+        "section": "model_and_xai_evidence",
+        "text": "The model is a shared multivariate reconstruction model (model_id 8) trained on patient SC400 and validated on SC402."
+      },
+      {
+        "claim_id": "claim-4",
+        "evidence_ids": [
+          "sleep-model:8"
+        ],
+        "section": "model_and_xai_evidence",
+        "text": "The overall anomaly threshold is the 99th percentile of validation-normal stable stage 2 reconstruction errors."
+      },
+      {
+        "claim_id": "claim-5",
+        "evidence_ids": [
+          "sleep-channel:EEG Fpz-Cz"
+        ],
+        "section": "model_and_xai_evidence",
+        "text": "EEG Fpz-Cz channel had a residual threshold flag with normalized margin 1.84."
+      },
+      {
+        "claim_id": "claim-6",
+        "evidence_ids": [
+          "sleep-channel:EOG horizontal"
+        ],
+        "section": "model_and_xai_evidence",
+        "text": "EOG horizontal channel had a residual threshold flag with normalized margin 9.61 and contribution share 0.968."
+      },
+      {
+        "claim_id": "claim-7",
+        "evidence_ids": [
+          "sleep-channel:EEG Pz-Oz"
+        ],
+        "section": "model_and_xai_evidence",
+        "text": "EEG Pz-Oz channel did not have a residual threshold flag, with normalized margin -0.29."
+      },
+      {
+        "claim_id": "claim-8",
+        "evidence_ids": [
+          "sleep-window:7197:attention"
+        ],
+        "section": "model_and_xai_evidence",
+        "text": "Attention evidence is window-level temporal relevance with no channel owner; peak relevance at 07:27:44.9, mean 0.0033."
+      },
+      {
+        "claim_id": "claim-9",
+        "evidence_ids": [
+          "sleep-night:sleep_SC4011E0"
+        ],
+        "section": "previous_monitoring_history",
+        "text": "The previous night recording sleep_SC4011E0 had 139 anomalies out of 1103 windows, an anomaly rate of 12.6%."
+      },
+      {
+        "claim_id": "claim-10",
+        "evidence_ids": [
+          "sleep-history:prediction:4971",
+          "sleep-history:prediction:4973",
+          "sleep-history:prediction:5998",
+          "sleep-history:prediction:6010",
+          "sleep-history:prediction:6013"
+        ],
+        "section": "previous_monitoring_history",
+        "text": "Representative previous-night anomalies occurred during recorded wake stages, with reconstruction errors up to 55.40."
+      },
+      {
+        "claim_id": "claim-11",
+        "evidence_ids": [
+          "sleep-annotation:7791"
+        ],
+        "section": "recorded_clinical_context",
+        "text": "The official Sleep-EDF hypnogram annotation for this window is stage W (wake)."
+      },
+      {
+        "claim_id": "claim-12",
+        "evidence_ids": [
+          "sleep-aux:7197:Resp oro-nasal",
+          "sleep-aux:7197:EMG submental",
+          "sleep-aux:7197:Temp rectal"
+        ],
+        "section": "recorded_clinical_context",
+        "text": "Auxiliary signals show respiratory oro-nasal values ranging 187-339, submental EMG around 4.97e-06, and rectal temperature around 37.01°C."
+      },
+      {
+        "claim_id": "claim-13",
+        "evidence_ids": [
+          "sleep-prediction:7197:detector",
+          "sleep-history:prediction:6013"
+        ],
+        "section": "evidence_grounded_summary",
+        "text": "The current event's reconstruction error (77.78) is higher than any previous-night representative anomaly error (max 55.40)."
+      }
+    ],
+    "narrative_sections": {
+      "current_event": "A 30-second monitoring window (window_id 7197) from patient SLEEP_SC401, recording sleep_SC4012E0, starting at 1989-03-31T07:27:30+00:00 and ending at 1989-03-31T07:28:00+00:00. The event is flagged as an anomaly by the shared multivariate reconstruction model, with a reconstruction error of 77.78 and an anomaly margin of 69.66, exceeding the threshold of 8.12.",
+      "evidence_grounded_summary": "In this 30-second window, the shared reconstruction model flagged an anomaly with high reconstruction error, primarily driven by the EOG horizontal channel. The recorded sleep stage is wake. The previous night had frequent anomalies, mostly during wake stages, but the current error is larger. Attention is shared temporal relevance, not channel-specific. No clinical diagnosis is implied.",
+      "model_and_xai_evidence": "The detector is a shared multivariate reconstruction model (model_id 8, fusion_sleep_loso_SC401) trained on patient SC400 and validated on SC402. The overall anomaly threshold is the 99th percentile of validation-normal stable stage 2 reconstruction errors. Channel-level evidence shows two channels flagged: EEG Fpz-Cz (residual_threshold_flag true, normalized_margin 1.84) and EOG horizontal (residual_threshold_flag true, normalized_margin 9.61). EEG Pz-Oz was not flagged (normalized_margin -0.29). The EOG horizontal channel contributed 96.8% of the reconstruction share. Attention evidence is window-level temporal relevance with no channel owner; peak relevance at 07:27:44.9, mean 0.0033, not a probability.",
+      "previous_monitoring_history": "The previous night recording (sleep_SC4011E0, starting 1989-03-29T16:49:00+00:00) had 139 anomalies out of 1103 windows (12.6% anomaly rate). Representative anomalies occurred during recorded wake stages, with reconstruction errors up to 55.40. The current event's reconstruction error (77.78) is higher than any previous-night representative error.",
+      "recorded_clinical_context": "The official Sleep-EDF hypnogram annotation for this window is stage W (wake), supplied as contextual provenance only, not as a diagnosis or proof of detector correctness. Auxiliary signals (not modeled inputs) show respiratory oro-nasal values ranging 187-339, submental EMG around 4.97e-06, and rectal temperature around 37.01°C."
+    },
+    "schema_version": "fusion_narrative_v1"
+  }
+}

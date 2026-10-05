@@ -1,0 +1,410 @@
+{
+  "adjudication_date": "2026-09-17",
+  "adjudication_type": "ai_assisted_evidence_audit",
+  "adjudicator": "OpenAI Codex",
+  "disclosure": "This is an AI-assisted semantic adjudication, not human review. A human spot-check is optional and must not be claimed unless performed.",
+  "method": "Each flagged claim was compared with the frozen evidence blocks named by its citation IDs. Whole-claim support and citation attribution were checked separately. For v5, adjudication evaluated the preserved first structurally valid response and did not repair or reject its content.",
+  "overrides": {
+    "1305:current_evidence:claim:claim-4": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "1305:current_evidence:claim:claim-5": {
+      "reviewer_class": "unsupported-other",
+      "reviewer_note": "The cited frozen catalog block(s) do not establish every factual part of this claim."
+    },
+    "1305:current_evidence:evidence:detector_margin": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "1305:current_evidence:evidence:event_timing": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "1305:pdm_enabled:evidence:clinical_context": {
+      "reviewer_class": "correctly_represented",
+      "reviewer_note": "The cited claim represents this concept in the frozen catalog."
+    },
+    "1305:pdm_enabled:evidence:detector_margin": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "1705:current_evidence:claim:claim-4": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "1705:current_evidence:evidence:reconstruction_comparison": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "1705:pdm_enabled:claim:claim-3": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "1705:pdm_enabled:claim:claim-7": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "1705:pdm_enabled:claim:claim-9": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "1705:pdm_enabled:evidence:detector_margin": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "2149:current_evidence:claim:claim-4": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2149:current_evidence:claim:claim-5": {
+      "reviewer_class": "unsupported-other",
+      "reviewer_note": "The cited frozen catalog block(s) do not establish every factual part of this claim."
+    },
+    "2149:current_evidence:evidence:attention_result": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "2149:current_evidence:evidence:xai_interpretation": {
+      "reviewer_class": "correctly_represented",
+      "reviewer_note": "The cited claim represents this concept in the frozen catalog."
+    },
+    "2149:pdm_enabled:claim:claim-8": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2149:pdm_enabled:evidence:attention_result": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "2149:pdm_enabled:evidence:clinical_context": {
+      "reviewer_class": "correctly_represented",
+      "reviewer_note": "The cited claim represents this concept in the frozen catalog."
+    },
+    "2149:pdm_enabled:evidence:xai_interpretation": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "223:current_evidence:evidence:detector_margin": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "223:current_evidence:evidence:xai_interpretation": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "223:pdm_enabled:claim:claim-4": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "223:pdm_enabled:claim:claim-8": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "223:pdm_enabled:evidence:attention_result": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "223:pdm_enabled:evidence:clinical_context": {
+      "reviewer_class": "correctly_represented",
+      "reviewer_note": "The cited claim represents this concept in the frozen catalog."
+    },
+    "223:pdm_enabled:evidence:detector_margin": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "223:pdm_enabled:evidence:xai_interpretation": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "2360:current_evidence:claim:claim-4": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2515:current_evidence:claim:claim-4": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2515:pdm_enabled:claim:claim-4": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2515:pdm_enabled:claim:claim-9": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2515:pdm_enabled:evidence:clinical_context": {
+      "reviewer_class": "correctly_represented",
+      "reviewer_note": "The cited claim represents this concept in the frozen catalog."
+    },
+    "2515:pdm_enabled:evidence:detector_margin": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "2672:current_evidence:claim:claim-4": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2672:current_evidence:claim:claim-5": {
+      "reviewer_class": "unsupported-other",
+      "reviewer_note": "The cited frozen catalog block(s) do not establish every factual part of this claim."
+    },
+    "2672:pdm_enabled:claim:claim-4": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2672:pdm_enabled:claim:claim-6": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2672:pdm_enabled:claim:claim-8": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2672:pdm_enabled:claim:claim-9": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2672:pdm_enabled:evidence:clinical_context": {
+      "reviewer_class": "correctly_represented",
+      "reviewer_note": "The cited claim represents this concept in the frozen catalog."
+    },
+    "2862:current_evidence:claim:claim-4": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2862:current_evidence:claim:claim-5": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2862:current_evidence:evidence:detector_decision": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "2862:pdm_enabled:claim:claim-10": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2862:pdm_enabled:claim:claim-3": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2862:pdm_enabled:claim:claim-5": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2862:pdm_enabled:claim:claim-7": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2862:pdm_enabled:claim:claim-9": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2862:pdm_enabled:evidence:aggregate_trend": {
+      "reviewer_class": "correctly_represented",
+      "reviewer_note": "The cited claim represents this concept in the frozen catalog."
+    },
+    "2862:pdm_enabled:evidence:clinical_context": {
+      "reviewer_class": "correctly_represented",
+      "reviewer_note": "The cited claim represents this concept in the frozen catalog."
+    },
+    "2905:current_evidence:claim:claim-4": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2905:pdm_enabled:claim:claim-5": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2905:pdm_enabled:evidence:clinical_context": {
+      "reviewer_class": "correctly_represented",
+      "reviewer_note": "The cited claim represents this concept in the frozen catalog."
+    },
+    "2905:pdm_enabled:evidence:detector_margin": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "2926:current_evidence:claim:claim-4": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2926:pdm_enabled:claim:claim-3": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2926:pdm_enabled:claim:claim-8": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "2926:pdm_enabled:evidence:clinical_context": {
+      "reviewer_class": "correctly_represented",
+      "reviewer_note": "The cited claim represents this concept in the frozen catalog."
+    },
+    "2926:pdm_enabled:evidence:detector_margin": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "2926:pdm_enabled:evidence:reconstruction_comparison": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "341:current_evidence:claim:claim-4": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "341:current_evidence:claim:claim-5": {
+      "reviewer_class": "unsupported-other",
+      "reviewer_note": "The cited frozen catalog block(s) do not establish every factual part of this claim."
+    },
+    "341:current_evidence:evidence:detector_margin": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "341:pdm_enabled:claim:claim-4": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "341:pdm_enabled:claim:claim-8": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "43:current_evidence:claim:claim-5": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "43:current_evidence:claim:claim-6": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "43:current_evidence:evidence:attention_result": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "43:current_evidence:evidence:detector_margin": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "43:current_evidence:evidence:xai_interpretation": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "43:pdm_enabled:claim:claim-4": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "43:pdm_enabled:evidence:attention_result": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "43:pdm_enabled:evidence:clinical_context": {
+      "reviewer_class": "correctly_represented",
+      "reviewer_note": "The cited claim represents this concept in the frozen catalog."
+    },
+    "43:pdm_enabled:evidence:detector_margin": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "43:pdm_enabled:evidence:xai_interpretation": {
+      "reviewer_class": "correctly_represented",
+      "reviewer_note": "The cited claim represents this concept in the frozen catalog."
+    },
+    "441:current_evidence:evidence:detector_margin": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "441:pdm_enabled:claim:claim-5": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "441:pdm_enabled:claim:claim-7": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "441:pdm_enabled:evidence:clinical_context": {
+      "reviewer_class": "correctly_represented",
+      "reviewer_note": "The cited claim represents this concept in the frozen catalog."
+    },
+    "441:pdm_enabled:evidence:detector_margin": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "446:current_evidence:evidence:detector_margin": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "446:pdm_enabled:claim:claim-10": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "446:pdm_enabled:claim:claim-4": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "446:pdm_enabled:claim:claim-6": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "446:pdm_enabled:claim:claim-8": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "446:pdm_enabled:evidence:aggregate_trend": {
+      "reviewer_class": "correctly_represented",
+      "reviewer_note": "The cited claim represents this concept in the frozen catalog."
+    },
+    "446:pdm_enabled:evidence:clinical_context": {
+      "reviewer_class": "correctly_represented",
+      "reviewer_note": "The cited claim represents this concept in the frozen catalog."
+    },
+    "446:pdm_enabled:evidence:detector_margin": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "446:pdm_enabled:evidence:recurrence": {
+      "reviewer_class": "correctly_represented",
+      "reviewer_note": "The cited claim represents this concept in the frozen catalog."
+    },
+    "507:current_evidence:claim:claim-4": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "507:current_evidence:evidence:detector_margin": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "507:pdm_enabled:claim:claim-6": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "507:pdm_enabled:evidence:clinical_context": {
+      "reviewer_class": "correctly_represented",
+      "reviewer_note": "The cited claim represents this concept in the frozen catalog."
+    },
+    "507:pdm_enabled:evidence:detector_margin": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "87:current_evidence:claim:claim-4": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "87:current_evidence:evidence:detector_margin": {
+      "reviewer_class": "omitted",
+      "reviewer_note": "No cited claim represents all required values or semantics for this concept."
+    },
+    "87:pdm_enabled:claim:claim-4": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "87:pdm_enabled:claim:claim-6": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    },
+    "87:pdm_enabled:claim:claim-8": {
+      "reviewer_class": "supported",
+      "reviewer_note": "Compared with the cited frozen catalog block(s); every factual part is supported."
+    }
+  },
+  "schema_version": "fusion-ai-adjudication-v7"
+}

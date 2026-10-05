@@ -1,0 +1,23 @@
+{
+  "schema_version": "fusion-generation-policy-v4",
+  "policy_version": "generation_policy_v4",
+  "prompt_version": "fusion_prompt_v4",
+  "prompt_path": "outputs/evidence_fusion/apnea/prompt_v4.txt",
+  "prompt_sha256": "43282841079db64dd7926a81fc1ce011343e7d7fc867e9dad71a77678ba9d1b9",
+  "provider": "Featherless",
+  "base_url": "https://api.featherless.ai/v1",
+  "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "generation_settings": {
+    "temperature": 0.1,
+    "top_p": 0.9,
+    "max_tokens": 800,
+    "chat_template_kwargs": {"thinking": false}
+  },
+  "response_schema_version": "fusion_summary_v4",
+  "optional_failure_policy": "After one correction attempt, omit the synthesis and preserve the complete deterministic factual narrative.",
+  "transport_retry": {
+    "maximum_attempts": 4,
+    "backoff_seconds": [1, 2, 4],
+    "retryable_http_statuses": [408, 409, 429, 500, 502, 503, 504]
+  }
+}

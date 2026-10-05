@@ -1,0 +1,75 @@
+{
+  "artifact_hashes": {
+    "evaluation_annotations.json": "5e2c28c6183b81b7df7c3c6580844e058a055d549ad4062aae0ac9934319128b",
+    "held_out_attention.npy": "a5e8ae336bb893dde0f1f91a18d25f304fe6b271307c5c5cbd1bcf742579892a",
+    "held_out_channel_errors.npy": "bf51ce89d9f582f8007cf828a37ae051e036facc8a2922ccfaddcfb99548589e",
+    "held_out_decisions.json": "2f8244626eb29f72533d627ea3bdd8208dd673317ab702e2401dc38d283f5e8b",
+    "held_out_errors.npy": "cda08cc15c852f90cf65203c99a746224b56eb17fafd16d13b4d9ac892c0a43d",
+    "held_out_reconstruction.npy": "3cc8c6c0c4000142d7913e03b40c67479cf06e15c45cc7b1cc05a60787eaf64c",
+    "held_out_residual.npy": "5857094f5d8e4c3d1bd5f4c320df7f2b82eab7fb2dfc800a744a6d1b1facfd62",
+    "model.keras": "4c76eae1db151a243e0032ee6e5412315b168f71d7f43885b525a93fad9e38bf",
+    "model_config.json": "e79caef7f9f2e031461174a7734d0a0f83273c2bca274cae4e4bfc1a38c30b30",
+    "normalization.json": "cc33f0409431b6d32ee2e98b8fee7d251007b0616d5759eb662ebebb76b76133",
+    "runtime_metadata.json": "8de3ecfb692458945f9e359b19bf8782340759822f8cc4b172dabc31eea525e2",
+    "thresholds.json": "d669e3ae2ae57e33b1e15ad478402a753a81ae66ffa2e2a5b628c498eac896a4",
+    "training_history.json": "73a3615caa527c7e3039953897481a9f38166a65a7ffdfaa2092f07cf5df5455"
+  },
+  "artifact_hashes_file": "artifact_hashes.json",
+  "artifact_hashes_sha256": "77ca3d6a99f25c19224cb8253ec6c254b41edc1c86e147c5cadaace0de329c9b",
+  "artifact_policy": "official annotations are evaluation-only and separate from model evidence",
+  "artifact_status": "validated",
+  "channel_threshold_policy": "99th percentile of validation-normal per-channel mean reconstruction error",
+  "dataset": "sleep",
+  "early_stopping_patients": [
+    "SC401"
+  ],
+  "evaluation_annotations_file": "evaluation_annotations.json",
+  "fitting_patients": [
+    "SC402"
+  ],
+  "fold_id": "sleep-01-SC400",
+  "held_out_outputs": {
+    "attention": "held_out_attention.npy",
+    "channel_errors": "held_out_channel_errors.npy",
+    "decisions": "held_out_decisions.json",
+    "errors": "held_out_errors.npy",
+    "reconstruction": "held_out_reconstruction.npy",
+    "residual": "held_out_residual.npy"
+  },
+  "index": 0,
+  "model_checkpoint": "model.keras",
+  "model_checkpoint_sha256": "4c76eae1db151a243e0032ee6e5412315b168f71d7f43885b525a93fad9e38bf",
+  "normalization_file": "normalization.json",
+  "normalization_patients": [
+    "SC402"
+  ],
+  "normalization_policy": "stable stage 2 epochs without a derived stage transition from training patients only",
+  "official_annotations": "evaluation_only; never model evidence or LLM input",
+  "preprocessing_policy": "per-night sleep interval plus 30-minute wake margins; unknown and movement epochs excluded",
+  "schema_version": "fusion-fold-v1",
+  "seed": 2026,
+  "test_patient": "SC400",
+  "test_recordings": [
+    "SC4001E0",
+    "SC4002E0"
+  ],
+  "threshold_calibration_patients": [
+    "SC401"
+  ],
+  "threshold_policy": "99th percentile of validation-normal stable stage 2 reconstruction errors",
+  "train_patients": [
+    "SC402"
+  ],
+  "train_recordings": [
+    "SC4021E0",
+    "SC4022E0"
+  ],
+  "validation_patient": "SC401",
+  "validation_patients": [
+    "SC401"
+  ],
+  "validation_recordings": [
+    "SC4011E0",
+    "SC4012E0"
+  ]
+}

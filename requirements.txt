@@ -1,0 +1,13 @@
+numpy
+pandas
+scipy
+scikit-learn
+wfdb
+mne
+psycopg2-binary
+pyarrow
+requests
+tensorflow-cpu==2.20.0
+openai
+python-dotenv
+flask

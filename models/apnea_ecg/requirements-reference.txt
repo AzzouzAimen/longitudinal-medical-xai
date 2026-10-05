@@ -1,0 +1,11 @@
+# Assembled from source imports and notebook setup; not a version-pinned environment lock.
+numpy
+pandas
+scipy
+scikit-learn
+tensorflow
+matplotlib
+joblib
+psycopg2-binary
+tabulate
+tslearn

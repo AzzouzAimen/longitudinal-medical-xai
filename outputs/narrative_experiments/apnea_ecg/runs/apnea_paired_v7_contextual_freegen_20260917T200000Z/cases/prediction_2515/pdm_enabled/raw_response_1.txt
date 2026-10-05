@@ -1,0 +1,65 @@
+{
+  "schema_version": "fusion_claims_v7",
+  "claims": [
+    {
+      "claim_id": "claim-1",
+      "section": "current_event",
+      "text": "A 60-second apnea window from patient c02 starting at 2000-01-05T08:15:00+00:00 was flagged as an anomaly by the detector.",
+      "evidence_ids": ["window:2515:event", "prediction:2515:detector"]
+    },
+    {
+      "claim_id": "claim-2",
+      "section": "model_and_xai_evidence",
+      "text": "The detector reported a reconstruction error of 3.928, exceeding the anomaly threshold of 3.521 with a normalized margin of 0.116; this is reconstruction threshold evidence, not a probability or calibrated confidence.",
+      "evidence_ids": ["prediction:2515:detector"]
+    },
+    {
+      "claim_id": "claim-3",
+      "section": "model_and_xai_evidence",
+      "text": "The model is a BiLSTM temporal-attention autoencoder (version apnea-05-c02_seed2026) trained on the apnea dataset and evaluated on patient c02.",
+      "evidence_ids": ["model:5:provenance"]
+    },
+    {
+      "claim_id": "claim-4",
+      "section": "model_and_xai_evidence",
+      "text": "No signal-level or attention-level evidence was available for this window; attention semantics are shared window-level temporal relevance, not channel-specific importance.",
+      "evidence_ids": ["window:2515:signal-summary", "window:2515:attention-summary"]
+    },
+    {
+      "claim_id": "claim-5",
+      "section": "previous_monitoring_history",
+      "text": "In the five minutes preceding the anomaly, all five windows were classified as normal with reconstruction errors between 1.989 and 2.936, showing no prior anomalies in that immediate period.",
+      "evidence_ids": ["history:patient:5:recent-summary:2515"]
+    },
+    {
+      "claim_id": "claim-6",
+      "section": "previous_monitoring_history",
+      "text": "The recent history shows a clear contrast: the current anomaly's reconstruction error (3.928) is substantially higher than the maximum of the preceding normal windows (2.936), supporting the novelty of this event.",
+      "evidence_ids": ["history:patient:5:recent-summary:2515", "prediction:2515:detector"]
+    },
+    {
+      "claim_id": "claim-7",
+      "section": "previous_monitoring_history",
+      "text": "Aggregate trend analysis over the prior hour (07:15 to 08:10) shows mean reconstruction error increased from 1.921 to 2.331, with zero anomalies in all 12 buckets, indicating a gradual upward trend before the current anomaly.",
+      "evidence_ids": ["aggregate:patient:5:recent-summary:2515"]
+    },
+    {
+      "claim_id": "claim-8",
+      "section": "previous_monitoring_history",
+      "text": "Over the entire analyzed period (495 windows before 08:15), the anomaly rate was 4.85% (24 anomalies), with a mean reconstruction error of 2.806 and a maximum of 129.262, providing recurrence context for the current event.",
+      "evidence_ids": ["recurrence:patient:5:before:2000-01-05T08:15:00+00:00"]
+    },
+    {
+      "claim_id": "claim-9",
+      "section": "recorded_clinical_context",
+      "text": "No clinical context was supplied for patient 5; the clinical summary is marked as a synthetic prototype with no diagnoses or visits recorded.",
+      "evidence_ids": ["clinical:patient:5:summary:2515"]
+    },
+    {
+      "claim_id": "claim-10",
+      "section": "evidence_grounded_summary",
+      "text": "The current anomaly is an isolated event following a period of normal windows and a gradual rise in reconstruction error, but the lack of signal, attention, and clinical evidence limits interpretability.",
+      "evidence_ids": ["prediction:2515:detector", "history:patient:5:recent-summary:2515", "aggregate:patient:5:recent-summary:2515", "window:2515:signal-summary", "window:2515:attention-summary", "clinical:patient:5:summary:2515"]
+    }
+  ]
+}

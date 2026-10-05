@@ -1,0 +1,12 @@
+Incremental Sort  (cost=0.80..10459.06 rows=25646 width=41) (actual time=0.061..136.493 rows=257400 loops=1)
+  Sort Key: "timestamp", source_signal_id
+  Presorted Key: "timestamp"
+  Full-sort Groups: 7800  Sort Method: quicksort  Average Memory: 27kB  Peak Memory: 27kB
+  Buffers: shared hit=5483
+  ->  Index Scan Backward using pg_final_patient_time_idx on pg_signal_data_final  (cost=0.43..9309.61 rows=25646 width=41) (actual time=0.029..59.855 rows=257400 loops=1)
+        Index Cond: ((patient_id = 68) AND ("timestamp" >= '2026-09-06 00:00:00+00'::timestamp with time zone) AND ("timestamp" < '2026-09-07 07:44:29.900001+00'::timestamp with time zone))
+        Buffers: shared hit=5483
+Planning:
+  Buffers: shared hit=2
+Planning Time: 0.201 ms
+Execution Time: 146.560 ms

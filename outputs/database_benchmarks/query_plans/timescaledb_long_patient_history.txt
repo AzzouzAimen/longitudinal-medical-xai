@@ -1,0 +1,18 @@
+Incremental Sort  (cost=0.51..17008.17 rows=257374 width=51) (actual time=0.083..131.029 rows=257400 loops=1)
+  Sort Key: ts_signal_data_final."timestamp", ts_signal_data_final.source_signal_id
+  Presorted Key: ts_signal_data_final."timestamp"
+  Full-sort Groups: 7800  Sort Method: quicksort  Average Memory: 27kB  Peak Memory: 27kB
+  Buffers: shared hit=5488
+  ->  Custom Scan (ChunkAppend) on ts_signal_data_final  (cost=0.42..9953.61 rows=257374 width=51) (actual time=0.041..63.578 rows=257400 loops=1)
+        Order: ts_signal_data_final."timestamp"
+        Buffers: shared hit=5488
+        ->  Index Scan Backward using _hyper_89_290_chunk_ts_final_patient_time_idx on _hyper_89_290_chunk  (cost=0.42..4676.22 rows=128700 width=51) (actual time=0.040..24.936 rows=128700 loops=1)
+              Index Cond: (patient_id = 68)
+              Buffers: shared hit=2744
+        ->  Index Scan Backward using _hyper_89_291_chunk_ts_final_patient_time_idx on _hyper_89_291_chunk  (cost=0.42..5277.39 rows=128674 width=51) (actual time=0.069..22.196 rows=128700 loops=1)
+              Index Cond: ((patient_id = 68) AND ("timestamp" >= '2026-09-06 00:00:00+00'::timestamp with time zone) AND ("timestamp" < '2026-09-07 07:44:29.900001+00'::timestamp with time zone))
+              Buffers: shared hit=2744
+Planning:
+  Buffers: shared hit=17
+Planning Time: 0.549 ms
+Execution Time: 139.577 ms

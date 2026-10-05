@@ -1,0 +1,10 @@
+{
+  "captured_at_utc": "2026-09-17T11:12:32.677146+00:00",
+  "counts": {
+    "experiment_narratives": 229,
+    "narrative": 229,
+    "narrative_evidence": 429,
+    "prediction": 9264,
+    "xai_explanation": 283
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "completed_at_utc": "2026-09-17T11:13:04.981707+00:00",
+  "parsed_response_sha256": "ba84f10c09703680a734fc83aa466805fcb94027b2de83c293b6a4d2c26ac70b",
+  "request_key": "223:current_evidence",
+  "request_sha256": "15ade554e91a9eaccf532d04f364a042b2e7b572a126e9d7273e9b85f17cabd1",
+  "response_audit_sha256": "1833f3b6ce953683b650db8b7ecd9379cff601c14c33848ea67a210320611f88",
+  "status": "response_saved"
+}

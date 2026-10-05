@@ -1,0 +1,15 @@
+{
+  "channel_threshold_percentile": 99,
+  "channel_threshold_semantics": "mean per-channel reconstruction error, not probability",
+  "channel_thresholds": [
+    4.717340469360352,
+    2.7770633697509766,
+    4.707674026489258
+  ],
+  "overall": 3.512266206741329,
+  "overall_percentile": 99,
+  "overall_selection": "99th percentile of validation-normal stable stage 2 reconstruction errors",
+  "overall_semantics": "reconstruction outlier relative to stable stage 2 sleep; not a transition or clinical diagnosis",
+  "tie_breaking": null,
+  "validation_patient": "SC400"
+}

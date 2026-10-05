@@ -1,0 +1,44 @@
+{
+  "artifact_status": "validated",
+  "dataset": "sleep",
+  "fold_count": 3,
+  "folds": [
+    {
+      "artifact_hashes": "folds/SC400/artifact_hashes.json",
+      "fold_manifest": "folds/SC400/fold_manifest.json",
+      "fold_manifest_sha256": "209bcd390e09d2fe87aa8fddfefd67a789fcdd9bd74a0164af329dc687544457",
+      "model_checkpoint": "folds/SC400/model.keras",
+      "model_checkpoint_sha256": "4c76eae1db151a243e0032ee6e5412315b168f71d7f43885b525a93fad9e38bf",
+      "test_patient": "SC400"
+    },
+    {
+      "artifact_hashes": "folds/SC401/artifact_hashes.json",
+      "fold_manifest": "folds/SC401/fold_manifest.json",
+      "fold_manifest_sha256": "23e72d8506107ad643e23837d79fa92c59c9026334c7576edabbb01f30aee300",
+      "model_checkpoint": "folds/SC401/model.keras",
+      "model_checkpoint_sha256": "eef9e05132e9de833c7d85042b9b8783009fbdff9ba662854d14d070e7f132d3",
+      "test_patient": "SC401"
+    },
+    {
+      "artifact_hashes": "folds/SC402/artifact_hashes.json",
+      "fold_manifest": "folds/SC402/fold_manifest.json",
+      "fold_manifest_sha256": "ba30b7480df0e32b7ecbd6f4da860a54422605f4f8348e1b35c222b4b2fcc76b",
+      "model_checkpoint": "folds/SC402/model.keras",
+      "model_checkpoint_sha256": "d9b31ec5b8a76d49b56a157b36a1e6d54fb925f718c3577dd78e50559a6edaa3",
+      "test_patient": "SC402"
+    }
+  ],
+  "limitations": [
+    "Sleep LOSO has one training patient, one validation patient, and one test patient per fold."
+  ],
+  "patients": [
+    "SC400",
+    "SC401",
+    "SC402"
+  ],
+  "provenance": "all fold/model hashes are SHA-256 and official annotations remain evaluation-only; provisional artifacts are not valid downstream evidence until --validate-only succeeds",
+  "schema_version": "fusion-loso-manifest-v1",
+  "seed": 2026,
+  "split_strategy": "deterministic cyclic nested patient LOSO",
+  "validation_note": "All required fold/model/artifact hashes and cyclic provenance were verified."
+}

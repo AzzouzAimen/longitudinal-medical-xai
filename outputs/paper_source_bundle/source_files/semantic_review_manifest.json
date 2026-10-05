@@ -1,0 +1,21 @@
+{
+  "adjudication": {
+    "adjudication_date": "2026-09-17",
+    "adjudication_type": "ai_assisted_evidence_audit",
+    "adjudicator": "OpenAI Codex",
+    "disclosure": "This is an AI-assisted semantic adjudication, not human review. A human spot-check is optional and must not be claimed unless performed.",
+    "method": "Each flagged claim was compared with the frozen evidence blocks named by its citation IDs. Whole-claim support and citation attribution were checked separately. For v5, adjudication evaluated the preserved first structurally valid response and did not repair or reject its content.",
+    "schema_version": "fusion-ai-adjudication-v7"
+  },
+  "approved_semantic_review_sha256": "bd9c66e96fecae92bf10777ee291ffa2371847fd5668ddfe7eab6f377a754139",
+  "completed_at_utc": "2026-09-17T11:17:47.400668+00:00",
+  "required_review_rows": 100,
+  "result_dir": "outputs/evidence_fusion/results/apnea_paired_v7_contextual_freegen_20260917T200000Z/fusion-scoring-v7",
+  "run_contract_hash": "da9c92b786498511f940c072333f325dd807962e3b77f69b44cc2cf799fa4620",
+  "run_id": "apnea_paired_v7_contextual_freegen_20260917T200000Z",
+  "schema_version": "fusion-semantic-review-v7",
+  "scoring_version": "fusion-scoring-v7",
+  "semantic_review_sha256": "64ab4139ef02501628aad647050111e8b7346bf898036651f3eafde8f632f902",
+  "status": "adjudication_complete",
+  "total_rows": 100
+}

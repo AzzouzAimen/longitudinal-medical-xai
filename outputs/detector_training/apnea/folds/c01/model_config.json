@@ -1,0 +1,26 @@
+{
+  "architecture": "BiLSTM temporal-attention autoencoder",
+  "batch_size": 64,
+  "decoder_lstm_units": [
+    16,
+    32
+  ],
+  "early_stopping_patience": 3,
+  "encoder_bilstm_units": [
+    32,
+    16
+  ],
+  "epochs": 20,
+  "input_shape": [
+    100,
+    7
+  ],
+  "latent_dimension": 16,
+  "loss": "clinical_pattern_loss",
+  "loss_weights": {
+    "fidelity": 0.3,
+    "pattern": 0.3,
+    "trend": 0.4
+  },
+  "seed": 2026
+}
